@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0rem;
+    height: 12rem;
+    padding: 1rem;
+    background-color: #C3A97B;
+    color: white;
+    font-size: 0.5rem;
+    align-items: flex-start;
+    width: 100%;
+    z-index: 99;
+}
+
+@media screen and (min-width: 320px) {
+    .footer {
+        padding: 3rem;
+
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer {
+        padding: 3rem 10rem;
+    }
+}
+.item {
+    padding: 0.7rem;
+}
+.copy {
+    margin-top: 3rem;
+    font-size: 0.6rem;
+    text-align: right;
+}
+.logo  {
+    color: #ecdec2;
+    border: solid 2px #ecdec2;
+    width: 10rem;
+    height: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0.5rem 0rem;
+}
