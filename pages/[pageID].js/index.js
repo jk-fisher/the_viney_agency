@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 
-const page = () => {
+const Page = () => {
 
     const router = useRouter();
     const { pId } = router.query
@@ -9,4 +9,4 @@ const page = () => {
     </h1> );
 }
  
-export default page;
+export default Page;
