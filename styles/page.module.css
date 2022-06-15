@@ -1,0 +1,10 @@
+.flex {
+    display: flex;
+    flex: 50%;
+    flex-direction: row;
+    justify-content: start;
+    padding: 3rem;
+}
+.flexItem {
+    margin: 3rem;
+}

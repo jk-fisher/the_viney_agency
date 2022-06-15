@@ -2,24 +2,28 @@ import { getAllPageData, getAllPageIDs, getPageData } from '../../lib/pages'
 import { getLayout } from '../../components/Layout/Layout'
 import { Fragment } from 'react';
 import Image from 'next/image';
+import styles from '../../styles/page.module.css'
 
 const Page = ({dynamicPageData}) => {
 
     console.log('p', dynamicPageData)
-    return ( <Fragment>
-        <div>
-            <Image src={dynamicPageData.image}  
-                alt="Picture of the author"
-                width={500}
-                height={500} />
+    return ( 
+        <div className={styles.flex}>
+            <div className={styles.flexItem}>
+                <Image src={dynamicPageData.image}  
+                    alt="Picture of the author"
+                    width={500}
+                    height={500} />
+            </div>
+            <div className={styles.flexItem}>
+                <h1>
+                    { dynamicPageData.title }
+                </h1>
+                <p>{ dynamicPageData.markdownBody }</p>
+            </div>
         </div>
-        <div>
-            <h1>
-                { dynamicPageData.title }
-            </h1>
-            <p>{ dynamicPageData.markdownBody }</p>
-        </div>
-        </Fragment> );
+        
+    );
 }
 
 const getStaticPaths = async () => {
