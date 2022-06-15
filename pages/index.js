@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { getDynamicPageData } from '../lib/pages'
+import { getAllPageData } from '../lib/pages'
 import { getLayout } from '../components/Layout/Layout'
 
 const getStaticProps = async () => {
-  const allPageData = getDynamicPageData();
+  const allPageData = getAllPageData();
   // const pageTitles = allPageData.map((page) => {
       
   //     return page.title;

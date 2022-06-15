@@ -41,7 +41,7 @@ const MainNavigation = ({ allPageData }) => {
                 </Link>
             </li>
             <li className={styles.navitem} key={allPageData[1].id}>
-                <Link href={`/pages/${allPageData[1].id}`}>
+                <Link href={`/${allPageData[1].id}`}>
                     <a className={styles.navlink} onClick={() => setIsOpen(false)}>{allPageData[1].title}</a>
                 </Link>
             </li>

@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-    background-color: #060826;
+    background-color: #248198;
     height: 5rem;
     position: fixed;
     width: 100%;
@@ -30,29 +30,30 @@
 }
 
 .navmenu {
+    list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .navitem {
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 
 .navlink{
-    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
     font-weight: 400;
-    color: #e5ddd0;
-    text-transform: uppercase;
+    color: #A0C0CC;
 }
 
 .navlink:hover{
-    color: #C6953D;
+    color: #adcfdb;
 }
 
 .navlogo {
-    color: #C6953D;
-    border: solid 2px #C6953D;
+    color: #ededed;
+    border: solid 2px #dbdbdb;
     width: 10rem;
     min-width: 9rem;
     height: 4rem;

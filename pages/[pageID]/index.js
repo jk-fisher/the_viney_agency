@@ -1,12 +1,25 @@
-import { getAllPageIDs, getPageData } from '../../lib/pages'
+import { getAllPageData, getAllPageIDs, getPageData } from '../../lib/pages'
 import { getLayout } from '../../components/Layout/Layout'
-
+import { Fragment } from 'react';
+import Image from 'next/image';
 
 const Page = ({dynamicPageData}) => {
 
-    return ( <h1>
-        Page: { dynamicPageData.title }
-    </h1> );
+    console.log('p', dynamicPageData)
+    return ( <Fragment>
+        <div>
+            <Image src={dynamicPageData.image}  
+                alt="Picture of the author"
+                width={500}
+                height={500} />
+        </div>
+        <div>
+            <h1>
+                { dynamicPageData.title }
+            </h1>
+            <p>{ dynamicPageData.markdownBody }</p>
+        </div>
+        </Fragment> );
 }
 
 const getStaticPaths = async () => {
@@ -19,14 +32,16 @@ const getStaticPaths = async () => {
 }
 const getStaticProps = async ({params}) => {
     const dynamicPageData = getPageData(params.pageID);
+    const allPageData = getAllPageData()
     console.log('dd', dynamicPageData)
   return {
       props: {
+        allPageData,
         dynamicPageData,
     } ,
   }
 }
 
 
-// Page.getLayout = getLayout; 
+Page.getLayout = getLayout; 
 export { Page as default, getStaticPaths, getStaticProps };
