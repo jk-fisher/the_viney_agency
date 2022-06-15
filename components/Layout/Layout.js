@@ -2,15 +2,15 @@ import Footer from "./Footer";
 import MainNavigation from "./MainNavigation";
 import styles from "../../styles/Layout.module.css";
 
-
-const Layout = ({children}) => {
+export const Layout = ({children, allPageData }) => {
+  console.log('layout', allPageData)
   return ( 
       <div className={styles.container}>
-        <MainNavigation />  
+        <MainNavigation allPageData={allPageData}/>  
           <main className={styles.main}>{children}</main>
         <Footer />
       </div>
    );
 }
  
-export default Layout;
+export const getLayout = (page, { allPageData }) => <Layout allPageData={allPageData}>{page}</Layout>

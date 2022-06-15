@@ -3,64 +3,64 @@ import Link from "next/link";
 
 import styles from "../../styles/MainNavigation.module.css"
 
-const MainNavigation = () => {
+const MainNavigation = ({ allPageData }) => {
 
+    console.log('mainNav', allPageData)
     const [isOpen, setIsOpen] = useState(false); 
     const openMenu = () => setIsOpen(!isOpen);
 
+    // const headers = allPageData.map((page) => {
+    //     return <li className={styles.navitem} key={page.id}>
+    //         <Link href={`/pages/${page.id}`}>
+    //             <a classname={styles.navlink} onClick={() => setIsOpen(false)}>{page.title}</a>
+    //         </Link>
+    //     </li>
+    // })
+    // console.log('headers', headers)
     return ( 
         <header className={styles.header}>
         <nav className={styles.navbar}>
             <Link href="/">
-                <a className={styles.navlogo}>Le<br />Petit Cottage</a>
+                <a className={styles.navlogo}>TVA</a>
             </Link>
           <ul className={isOpen === false ? 
                 styles.navmenu : styles.navmenu +' '+styles.active}>
             <li className={styles.navitem}>
                 <Link href="/">
-                    <a className={styles.navlink}>Home</a>
+                    <a className={styles.navlink} onClick={() => setIsOpen(false)}>Home</a>
+                </Link>
+            </li>
+            <li className={styles.navitem} key={allPageData[0].id}>
+                <Link href={`/${allPageData[0].id}`}>
+                    <a className={styles.navlink} onClick={() => setIsOpen(false)}>{allPageData[0].title}</a>
                 </Link>
             </li>
             <li className={styles.navitem}>
-                The Cottage
-                {/* <Link href="/property">
-                    <a className={styles.navlink}>The Cottage</a>
-                </Link> */}
+                <Link href="/authors">
+                    <a className={styles.navlink} onClick={() => setIsOpen(false)}>Authors</a>
+                </Link>
             </li>
+            <li className={styles.navitem} key={allPageData[1].id}>
+                <Link href={`/pages/${allPageData[1].id}`}>
+                    <a className={styles.navlink} onClick={() => setIsOpen(false)}>{allPageData[1].title}</a>
+                </Link>
+            </li>
+            {/* <li className={styles.navitem} key={allPageData[2].id}>
+                <Link href={`/pages/${allPageData[2].id}`}>
+                    <a classname={styles.navlink} onClick={() => setIsOpen(false)}>{allPageData[2].title}</a>
+                </Link>
+            </li> */}
             <li className={styles.navitem}>
-                <Link href="/bookings">
-                    <a className={styles.navlink} onClick={() => setIsOpen(false)}>Booking</a>
-                    
+                <Link href="/submissions">
+                    <a className={styles.navlink} onClick={() => setIsOpen(false)}>Submissions</a>
                 </Link>
             </li>
             <li className={styles.navitem}>
-                Location
-                {/* <Link href="/location">
-                    <a className={styles.navlink}>Location</a>
-                    
-                </Link> */}
-            </li>
-            <li className={styles.navitem}>
-                Local Area
-                {/* <Link href="/local_area">
-                    <a className={styles.navlink}>Local Area</a>
-                    
-                </Link> */}
-            </li>
-            <li className={styles.navitem}>
-                Gallery
-                <Link href="/gallery">
-                    <a className={styles.navlink} onClick={() => setIsOpen(false)}>Gallery</a>
-                    
+                <Link href="/contact">
+                    <a className={styles.navlink} onClick={() => setIsOpen(false)}>Contact</a>
                 </Link>
             </li>
-            <li className={styles.navitem}>
-                Contact
-                {/* <Link href="/contact">
-                    <a className={styles.navlink}>Contact</a>
-                    
-                </Link> */}
-            </li>
+            {/* {headers} */}
           </ul>
           <button className={isOpen === false ? 
                             styles.hamburger : styles.hamburger+' '+styles.active}
@@ -76,4 +76,4 @@ const MainNavigation = () => {
      );
 }
  
-export default MainNavigation;
+export { MainNavigation as default };

@@ -1,9 +1,25 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { getDynamicPageData } from '../lib/pages'
+import { getLayout } from '../components/Layout/Layout'
 
-export default function Home() {
+const getStaticProps = async () => {
+  const allPageData = getDynamicPageData();
+  // const pageTitles = allPageData.map((page) => {
+      
+  //     return page.title;
+  // })
+  return {
+      props: {
+        allPageData
+      } 
+  }
+}
 
+const Home = ({ allPageData }) => {
+
+  console.log('index', allPageData)
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -18,3 +34,6 @@ export default function Home() {
     </div>
   )
 }
+
+Home.getLayout = getLayout; 
+export { Home as default, getStaticProps }
