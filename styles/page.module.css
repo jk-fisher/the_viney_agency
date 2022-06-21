@@ -1,10 +1,17 @@
 .flex {
-    display: flex;
-    flex: 50%;
-    flex-direction: row;
-    justify-content: start;
-    padding: 3rem;
+    display: block;
+    padding: 5rem 3rem;
+    margin: 0 auto;
 }
-.flexItem {
-    margin: 3rem;
+@media screen and (min-width: 1023px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex: 50%
+    }
+    .flexItem {
+        margin: 3rem;
+        flex-basis: 100%;
+    }
 }

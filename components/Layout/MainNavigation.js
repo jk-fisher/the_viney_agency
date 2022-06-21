@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image"
+import logo from "../../public/assets/favicon.png"
 
 import styles from "../../styles/MainNavigation.module.css"
 
@@ -20,9 +22,13 @@ const MainNavigation = ({ allPageData }) => {
     return ( 
         <header className={styles.header}>
         <nav className={styles.navbar}>
-            <Link href="/">
-                <a className={styles.navlogo}>TVA</a>
-            </Link>
+            <div className={styles.navlogo}>
+                <Link href="/">
+                    <a className={styles.button}>
+                        <Image src={logo} alt="The Viney Agency Logo" />
+                    </a>
+                </Link>
+            </div>
           <ul className={isOpen === false ? 
                 styles.navmenu : styles.navmenu +' '+styles.active}>
             <li className={styles.navitem}>

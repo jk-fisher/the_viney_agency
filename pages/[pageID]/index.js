@@ -10,10 +10,11 @@ const Page = ({dynamicPageData}) => {
     return ( 
         <div className={styles.flex}>
             <div className={styles.flexItem}>
-                <Image src={dynamicPageData.image}  
+                <Image className={styles.img}
+                    src={dynamicPageData.image}  
                     alt="Picture of the author"
-                    width={500}
-                    height={500} />
+                    width={920}
+                    height={920} />
             </div>
             <div className={styles.flexItem}>
                 <h1>

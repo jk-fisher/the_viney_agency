@@ -1,0 +1,27 @@
+.gridWrapper {
+    margin: 7rem auto;
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+.authorTitle {
+    font-size: 1rem;
+    color: #676767;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+    .gridWrapper {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .gridWrapper {
+        width: 80%;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+    }
+}
