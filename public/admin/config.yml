@@ -35,7 +35,7 @@ collections:
     folder: "_books"
     create: true
     slug: "{{author_last_name}}_{{slug}}"
-    media_folder: "{{media_folder}}/book_images"
+    media_folder: "/{{media_folder}}/book_images"
     fields: 
      - {label: "Date Published", name: "publish_date", widget: "date", date_format: "DD-MM-YYYY", required: true}
      - {label: "Author's First Name", name: "author_first_name", widget: "string", required: true}
