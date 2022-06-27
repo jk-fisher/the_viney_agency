@@ -1,8 +1,8 @@
 ---
 authors_first_name: Philippa
 authors_last_name: Langley
-book_title: The Kings Grave
-release_date: 2022-04-28T10:19:00.772Z
+title: The Kings Grave
+publish_date: 2022-04-28T10:19:00.772Z
 genre: history
 review_1_by:
 review_1_text:

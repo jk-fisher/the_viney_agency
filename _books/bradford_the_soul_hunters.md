@@ -1,8 +1,8 @@
 ---
 authors_first_name: Bradford
 authors_last_name: Chris
-book_title: The Soul Prophecy
-release_date: 2022-04-28T10:19:00.772Z
+title: The Soul Prophecy
+publish_date: 2022-04-28T10:19:00.772Z
 genre: history
 review_1_by:
 review_1_text:

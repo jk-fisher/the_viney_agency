@@ -5,7 +5,7 @@ first_name: Chris
 url: www.chrisbradford.co.uk
 twitter: YoungSamurai
 instagram:
-image: /author_images/chris_bradford.jpg
+image: images/author_images/chris_bradford.jpg
 ---
 Chris Bradford is a multi-million copy bestselling author who is renowned for his live events and for practising ‘method writing’. 
 

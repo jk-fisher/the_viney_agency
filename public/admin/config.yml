@@ -2,12 +2,12 @@ backend:
   name: git-gateway
   branch: main
 publish_mode: editorial_workflow
+media_folder: "public/images"
+public_folder: "images"
 collections: 
   - name: "pages"
     label: "Pages"
     folder: "_pages"
-    media_folder: "public/images"
-    public_folder: "images"
     create: false
     slug: "{{title}}"
     fields: 
@@ -20,8 +20,7 @@ collections:
     create: true
     slug: "{{last_name}}_{{first_name}}_{{day}}{{hour}}{{minute}}"
     identifier_field: "last_name"
-    media_folder: "public/author_images"
-    public_folder: "author_images"
+    media_folder: "/{{media_folder}}/author_images"
     fields: 
      - {label: "Date Created", name: "date", widget: "date", date_format: "DD-MM-YYYY", required: true}
      - {label: "First Name", name: "first_name", widget: "string", required: true}
@@ -30,4 +29,28 @@ collections:
      - {label: "Twitter Handle", name: "twitter", widget: "string", required: false}
      - {label: "Instagram Handle", name: "instagram", widget: "string", required: false}
      - {label: "Author's Image", name: "image", widget: "image", required: true}
-     - {label: "Body", name: "body", widget: "markdown", required: true}
+     - {label: "Author's Biography", name: "body", widget: "markdown", required: true}
+  - name: "book"
+    label: "Book"
+    folder: "_books"
+    create: true
+    slug: "{{author_last_name}}_{{slug}}"
+    media_folder: "/{{media_folder}}/book_images"
+    fields: 
+     - {label: "Date Published", name: "publish_date", widget: "date", date_format: "DD-MM-YYYY", required: true}
+     - {label: "Author's First Name", name: "author_first_name", widget: "string", required: true}
+     - {label: "Author's Last Name", name: "author_last_name", widget: "string", required: true}
+     - {label: "Book Title", name: "title", widget: "string", required: true}
+     - {label: "Genre", name: "genre", widget: "string", required: true}
+     - {label: "Book Image", name: "image", widget: "image", required: true}
+     - {label: "Book Blurb", name: "body", widget: "markdown", required: true}
+     - {label: "Review 1 - Text", name: "review_1_text", widget: "string", required: false}
+     - {label: "Review 1 - By", name: "review_1_by", widget: "string", required: false}
+     - {label: "Review 2 - Text", name: "review_2_text", widget: "string", required: false}
+     - {label: "Review 2 - By", name: "review_2_by", widget: "string", required: false}
+     - {label: "Review 3 - Text", name: "review_3_text", widget: "string", required: false}
+     - {label: "Review 3 - By", name: "review_3_by", widget: "string", required: false}
+     - {label: "Review 4 - Text", name: "review_4_text", widget: "string", required: false}
+     - {label: "Review 4 - By", name: "review_4_by", widget: "string", required: false}
+     - {label: "Review 5 - Text", name: "review_5_text", widget: "string", required: false}
+     - {label: "Review 5 - By", name: "review_5_by", widget: "string", required: false}
