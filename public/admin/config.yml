@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 publish_mode: editorial_workflow
-media_folder: public/images
+media_folder: "public/images"
 public_folder: "images"
 collections: 
   - name: "pages"
@@ -20,6 +20,8 @@ collections:
     create: true
     slug: "{{last_name}}_{{first_name}}_{{day}}{{hour}}{{minute}}"
     identifier_field: "last_name"
+    media_folder: "public/author_images/"
+    public_folder: "author_images"
     fields: 
      - {label: "Date Created", name: "date", widget: "date", date_format: "DD-MM-YYYY", required: true}
      - {label: "First Name", name: "first_name", widget: "string", required: true}
