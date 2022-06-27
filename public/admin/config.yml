@@ -21,7 +21,7 @@ collections:
     slug: "{{last_name}}_{{first_name}}_{{day}}{{hour}}{{minute}}"
     identifier_field: "last_name"
     fields: 
-     - {label: "Date Created", name: "date", widget: "string", date_format: "DD-MM-YYYY", required: true}
+     - {label: "Date Created", name: "date", widget: "date", date_format: "DD-MM-YYYY", required: true}
      - {label: "First Name", name: "first_name", widget: "string", required: true}
      - {label: "Last Name", name: "last_name", widget: "string", required: true}
      - {label: "Website URL", name: "url", widget: "string", required: false}
