@@ -14,3 +14,17 @@ collections:
      - {label: "Title", name: "title", widget: "string"}
      - {label: "Featured Image", name: "image", widget: "image"}
      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "authors"
+    label: "Authors"
+    folder: "_authors"
+    create: true
+    slug: "{{last_name}}_{{first_name}}_{{day}}{{hour}}{{minute}}"
+    identifier_field: "{{first_name}}_{{last_name}}"
+    fields: 
+     - {label: "Date Created", name: "date", widget: "string", date_format: "DD-MM-YYYY", required: true}
+     - {label: "First Name", name: "first_name", widget: "string", required: true}
+     - {label: "Website URL", name: "url", widget: "string", required: false}
+     - {label: "Twitter Handle", name: "twitter", widget: "string", required: false}
+     - {label: "Instagram Handle", name: "instagram", widget: "string", required: false}
+     - {label: "Author's Image", name: "image", widget: "image"}
+     - {label: "Body", name: "body", widget: "markdown"}

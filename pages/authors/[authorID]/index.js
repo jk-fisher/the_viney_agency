@@ -4,7 +4,9 @@ import { getAllAuthorIDs, getAuthorData } from '../../../lib/authors'
 import { getLayout } from '../../../components/Layout/Layout'
 import { Fragment } from 'react'
 
-const Author = ({}) => {
+
+const Author = ({authorData}) => {
+    console.log(authorData)
     return ( <Fragment>
         <Head>
           <title>Create Next App</title>
@@ -29,9 +31,12 @@ const getStaticPaths = async () => {
 const getStaticProps = async ({params}) => {
   const allPageData = getAllPageData();
   const authorData = getAuthorData(params.authorID)
-    const dateObj = new Date(authorData.date)
-    const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
-    authorData.date = dateString;
+  let dateObj = new Date(authorData.date)
+  const uniqueID = `${dateObj.getDate()}${dateObj.getHours()}${dateObj.getMinutes()}`;
+  authorData.date = uniqueID;
+  // const dateString = dateObj.toLocaleDateString("en-GB")
+  // authorData.date = dateString;
+  console.log(authorData)
   return {
       props: {
         allPageData,
