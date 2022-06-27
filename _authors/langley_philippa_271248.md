@@ -1,6 +1,6 @@
 ---
 date: 2022-06-27T12:45:41.990Z
-first_name: "Philippa "
+first_name: "Philippa"
 last_name: Langley
 url: www.philippalangley.co.uk
 image: author_images/philippa_langley.jpg
