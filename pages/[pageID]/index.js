@@ -2,7 +2,7 @@ import { getAllPageData, getAllPageIDs, getPageData } from '../../lib/pages'
 import { getLayout } from '../../components/Layout/Layout'
 import { Fragment } from 'react';
 import Image from 'next/image';
-import styles from '../../styles/Page.module.css'
+import styles from '../../styles/page.module.css'
 
 const Page = ({dynamicPageData}) => {
 
