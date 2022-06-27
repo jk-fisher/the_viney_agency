@@ -19,7 +19,7 @@ collections:
     folder: "_authors"
     create: true
     slug: "{{last_name}}_{{first_name}}_{{day}}{{hour}}{{minute}}"
-    identifier_field: "{{first_name}}_{{last_name}}"
+    identifier_field: "{{last_name}}"
     fields: 
      - {label: "Date Created", name: "date", widget: "string", date_format: "DD-MM-YYYY", required: true}
      - {label: "First Name", name: "first_name", widget: "string", required: true}
