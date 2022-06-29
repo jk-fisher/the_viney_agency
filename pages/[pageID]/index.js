@@ -3,26 +3,33 @@ import { getLayout } from '../../components/Layout/Layout'
 import { Fragment } from 'react';
 import Image from 'next/image';
 import styles from '../../styles/Page.module.css'
+import HeaderPractice from '../../components/UI/HeaderPractice';
 
 const Page = ({dynamicPageData}) => {
 
     console.log('p', dynamicPageData)
+    dynamicPageData.pageID
     return ( 
-        <div className={styles.flex}>
-            <div className={styles.flexItem}>
-                <Image className={styles.img}
-                    src={dynamicPageData.image}  
-                    alt="Picture of the author"
-                    width={920}
-                    height={920} />
+        <Fragment>
+            {dynamicPageData.pageID === "about" && 
+                    <HeaderPractice title="About the Agency" description={dynamicPageData}/>
+            }
+            <div className={styles.flex}>
+                <div className={styles.flexItem}>
+                    <Image className={styles.img}
+                        src={dynamicPageData.image}  
+                        alt="Picture of the author"
+                        width={920}
+                        height={920} />
+                </div>
+                <div className={styles.flexItem}>
+                    <h1>
+                        { dynamicPageData.title }
+                    </h1>
+                    <p>{ dynamicPageData.markdownBody }</p>
+                </div>
             </div>
-            <div className={styles.flexItem}>
-                <h1>
-                    { dynamicPageData.title }
-                </h1>
-                <p>{ dynamicPageData.markdownBody }</p>
-            </div>
-        </div>
+        </Fragment>
         
     );
 }

@@ -9,7 +9,7 @@
     font-size: 0.8rem;
     align-items: flex-start;
     width: 100%;
-    z-index: 99;
+    z-index: 9;
 }
 
 @media screen and (min-width: 320px) {

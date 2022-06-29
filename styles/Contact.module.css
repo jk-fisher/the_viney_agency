@@ -1,0 +1,37 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5rem;
+    /* background-color: red; */
+    max-width: 1200px;
+    width: 95%;
+    min-height: 400px;
+    padding-top: 4rem;
+    margin: auto;
+}
+.gridItem {
+    align-self: start;
+    list-style: none;
+}
+.gridItem > span {
+    display: block;
+    margin-bottom: 2rem;;
+}
+.bold{
+    color: #39778B;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+    font-family: 'calibri', 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.text {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2rem;;
+}
+.inline {
+    float: left;
+    margin-right: 10px;
+}
+.socialLink {
+    padding-top: 10px;
+}
