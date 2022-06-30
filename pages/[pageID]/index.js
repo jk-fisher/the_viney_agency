@@ -4,16 +4,24 @@ import { Fragment } from 'react';
 import Image from 'next/image';
 import styles from '../../styles/Page.module.css'
 import HeaderPractice from '../../components/UI/HeaderPractice';
+import ArrowIcon from '../../components/UI/ArrowIcon';
+// import { ReactComponent as Arrow } from '../../public/assets/arrow_vector.svg'
+// import { IoNavigateSharp } from "react-icons/io5";
 
 const Page = ({dynamicPageData}) => {
 
+    
+    
     console.log('p', dynamicPageData)
     dynamicPageData.pageID
     return ( 
         <Fragment>
             {dynamicPageData.pageID === "about" && 
-                    <HeaderPractice title="About the Agency" description={dynamicPageData}/>
-            }
+                <div>
+                    <HeaderPractice title="About the Agency" description={dynamicPageData.about_summary} />
+                    <ArrowIcon />
+                </div>
+                }
             <div className={styles.flex}>
                 <div className={styles.flexItem}>
                     <Image className={styles.img}

@@ -1,0 +1,10 @@
+import styles from "../../styles/RightArrowIcon.module.css"
+
+const RightArrowIcon = () => {
+    return ( <svg className={styles.icon} width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.55085 10.5L0.5 20.5L13.5 10.5L0.499999 0.5L7.55085 10.5Z" fill="#EBEAE7"/>
+        </svg>
+     );
+}
+ 
+export default RightArrowIcon;

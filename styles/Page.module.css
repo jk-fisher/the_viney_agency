@@ -15,3 +15,7 @@
         flex-basis: 100%;
     }
 }
+.icon {
+    transform: rotateY(0deg) rotate(135deg); 
+    font-size: 5rem;
+}

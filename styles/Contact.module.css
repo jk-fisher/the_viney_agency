@@ -1,13 +1,26 @@
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 5rem;
-    /* background-color: red; */
+    grid-row-gap: 5rem;
     max-width: 1200px;
-    width: 95%;
+    width: 85%;
     min-height: 400px;
-    padding-top: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    padding-left: 0;
     margin: auto;
+}
+@media screen and (min-width: 768px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }        
+}
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
 }
 .gridItem {
     align-self: start;
@@ -26,7 +39,7 @@
 }
 .text {
     font-family: 'Open Sans', sans-serif;
-    line-height: 2rem;;
+    line-height: 2rem;
 }
 .inline {
     float: left;

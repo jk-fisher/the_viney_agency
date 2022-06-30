@@ -1,0 +1,17 @@
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 5rem auto;
+}
+.header {
+    margin-bottom: 5rem;
+    font-family: 'calibri', 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #237d94;
+}
+.text {
+    line-height: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #676767;
+    font-size: 1rem;
+}

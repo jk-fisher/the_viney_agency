@@ -1,14 +1,14 @@
-import styles from '../../styles/HeaderPractice.module.css'
+import styles from '../../styles/AboutHeader.module.css'
 import Logo from '../../public/assets/faded_icon.png'
 import Image from 'next/image'
 import { Fragment } from 'react'
 
-const HeaderPractice = ({ title, description }) => {
+const AboutHeader = ({ title, description }) => {
     console.log(description)
     return ( <Fragment>
         <div className={`${styles.container} ${description ? styles.lgContainer : ''}`}>
             <div className={styles.wrapper}>
-                <div className={`${styles.fadedLogo} ${description ? styles.smallLogo : ''}`}>
+                <div className={styles.fadedLogo}>
                     <Image 
                         className={styles.img}
                         src={Logo}
@@ -27,4 +27,4 @@ const HeaderPractice = ({ title, description }) => {
      );
 }
  
-export default HeaderPractice;
+export default AboutHeader;

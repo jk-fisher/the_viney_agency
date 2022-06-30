@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    background-color: #EBEAE7;
+    margin: 5rem auto 0 auto;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.header{
+    width: 90%; 
+    margin: 2rem auto 0 auto;
+    max-width: 1200px;
+    color: #39778B;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+
+}
