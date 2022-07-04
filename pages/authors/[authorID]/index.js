@@ -66,8 +66,12 @@ const getStaticProps = async ({params}) => {
   let dateObj = new Date(authorData.date)
   const uniqueID = `${dateObj.getDate()}${dateObj.getHours()}${dateObj.getMinutes()}`;
   authorData.date = uniqueID;
-  // const dateString = dateObj.toLocaleDateString("en-GB")
-  // authorData.date = dateString;
+  authorData.book_releases.map((book_release) => {
+    const dateObj = new Date(book_release.release_date)
+    const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
+    book_release.release_date = dateString;
+    return book_release;
+})
   console.log(authorData)
   return {
       props: {
