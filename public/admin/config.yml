@@ -31,6 +31,13 @@ collections:
      - {label: "Instagram Handle", name: "instagram", widget: "string", required: false}
      - {label: "Author's Image", name: "image", widget: "image", required: true}
      - {label: "Author's Biography", name: "body", widget: "markdown", required: true}
+     - label: "Book Releases"
+       name: "book_releases"
+       widget: list
+       create: true
+       fields: 
+       - {label: "Book Title", name: "book_title", widget: "string", required: true}
+       - {label: "Release Date", name: "release_date", widget: "date", date_format: " DD-MM-YYYY", required: true}
   - name: "book"
     label: "Book"
     folder: "_books"
