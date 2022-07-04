@@ -5,11 +5,21 @@ import { getLayout } from '../../components/Layout/Layout';
 import { Fragment } from 'react';
 import Guidelines from '../../components/submissions/Guidelines';
 import CardTemplate from '../../components/UI/CardTemplate';
-import Headshot from '../../public/images//staff_images/amberley.jpg'
+import headshot from '../../public/images/staff_images/amberley.jpg'
 
 
 const Submissions = ({  }) => {
-  const cardContent = "I’m actively building my list and looking for debut commercial, reading group and literary fiction. I love beautifully crafted, evocative and original storytelling. I am also very interested in a broad range of lively and original non-fiction, particularly in the areas of narrative non-fiction, biography, memoir and cookery. I am also developing a children’s and young adult fiction list. "
+  // const cardContent = "I’m actively building my list and looking for debut commercial, reading group and literary fiction. I love beautifully crafted, evocative and original storytelling. I am also very interested in a broad range of lively and original non-fiction, particularly in the areas of narrative non-fiction, biography, memoir and cookery. I am also developing a children’s and young adult fiction list. "
+  const header = "What we're looking for..."
+
+  const cardsContent = [{
+    pg: "submission",
+    title: "Amberley Lowis",
+    subTitle: "Literary Agent",
+    content: "I’m actively building my list and looking for debut commercial, reading group and literary fiction. I love beautifully crafted, evocative and original storytelling. I am also very interested in a broad range of lively and original non-fiction, particularly in the areas of narrative non-fiction, biography, memoir and cookery. I am also developing a children’s and young adult fiction list.",
+    image: {icon: headshot}
+  }
+  ]
     return ( <Fragment>
         <Head>
           <title>Create Next App</title>
@@ -18,7 +28,7 @@ const Submissions = ({  }) => {
         </Head>
         <HeaderPractice title="Submissions" description={null}/>
         <Guidelines />
-        <CardTemplate header="What we're looking for..." title="Amberley Lowis" subTitle="Literary Agent" content={cardContent} image={Headshot}/>
+        <CardTemplate header={header} cardsContent={cardsContent}/>
     </Fragment> );
 }
 

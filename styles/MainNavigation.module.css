@@ -85,10 +85,6 @@
     .navmenu.active {
         right: 0;
     }
-
-    .navitem {
-        margin: 2.5rem 0;
-    }
     .navmenu.active .navitem {
         margin-left: 5%;
     }
@@ -99,6 +95,9 @@
     }
     .navbar {
         padding: 4rem 2rem;
+    }
+    .navitem {
+        left: 0;
     }
     .hamburger {
         display: block;

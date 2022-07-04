@@ -51,11 +51,11 @@ const MainNavigation = ({ allPageData }) => {
                     <a className={styles.navlink} onClick={() => setIsOpen(false)}>{allPageData[1].title}</a>
                 </Link>
             </li>
-            {/* <li className={styles.navitem} key={allPageData[2].id}>
-                <Link href={`/pages/${allPageData[2].id}`}>
-                    <a classname={styles.navlink} onClick={() => setIsOpen(false)}>{allPageData[2].title}</a>
+            <li className={styles.navitem} key={allPageData[2].id}>
+                <Link href={`/${allPageData[2].id}`}>
+                    <a className={styles.navlink} onClick={() => setIsOpen(false)}>{allPageData[2].title}</a>
                 </Link>
-            </li> */}
+            </li>
             <li className={styles.navitem}>
                 <Link href="/submissions">
                     <a className={styles.navlink} onClick={() => setIsOpen(false)}>Submissions</a>

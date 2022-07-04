@@ -1,5 +1,5 @@
 .gridWrapper {
-    margin: -5rem auto;
+    margin: -4rem auto;
     display: grid;
     width: 80%;
     grid-template-columns: repeat(2, 1fr);
