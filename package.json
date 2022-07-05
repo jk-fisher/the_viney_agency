@@ -17,6 +17,7 @@
     "react-icons": "^4.4.0",
     "react-markdown": "^8.0.3",
     "react-social-icons": "^5.13.0",
+    "react-transition-group": "^4.4.2",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

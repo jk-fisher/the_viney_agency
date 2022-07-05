@@ -1,0 +1,87 @@
+.textButton {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #959595;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+
+}
+.text {
+    margin-top: 2rem;
+    line-height: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #676767;
+    font-size: 1rem;
+}
+.icon {
+    margin-left: 0.2rem;
+    margin-bottom: -0.2rem;
+
+}
+.fade-enter-active {
+    animation: moreText 1s ease-in;
+    
+}
+.fade-exit-active {
+    animation: lessText 1 ease-out;
+}
+
+@keyframes moreText {
+    0%{
+        opacity: 0;
+        transform: translateY(-15%);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lessText {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.fadeBtn-enter-active {
+    animation: showBtn 1s ease-in;
+    
+}
+.fadeBtn-exit-active {
+    animation: hideBtn 0.5s ease-out;
+}
+
+@keyframes showBtn {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hideBtn {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

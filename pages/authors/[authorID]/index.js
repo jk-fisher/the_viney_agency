@@ -1,16 +1,24 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { Fragment } from 'react'
+
 import { getAllPageData } from '../../../lib/pages'
 import { getAllAuthorIDs, getAuthorData } from '../../../lib/authors'
+import { getAllBookData } from '../../../lib/books'
 import { getLayout } from '../../../components/Layout/Layout'
-import { Fragment } from 'react'
+
 import styles from '../../../styles/AuthorID.module.css'
+
 import ArrowIcon from '../../../components/UI/ArrowIcon'
 import { SocialIcon } from 'react-social-icons';
+import ShowMoreText from '../../../components/UI/ShowMoreText'
 
-const Author = ({authorData}) => {
-    console.log(authorData)
+const Author = ({authorData, bookData}) => {
+    console.log(authorData, bookData)
     const authorsName = `${authorData.first_name} ${authorData.last_name}`
+    
+    
+    
     return ( <Fragment>
         <Head>
           <title>Create Next App</title>
@@ -34,7 +42,7 @@ const Author = ({authorData}) => {
                 {authorsName}
               </h1>
               <h3 className={`${styles.headerSm} ${styles.headerGrey}`}>Author</h3>
-              <p className={styles.text}>{authorData.markdownBody}</p>
+              <ShowMoreText content={authorData.markdownBody}/>
             </div>
             <div  className={styles.col_3}>
               <h3 className={`${styles.headerSm} ${styles.headerBlue}`}>Social Links</h3>
@@ -47,6 +55,7 @@ const Author = ({authorData}) => {
         </div> 
         <div className={styles.bookWrapper}>
           <ArrowIcon />
+          
         </div>
     </Fragment>
     )
@@ -66,17 +75,19 @@ const getStaticProps = async ({params}) => {
   let dateObj = new Date(authorData.date)
   const uniqueID = `${dateObj.getDate()}${dateObj.getHours()}${dateObj.getMinutes()}`;
   authorData.date = uniqueID;
-  authorData.book_releases.map((book_release) => {
-    const dateObj = new Date(book_release.release_date)
+
+  const bookData = getAllBookData(authorData)
+  bookData.map((book_release) => {
+    const dateObj = new Date(book_release.publish_date)
     const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
-    book_release.release_date = dateString;
+    book_release.publish_date = dateString;
     return book_release;
-})
-  console.log(authorData)
+  })
   return {
       props: {
         allPageData,
-        authorData
+        authorData,
+        bookData
       } 
   }
 }

@@ -39,13 +39,6 @@
 .paddingLft {
     padding-left: 1rem;
 }
-.text {
-    margin-top: 2rem;
-    line-height: 1.8rem;
-    font-family: 'Open Sans', sans-serif;
-    color: #676767;
-    font-size: 1rem;
-}
 .authorWrapper {
     margin: 4rem auto;
     display: block;
@@ -57,15 +50,17 @@
 @media screen and (min-width: 768px){
     .headerLg {
         border: none;
+        padding-bottom: 0;
     }
     .authorWrapper {
         margin: 5rem auto;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: fit-content;
         width: 90%;
         grid-gap: 2rem;
-        height: 68vh;
+        min-height: 60vh;
+        min-height: fit-content;
 
     }
     .col_1 {
@@ -77,7 +72,7 @@
     }
     .col_2 {
         grid-column-start: 3;
-        grid-column-end: 6;
+        grid-column-end: 7;
         grid-row-start: 1;
         grid-row-end: 4;
     }
@@ -88,29 +83,30 @@
         grid-row-end: 3;
     }
 }
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1366px){
     .authorWrapper{
-        margin: 3rem auto;
-        grid-template-columns: 22% 56% 22%;
+        width: 95%;
+        margin: 3rem auto 0 auto;
+        grid-template-columns: 22% minmax(auto, 56%) minmax(285px, 22%);
         grid-template-rows: auto;
         grid-template-areas: 
         "img main social";
     }
     .col_1{
         grid-area: img;
-        padding: 3rem 2rem;
+        padding: 3rem 1rem;
         
     }
     .col_2{
         grid-area: main;
-        padding: 2rem 3rem;
+        padding: 2rem 2rem;
         
     }
     .col_3{
         margin-top: 3rem;
         grid-area: social;
-        padding: 2rem 2rem;
-        border-left: 1px solid #A3AEB1;
+        padding: 2rem 1rem;
+        border-left: 1px solid #d0d6d7;
         margin-bottom: 3rem;
     }
 }
