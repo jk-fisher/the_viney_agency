@@ -12,10 +12,7 @@ const Text = (props) => {
 
     return ( 
         <Fragment>
-            <p className={styles.text}>
-            {!props.state ? displayedText : props.content}
-                
-            </p>
+            {/* <p>{!props.state ? displayedText : props.content}</p> */}
             <CSSTransition
                     nodeRef={moreBtn}
                     in={!props.state}
@@ -31,6 +28,9 @@ const Text = (props) => {
                     }}
                 >
                 <div ref={moreBtn}>
+                    <p className={styles.text}>
+                        {displayedText}
+                    </p>
                     <button className={styles.textButton} onClick={props.moreText}>
                     Read More
                     <FaAngleDown className={styles.icon} />
@@ -53,6 +53,9 @@ const Text = (props) => {
                         exitActive: styles["fade-exit-active"]
                     }}>
                 <div ref={lessBtn}>
+                        <p className={styles.text}>
+                            {props.content}
+                        </p>
                         <button className={styles.textButton} onClick={props.lessText}>
                         Read Less 
                         <FaAngleUp className={styles.icon}/>

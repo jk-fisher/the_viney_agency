@@ -1,37 +1,50 @@
 import Link from "next/link";
 import styles from "../../styles/Footer.module.css"
+import Image from "next/image"
+import logo from "../../public/assets/favicon.png"
 
 const Footer = () => {
+    const contacts =
+    [
+        {
+            name: "Charlie Viney",
+            address: "21, Dartmouth Park Avenue, London, NW5 1JL",
+            email: "charlie@thevineyagency.com"
+        },
+        {
+            name: "Amberley Lowis",
+            address: "15, Lyne Crescent, London, E17 5HY",
+            email: "amberley@thevineyagency.com"
+        }
+    ]
+    const contactInfo = contacts.map((contact, index) => {
+        return (
+            <li className={styles.gridItem} key={index}>
+                <span className={styles.bold}>{contact.name}</span>
+                <span className={styles.text}>
+                    The Viney Agency, <br/>
+                    {contact.address}
+                </span>
+                <span className={styles.text}>
+                    Email:&nbsp;{contact.email}
+                </span>
+            </li>
+        )
+    })
     return ( 
+        
         <div className={styles.footer}>
-            <div className="left">
-                <ul>
-                    <li className={styles.item}>
-                        <Link href="/contact">
-                            <a>Contact</a>
-                        </Link>
-                    </li>
-                    <li className={styles.item}>
-                        <Link href="/location">
-                            <a>Location</a>
-                        </Link>
-                    </li>
-                    <li className={styles.item}>
-                        <Link href="/reviews">
-                            <a>Reviews</a>
-                        </Link>
-                    </li>
-                </ul>
+            <div className={styles.logoWrapper}>
+                <Link href="/">
+                        <a className={styles.logo}>
+                            <Image src={logo} alt="The Viney Agency Logo" />
+                        </a>
+                </Link>
             </div>
-            <div className="right">
-                <div className={styles.logo}>
-                    <Link href="/">
-                        <a >Le<br />Petit Cottage</a>
-                    </Link>
-                </div>
-                <p className={styles.copy}>Copyright &copy; 2020 - Le Petit Cottage.</p>
-            </div>
+            <ul className={styles.wrapper}>
+                {contactInfo}
 
+            </ul>
         </div>
      );
 }

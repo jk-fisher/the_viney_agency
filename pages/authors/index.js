@@ -12,6 +12,7 @@ import HeaderPractice from '../../components/UI/HeaderPractice'
 const Authors = ({ allAuthorData }) => {
     // console.log(allAuthorData)
     const authors = allAuthorData.map((author) => {
+        console.log(author)
         return (
             <Link href={`/authors/${author.id}`} className={styles.gridItem} key={author.id}>
                 <a>
@@ -49,12 +50,12 @@ const getStaticProps = async () => {
     const allAuthorData = getAllAuthorData();
     allAuthorData.map((author) => {
         console.log('author', author)
-        // author.book_releases.map((book_release) => {
-        //     const dateObj = new Date(book_release.release_date)
-        //     const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
-        //     book_release.release_date = dateString;
-        //     return book_release;
-        // })
+        author.book_releases.map((book_release) => {
+            const dateObj = new Date(book_release.release_date)
+            const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
+            book_release.release_date = dateString;
+            return book_release;
+        })
         const dateObj = new Date(author.date)
         const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
         author.date = dateString;

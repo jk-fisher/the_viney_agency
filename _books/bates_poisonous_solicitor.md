@@ -2,19 +2,14 @@
 authors_first_name: Bates
 authors_last_name: Stephen
 title: Poisonous Solicitor
-publish_date: 2022-04-28T10:19:00.772Z
-genre: history
-image: /book_images
-review_1_by:
-review_1_text:
-review_2_by:
-review_2_text:
-review_3_by:
-review_3_text:
-review_4_by:
-review_4_text:
-review_5_by:
-review_5_text:
+publish_date: 2021-11-18T16:19:33.418Z
+genre: History
+image: /images/book_images/bates_poisonous_solicitor.jpg
+book_reviews:
+    - review: The book was fabulous!
+      by: The Sunday Times
+    - review: Highly recommend 
+      by: New York Times
 ---
 A classic 1920s murder mystery.
 
