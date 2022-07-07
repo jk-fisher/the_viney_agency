@@ -5,8 +5,8 @@
 .wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 7rem;
-    max-width: 1200px;
+    grid-column-gap: 4rem;
+    grid-row-gap: 3rem;
     width: 80%;
     min-height: 50vh;
     padding-top: 4rem;
@@ -15,6 +15,20 @@
     margin: auto;
     list-style: none;
     color: #CECECE;
+}
+.subFooter{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 3rem;
+    width: 80%;
+    font-size: 0.9rem;
+    color: #48859a;
+    justify-content: space-between;
+    padding-bottom: 8rem;
+    padding-top: 2rem;
+    border-top: 1px solid #48859a;
 }
 .gridItem > span {
     display: block;
@@ -30,6 +44,16 @@
     font-family: 'Open Sans', sans-serif;
     line-height: 2rem;
 }
+.caps {
+    text-transform: uppercase;
+}
+.imgWrapper {
+    min-width: 230px;
+    max-width: 60vw;
+}
+.aaaLogo{
+    opacity: 0.7;
+}
 .logoWrapper {
     width: 80%;
     margin: 5rem auto 0 auto;
@@ -38,6 +62,11 @@
     display: block;
     max-width: 100px;
 }
+.social {
+    grid-row-start: 3;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 @media screen and (min-width: 768px) {
     .wrapper {
         grid-template-columns: repeat(2, 1fr);
@@ -45,10 +74,27 @@
     .logo {
         max-width: 120px;
     }
+    .social {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
 }
 @media screen and (min-width: 1024px) {
     .wrapper {
         grid-template-columns: repeat(3, 1fr);
-
+    }
+    .subFooter{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .col_1{
+        justify-self: start;
+    }
+    .col_2{
+        justify-self: center;
+        text-align: center;
+    }
+    .col_3{
+        justify-self: end;
     }
 }
+
