@@ -1,6 +1,6 @@
 ---
-authors_first_name: Bates
-authors_last_name: Stephen
+authors_first_name: Stephen
+authors_last_name: Bates
 title: The Crew
 publish_date: 2022-04-28T10:19:00.772Z
 genre: History

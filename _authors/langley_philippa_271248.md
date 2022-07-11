@@ -1,12 +1,11 @@
 ---
 date: 2022-06-27T12:45:41.990Z
-first_name: "Philippa"
 last_name: Langley
+first_name: Philippa
 url: www.philippalangley.co.uk
 image: /images/author_images/philippa_langley.jpg
 book_releases:
-  - release_date: 2022-07-04T15:18:47.884Z
-    book_title: The Kings Grave
+  - book_title: The Kings Grave
 ---
 With an enduring passion to tell stories that challenge our perception of established truths, Philippa Langley is a screenwriter and producer who inaugurated and led the successful archaeological search to locate King Richard III’s grave in Leicester. Her 90-minute documentary, *The King in the Car Park,* about the search for King Richard, made with Channel Four and Darlow Smithson Productions, was aired on 4th February 2013 and commanded an audience of six million. Based on her *Looking for Richard Project,* it became the channel's highest rated specialist factual show in its thirty-year history. It won the 2013 Royal Television Society Award for Best History Programme and was nominated for a 2014 BAFTA in the category of TV: Specialist Factual.  Her screenplayon the life of King Richard, the most controversial monarch in British history, is based on contemporary source materials from the king's lifetime.
 

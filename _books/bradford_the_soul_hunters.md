@@ -1,6 +1,6 @@
 ---
-authors_first_name: Bradford
-authors_last_name: Chris
+authors_first_name: Chris
+authors_last_name: Bradford
 title: The Soul Prophecy
 publish_date: 2022-04-28T10:19:00.772Z
 genre: history

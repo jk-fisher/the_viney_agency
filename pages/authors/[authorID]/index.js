@@ -17,7 +17,7 @@ import { SocialIcon } from 'react-social-icons';
 import ShowMoreText from '../../../components/UI/ShowMoreText'
 
 const Author = ({authorData, bookData}) => {
-    console.log('date object',typeof authorData.book_releases[0].release_date)
+    // console.log('date object',typeof authorData.book_releases[0].release_date)
 
     const authorsName = `${authorData.first_name} ${authorData.last_name}`
     const bookReviews = bookData[0].book_reviews.map((review, index) => {
@@ -29,7 +29,15 @@ const Author = ({authorData, bookData}) => {
     })
     const releasedBooks = bookData.map((book_release) => {
       console.log(book_release.bookid)
-        return <Link href={`/${book_release.id}`} className={booksStyles.gridItem} key={book_release.bookid}>
+        return <Link
+         href={{
+          pathname: '/authors/[authorID]/[bookID]',
+          query: {
+                    authorID: authorData.authorID,
+                    bookID: book_release.bookid  },}}
+        //  {`/authors/${authorData.authorID}/${book_release.bookid}`} 
+        
+        className={booksStyles.gridItem} key={book_release.bookid}>
                 <a>
                     <Image 
                         src={book_release.image}

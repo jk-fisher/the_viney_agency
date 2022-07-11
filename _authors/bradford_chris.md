@@ -7,8 +7,7 @@ twitter: YoungSamurai
 instagram:
 image: /images/author_images/chris_bradford.jpg
 book_releases:
-  - release_date: 2022-07-04T15:18:47.884Z
-    book_title: The Soul Hunters
+  - book_title: The Soul Hunters
 ---
 Chris Bradford is a multi-million copy bestselling author who is renowned for his live events and for practising ‘method writing’. 
 

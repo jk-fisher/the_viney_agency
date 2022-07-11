@@ -1,6 +1,6 @@
 ---
-authors_first_name: Bates
-authors_last_name: Stephen
+authors_first_name: Stephen
+authors_last_name: Bates
 title: Poisonous Solicitor
 publish_date: 2021-11-18T16:19:33.418Z
 genre: History
