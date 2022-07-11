@@ -17,7 +17,7 @@ import { SocialIcon } from 'react-social-icons';
 import ShowMoreText from '../../../components/UI/ShowMoreText'
 
 const Author = ({authorData, bookData}) => {
-    console.log(authorData, bookData)
+    console.log('date object',typeof authorData.book_releases[0].release_date)
 
     const authorsName = `${authorData.first_name} ${authorData.last_name}`
     const bookReviews = bookData[0].book_reviews.map((review, index) => {

@@ -5,16 +5,11 @@ title: The Kings Grave
 publish_date: 2022-04-28T10:19:00.772Z
 genre: history
 image: /images/book_images/langley_the_kings_grave.jpg
-review_1_by:
-review_1_text:
-review_2_by:
-review_2_text:
-review_3_by:
-review_3_text:
-review_4_by:
-review_4_text:
-review_5_by:
-review_5_text:
+book_reviews:
+    - review: The book was fabulous!
+      by: The Sunday Times
+    - review: Highly recommend 
+      by: New York Times
 ---
 The real life, death and remarkable discovery of history's most controversial monarch.
 

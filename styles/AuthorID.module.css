@@ -72,8 +72,9 @@
         grid-template-rows: fit-content;
         width: 90%;
         grid-gap: 2rem;
-        height: 72vh;
+        min-height: 72vh;
     }
+    
     .col_1 {
         padding: 0;
         grid-column-start: 1;
