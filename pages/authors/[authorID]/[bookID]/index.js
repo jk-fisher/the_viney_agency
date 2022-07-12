@@ -11,7 +11,7 @@ const Book = ({bookData}) => {
 
 const getStaticPaths = async () => {
     const paths = getAllBookIDs();
-    console.log('paths', paths)
+    // console.log('paths', paths)
     return {
         paths,
         fallback: false,

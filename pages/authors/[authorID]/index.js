@@ -28,7 +28,6 @@ const Author = ({authorData, bookData}) => {
 
     })
     const releasedBooks = bookData.map((book_release) => {
-      console.log(book_release.bookid)
         return <Link
          href={{
           pathname: '/authors/[authorID]/[bookID]',
@@ -124,7 +123,6 @@ const Author = ({authorData, bookData}) => {
 
 const getStaticPaths = async () => {
     const paths = getAllAuthorIDs();
-    console.log(paths)
     return {
         paths,
         fallback: false,
