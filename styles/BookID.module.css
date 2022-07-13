@@ -15,7 +15,7 @@
 .col_2{
     position: relative;
     display: block;
-    padding: 0 2rem 3rem 2rem;
+    padding: 0 4rem 3rem 4rem;
     width: 100%;
 }
 .tag{ 
@@ -58,20 +58,20 @@
         position: relative;
         grid-template-rows: fit-content;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
     }
     .col_1 {
         grid-row-start: 1;
         grid-column-start: 1;
         grid-column-end: 2;
-        padding: 0 0 0 5rem;
+        padding: 0 0 0 4rem;
     }
     .col_2 {
         grid-column-start: 2;
         grid-column-end: 4;
+        padding: 3rem;
     }
-    
 }
 .reviewWrapper {
     padding: 5rem 0;
