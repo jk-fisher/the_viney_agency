@@ -1,6 +1,6 @@
 import authorStyles from '../../styles/AuthorID.module.css'
-import bookStyles from '../../styles/BookID.module.css'
-import booksStyles from '../../styles/Books.module.css'
+import bookStyles from '../../styles/Book.module.css'
+import booksStyles from '../../styles/BookList.module.css'
 
 const BookList = ({ authorsName, releasedBooks }) => {
     return ( <section className={booksStyles.blueColourContainer}>

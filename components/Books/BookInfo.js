@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
 import authorStyles from '../../styles/AuthorID.module.css'
-import bookStyles from '../../styles/BookID.module.css'
+import bookStyles from '../../styles/Book.module.css'
 import ArrowIcon from '../UI/ArrowIcon';
 
-const Book = ({ authorsName, image, genre, title, blurb, reviews }) => {
+const BookInfo = ({ authorsName, image, genre, title, blurb, reviews }) => {
 
     const bookReviews = reviews.map((review, index) => {
         return <li className={bookStyles.review} key={index}>
@@ -42,4 +42,4 @@ const Book = ({ authorsName, image, genre, title, blurb, reviews }) => {
     </section> );
 }
  
-export default Book;
+export default BookInfo;

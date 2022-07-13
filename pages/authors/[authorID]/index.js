@@ -8,13 +8,13 @@ import { getAllAuthorIDs, getAuthorData } from '../../../lib/authors'
 import { getAllBookData } from '../../../lib/books'
 import { getLayout } from '../../../components/Layout/Layout'
 
-import booksStyles from '../../../styles/Books.module.css'
+import booksStyles from '../../../styles/BookList.module.css'
 
 import AuthorInfo from '../../../components/Author/AuthorInfo'
-import Book from '../../../components/Books/Book'
+import BookInfo from '../../../components/Books/BookInfo'
 import BookList from '../../../components/Books/BookList'
 
-const Author = ({authorData, bookData}) => {
+const Author = ({authorData, allBookData}) => {
     // console.log('date object',typeof authorData.book_releases[0].release_date)
     const authorsName = `${authorData.first_name} ${authorData.last_name}`
     const authorImage = authorData.image;
@@ -23,14 +23,14 @@ const Author = ({authorData, bookData}) => {
     const authorInsta = authorData.instagram;
     const authorWeb = authorData.url;
 
-    const bookTitle = bookData[0].title;
-    const bookImage = bookData[0].image;
-    const bookGenre = bookData[0].genre;
-    const bookBlurb = bookData[0].markdownBody;
-    const reviews = bookData[0].book_reviews;
+    const bookTitle = allBookData[0].title;
+    const bookImage = allBookData[0].image;
+    const bookGenre = allBookData[0].genre;
+    const bookBlurb = allBookData[0].markdownBody;
+    const reviews = allBookData[0].book_reviews;
 
     
-    const releasedBooks = bookData.map((book_release) => {
+    const releasedBooks = allBookData.map((book_release) => {
         return <Link
         href={{
           pathname: '/authors/[authorID]/[bookID]',
@@ -64,7 +64,7 @@ const Author = ({authorData, bookData}) => {
           twitter={authorTwitter}
           web={authorWeb}
           />
-        <Book 
+        <BookInfo 
           authorsName={authorsName} 
           reviews={reviews}
           image={bookImage}
@@ -94,18 +94,13 @@ const getStaticProps = async ({params}) => {
   const uniqueID = `${dateObj.getDate()}${dateObj.getHours()}${dateObj.getMinutes()}`;
   authorData.date = uniqueID;
 
-  const bookData = getAllBookData(authorData)
-  bookData.map((book_release) => {
-    const dateObj = new Date(book_release.publish_date)
-    const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
-    book_release.publish_date = dateString;
-    return book_release;
-  })
+  const allBookData = getAllBookData(authorData)
+
   return {
       props: {
         allPageData,
         authorData,
-        bookData
+        allBookData
       } 
   }
 }
