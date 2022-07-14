@@ -4,18 +4,21 @@ import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { CSSTransition } from "react-transition-group";
 import styles from '../../styles/Text.module.css'
 
-const Text = (props) => {
+const Text = ({ state, moreText, lessText, content }) => {
     const moreBtn = useRef(null);
     const lessBtn = useRef(null);
 
-    const displayedText = props.content.split(' ').slice(0, 150).join(' ').concat('...')
-
-    return ( 
+    const displayedText = content.split(' ').slice(0, 150).join(' ').concat('...')
+    
+    return ( <Fragment>
+        {content.split(' ').length < 150 ? 
+        <p className={styles.text}>{content}</p>
+        :
         <Fragment>
             {/* <p>{!props.state ? displayedText : props.content}</p> */}
             <CSSTransition
                     nodeRef={moreBtn}
-                    in={!props.state}
+                    in={!state}
                     timeout={{
                         enter: 1000,
                         exit: 200
@@ -31,7 +34,7 @@ const Text = (props) => {
                     <p className={styles.text}>
                         {displayedText}
                     </p>
-                    <button className={styles.textButton} onClick={props.moreText}>
+                    <button className={styles.textButton} onClick={moreText}>
                     Read More
                     <FaAngleDown className={styles.icon} />
                     </button>
@@ -41,7 +44,7 @@ const Text = (props) => {
 
             <CSSTransition
                     nodeRef={lessBtn}
-                    in={props.state}
+                    in={state}
                     timeout={{
                         enter: 1000,
                         exit: 1
@@ -54,15 +57,17 @@ const Text = (props) => {
                     }}>
                 <div ref={lessBtn}>
                         <p className={styles.text}>
-                            {props.content}
+                            {content}
                         </p>
-                        <button className={styles.textButton} onClick={props.lessText}>
+                        <button className={styles.textButton} onClick={lessText}>
                         Read Less 
                         <FaAngleUp className={styles.icon}/>
                     </button>
                 </div>
 
             </CSSTransition>
+        </Fragment>
+        }
         </Fragment>
      );
 }

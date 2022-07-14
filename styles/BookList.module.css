@@ -9,9 +9,9 @@
     padding: 3rem 0rem;
 }
 .gridWrapper {
-    margin-top: 4rem;
+    margin: 4rem auto 0rem auto;
+    padding: 0;
     display: grid;
-    width: 85%;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
 }
@@ -20,14 +20,14 @@
         padding: 5rem 3rem;
     }
     .gridWrapper {
-        width: 80%;
+        /* width: 80%; */
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
 }
 @media screen and (min-width: 1024px) {
     .gridWrapper {
-        width: 70%;
+        /* width: 70%; */
         grid-template-columns: repeat(5, 1fr);
         gap: 2rem;
     }
