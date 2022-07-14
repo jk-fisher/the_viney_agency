@@ -1,78 +1,18 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%; 
-    height: 65vh;
-    margin: 0;
-    align-items: center;
-    background-color: #EBEAE7;
-}
-.lgContainer {
-    min-height: 640px;
-    padding: 5rem 0;
-}
-.wrapper {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-.textBox {
-    position: relative;
-    width: 100%;
-    display: block;
-    background-color: #EBEAE7;
-    padding-bottom: 2rem;
-    top: 4rem;
-}
-.text {
-    width:75%;
-    margin: auto;
-    text-align: center;
-    position: relative;
-    bottom: -30%;
-    color: #0D4253;
-    font-family: 'EB Garamond', serif;
-    font-size: 1.3rem;
-    line-height: 1.5;
-}
-.fadedLogo {
+.fadedLogoSml {
     position: relative;
     display:block;
     width: 80vw;
     clear: both;
     max-width: 250px;
     margin: 0 auto;
-    /* top: 40%;
-    transform: translate(0, -40%); */
-}
-.img {
-    opacity: 0.4;
-}
-.title {
-    color: #39778B;
-    text-align: center;
-    font-size: 2rem;
-    letter-spacing: 0.5rem;
-    font-family: 'EB Garamond', serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    position: absolute;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -62%);
-    width: inherit;
 }
 @media screen and (min-width: 678px) {
-    .title {
-        font-size: 2.2rem;
-    }
-    .fadedLogo {
+    .fadedLogoSml {
         max-width: 300px;
     }
 }
 @media screen and (min-width: 1024px) {
-    .fadedLogo {
-        max-width: 350px;
+    .fadedLogoSml {
+        max-width: 320px;
     } 
 } 

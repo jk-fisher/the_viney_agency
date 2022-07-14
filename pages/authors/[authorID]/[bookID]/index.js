@@ -44,6 +44,7 @@ const Book = ({bookData, authorData, allBookData}) => {
 
     return ( <Fragment>
         <BookInfo 
+          authorPg={false} 
           authorsName={authorsName} 
           reviews={reviews}
           image={bookImage}

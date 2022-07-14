@@ -42,6 +42,14 @@
     max-width: 250px;
     margin: 0 auto;
 }
+.smallLogo {
+    position: relative;
+    display:block;
+    width: 80vw;
+    clear: both;
+    max-width: 250px;
+    margin: 0 auto;
+}
 .img {
     opacity: 0.4;
 }
@@ -69,14 +77,14 @@
     .fadedLogo {
         max-width: 300px;
     }
+    .smallLogo {
+        max-width: 280px;
+    }  
 }
 @media screen and (min-width: 1024px) {
     .fadedLogo {
         max-width: 350px;
     } 
-    /* .smallLogo {
-        max-width: 300pxs;
-    } */
     .lgContainer {
         min-height: 600px;
     }

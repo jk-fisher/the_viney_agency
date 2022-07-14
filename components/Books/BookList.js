@@ -1,5 +1,5 @@
 import authorStyles from '../../styles/AuthorID.module.css'
-import bookStyles from '../../styles/Book.module.css'
+import bookStyles from '../../styles/BookInfo.module.css'
 import booksStyles from '../../styles/BookList.module.css'
 
 const BookList = ({ authorsName, releasedBooks }) => {

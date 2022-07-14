@@ -64,7 +64,8 @@ const Author = ({authorData, allBookData}) => {
           twitter={authorTwitter}
           web={authorWeb}
           />
-        <BookInfo 
+        <BookInfo
+          authorPg={true} 
           authorsName={authorsName} 
           reviews={reviews}
           image={bookImage}

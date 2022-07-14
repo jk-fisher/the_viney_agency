@@ -43,7 +43,9 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.navbar {
+    padding: 4rem 2rem;
+}
 .navitem {
     margin-left: 4rem;
 }
@@ -60,7 +62,7 @@
 }
 
 
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1140px) {
     .navmenu {
         position: fixed;
         right: -100%;

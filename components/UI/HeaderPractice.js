@@ -8,7 +8,7 @@ const HeaderPractice = ({ title, description }) => {
     return ( <Fragment>
         <div className={`${styles.container} ${description ? styles.lgContainer : ''}`}>
             <div className={styles.wrapper}>
-                <div className={`${styles.fadedLogo} ${description ? styles.smallLogo : ''}`}>
+                <div className={`${description ? styles.smallLogo : styles.fadedLogo}`}>
                     <Image 
                         className={styles.img}
                         src={Logo}
