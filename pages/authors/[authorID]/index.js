@@ -31,23 +31,35 @@ const Author = ({authorData, allBookData}) => {
 
     
     const releasedBooks = allBookData.map((book_release) => {
-        return <Link
-        href={{
-          pathname: '/authors/[authorID]/[bookID]',
-          query: {
-                    authorID: authorData.authorID,
-                    bookID: book_release.bookid  }
-                  }}
-        className={booksStyles.gridItem} key={book_release.bookid}>
-                <a>
-                    <Image 
-                        src={book_release.image}
-                        alt={`${book_release.title}`}
-                        width={400}
-                        height={570}
-                    />
-                </a>
-        </Link>
+      return (
+        book_release.markdownBody ?
+        <Link
+            href={{
+            pathname: '/authors/[authorID]/[bookID]',
+            query: {
+                        authorID: authorData.authorID,
+                        bookID: book_release.bookid  }
+                    }}
+            className={booksStyles.gridItem} key={book_release.bookid}>
+                    <a>
+                        <Image 
+                            src={book_release.image}
+                            alt={`${book_release.title}`}
+                            width={400}
+                            height={570}
+                        />
+                    </a>
+        </Link> :
+        <div className={booksStyles.gridItem} key={book_release.bookid}>
+            <Image 
+                src={book_release.image}
+                alt={`${book_release.title}`}
+                width={400}
+                height={570}
+            />
+            
+        </div>
+        )
     })
     
     return ( <Fragment>
