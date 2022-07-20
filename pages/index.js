@@ -5,11 +5,14 @@ import { getLayout } from '../components/Layout/Layout'
 import Header from '../components/UI/Header'
 import { Fragment } from 'react'
 
+import Summary from '../components/UI/Summary'
 
+import ImageCarousel from '../components/UI/ImageCarousel'
+import { getSortedImages  } from '../lib/carousel'
 
-const Home = ({ allPageData }) => {
+const Home = ({ carouselImages }) => {
   
-  console.log('index', allPageData)
+  console.log('carouselimgs', carouselImages)
   
   return (<Fragment>
         <Head>
@@ -18,6 +21,8 @@ const Home = ({ allPageData }) => {
           <link rel="icon" href="/assets/tva_logo.png" />
         </Head>
         <Header />
+        <ImageCarousel images={carouselImages} />
+        <Summary />
     </Fragment>
 
 )
@@ -25,9 +30,11 @@ const Home = ({ allPageData }) => {
 
 const getStaticProps = async () => {
   const allPageData = getAllPageData();
+  const carouselImages = getSortedImages();
   return {
       props: {
-        allPageData
+        allPageData,
+        carouselImages
       } 
   }
 }

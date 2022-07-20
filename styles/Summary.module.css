@@ -1,0 +1,16 @@
+.summary {
+    text-align: center;
+    width: 100%;
+    background-color: #EBEAE7;
+    margin: 0 auto;
+}
+.text{
+    width:95%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    color: #0D4253;
+    font-family: 'Garamond', serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}

@@ -60,4 +60,14 @@ collections:
        fields: 
        - {label: "Review Text", name: "review", widget: "string", required: true}
        - {label: "Review Written By", name: "by", widget: "string", required: true}
+  - name: 'carousel'
+    label: 'Carousel'
+    media_folder: ""
+    public_folder: ""
+    folder: "/public/images/carousel_images"
+    create: false
+    slug: "{{name}}"
+    fields: 
+      - {label: "Name", name: "name", widget: "string", required: true}
+      - {label: "Image", name: image, widget: "list", required: true, create: true, field: { label: "Image", name: "image", widget: "image"}}
      
