@@ -7,7 +7,7 @@ const Card = ({ pg, title, subTitle, content, image }) => {
         <div>
             <Image 
                 src={image.icon}
-                alt="Photograph of Amberley Lowis"
+                alt="Amberley Lowis"
                 layout="responsive"
                 className={styles.thumbnail}
             />

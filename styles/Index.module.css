@@ -6,12 +6,13 @@
     height: calc(100vh - 15vh - 5rem);
     min-height: 400px;
 }
-.slideDownContainer{
+/* .slideDownContainer{
     display: none;
-}
+} */
 @media screen and (min-width: 768px) {
     .flex {
         height: calc(100vh - 15vh - 7rem - 4.5rem);
+        min-height: 500px;
     }
     .slideDownContainer{
         display: block;

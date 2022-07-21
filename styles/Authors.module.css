@@ -1,15 +1,17 @@
 .gridWrapper {
     margin: -4rem auto;
+    margin-bottom: 6rem;
     display: grid;
     width: 80%;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
 }
 .authorTitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
     color: #676767;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 @media screen and (min-width: 768px) {
     .gridWrapper {

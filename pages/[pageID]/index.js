@@ -57,7 +57,7 @@ const Page = ({dynamicPageData}) => {
                 </div>
             </div>
             {dynamicPageData.pageID === "about" && 
-                <CardTemplate header="Meet our agents" cardsContent={cardsContent}/>
+                <CardTemplate header="Meet our Agents" cardsContent={cardsContent}/>
             }
         </Fragment>
         

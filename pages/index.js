@@ -10,6 +10,7 @@ import styles from '../styles/Index.module.css'
 import Summary from '../components/UI/Summary'
 import ArrowIcon from '../components/UI/ArrowIcon'
 import ImageCarousel from '../components/UI/ImageCarousel'
+import TeamContainer from '../components/Team/TeamContainer'
 import { getSortedImages  } from '../lib/carousel'
 
 const Home = ({ carouselImages }) => {
@@ -30,6 +31,7 @@ const Home = ({ carouselImages }) => {
         <div className={styles.slideDownContainer}>
           <ArrowIcon /> 
         </div>
+        <TeamContainer />
     </Fragment>
 
 )
