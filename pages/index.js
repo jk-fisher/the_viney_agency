@@ -5,8 +5,10 @@ import { getLayout } from '../components/Layout/Layout'
 import Header from '../components/UI/Header'
 import { Fragment } from 'react'
 
-import Summary from '../components/UI/Summary'
+import styles from '../styles/Index.module.css'
 
+import Summary from '../components/UI/Summary'
+import ArrowIcon from '../components/UI/ArrowIcon'
 import ImageCarousel from '../components/UI/ImageCarousel'
 import { getSortedImages  } from '../lib/carousel'
 
@@ -21,8 +23,13 @@ const Home = ({ carouselImages }) => {
           <link rel="icon" href="/assets/tva_logo.png" />
         </Head>
         <Header />
-        <ImageCarousel images={carouselImages} />
-        <Summary />
+        <div className={styles.flex}>
+          <ImageCarousel images={carouselImages} />
+          <Summary />
+        </div>
+        <div className={styles.slideDownContainer}>
+          <ArrowIcon /> 
+        </div>
     </Fragment>
 
 )

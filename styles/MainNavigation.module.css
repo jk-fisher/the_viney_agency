@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
     background-color: #237d94;
     height: 7rem;
     position: fixed;
@@ -96,7 +96,7 @@
         color: #ebeae7
     }
     .navbar {
-        padding: 4rem 2rem;
+        /* padding: 4rem 2rem; */
     }
     .navitem {
         left: 0;
@@ -125,7 +125,7 @@
 @media screen and (max-width: 767px) {
     .navbar {
         height: 5rem;
-        padding: 3rem 1rem;
+        padding: 0rem 1rem;
     }
     .navmenu {
         width: 100%;

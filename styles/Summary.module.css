@@ -1,11 +1,14 @@
 .summary {
     text-align: center;
     width: 100%;
-    background-color: #EBEAE7;
+    /* background-color: #EBEAE7; */
     margin: 0 auto;
+    /* padding-top: 1rem; */
+    /* padding-bottom: 2rem; */
 }
 .text{
     width:95%;
+    max-width: 900px;
     margin: auto;
     text-align: center;
     position: relative;
@@ -13,4 +16,12 @@
     font-family: 'Garamond', serif;
     font-size: 1.5rem;
     line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+    .summary {
+        /* padding-top: 2rem; */
+    }
+    .text{
+        font-size: 1.8rem;
+    }
 }

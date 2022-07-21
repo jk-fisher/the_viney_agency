@@ -1,0 +1,20 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #EBEAE7;
+    height: calc(100vh - 15vh - 5rem);
+    min-height: 400px;
+}
+.slideDownContainer{
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .flex {
+        height: calc(100vh - 15vh - 7rem - 4.5rem);
+    }
+    .slideDownContainer{
+        display: block;
+        background-color: white;
+    }
+}
