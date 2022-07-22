@@ -10,6 +10,7 @@
 }
 .gridWrapper {
     width:90%;
+    max-width: 1200px;
     margin: 4rem auto 4rem auto;
     padding: 0;
     display: grid;
