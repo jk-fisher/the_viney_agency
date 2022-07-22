@@ -1,8 +1,14 @@
-.icon {
-    position: relative;
-    margin: 1rem auto;
-    width: 100%;
+.object {
+    /* position: relative; */
+    /* margin: 1rem auto; */
+    /* width: 100%; */
     z-index: 9;
-    display: flex;
-    justify-content: flex-end;
+}
+.icon {
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: column;
+    height: 5rem;
+    /* z-index: 9; */
+    align-items: center;
 }
