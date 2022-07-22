@@ -96,12 +96,12 @@ const ImageCarousel = ({ images }) => {
     })
   }
 
-  useEffect(() => {
-    timer.current = setInterval(() => {
-      tick()
-    }, 3800);
-    return () => clearInterval(timer.current);
-  }, []);
+  // useEffect(() => {
+  //   timer.current = setInterval(() => {
+  //     tick()
+  //   }, 3800);
+  //   return () => clearInterval(timer.current);
+  // }, []);
 
   return (
 
