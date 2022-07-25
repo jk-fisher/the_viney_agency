@@ -38,7 +38,7 @@ const Page = ({dynamicPageData}) => {
                     <ArrowIcon />
                 </div>
                 }
-            <div className={styles.flex}>
+            <div className={`${styles.flex} ${dynamicPageData.pageID !== "about" && styles.mLg}`}>
                 <div className={styles.flexItem}>
                     <Image className={styles.img}
                         src={dynamicPageData.image}  

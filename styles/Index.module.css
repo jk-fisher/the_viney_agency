@@ -3,19 +3,24 @@
     flex-direction: column;
     justify-content: space-evenly;
     background-color: #EBEAE7;
-    height: calc(100vh - 15vh - 5rem - 4rem);
-    min-height: 400px;
+    height: calc(100vh - 20vh - 5rem - 4rem);
+    min-height: 420px;
 }
 /* .slideDownContainer{
     display: none;
 } */
 @media screen and (min-width: 768px) {
     .flex {
-        height: calc(100vh - 15vh - 7rem - 4.5rem);
+        height: calc(100vh - 20vh - 7rem - 4rem);
         min-height: 480px;
     }
     .slideDownContainer{
         display: block;
         background-color: white;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .flex {
+        height: calc(100vh - 17vh - 7rem - 4.5rem);
     }
 }
