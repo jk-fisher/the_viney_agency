@@ -2,9 +2,10 @@ import styles from '../../styles/Guidelines.module.css';
 import SubmissionButton from '../UI/SubmissionButton';
 
 const Guidelines = () => {
+
     return ( <div className={styles.container}>
         <h2 className={styles.header}>General Guidelines</h2>
-        <p className={styles.text}>
+        <p className={styles.text} data-aos="fade-up">
             The Viney Agency represents the needs of its writers across all media, and when we take on new clients we always ensure that there is a good fit between their requirements and our ambitions. We do not accept play or film scripts.
             <br/><br/>
             When you email the agency, please keep the content relevant to your writing. Please ensure that you inform us of any previously published work and, specifically for non-fiction, what qualifies you to write about the subject. Please attach a synopsis or summary of your fiction or non-fiction work which should be no longer than one page, together with the first twenty pages of consecutively written sample material. The manuscript/proposal and synopsis should be in Word format and 1.5 or double spaced.
@@ -15,7 +16,9 @@ const Guidelines = () => {
             <br/><br/>
             The Viney Agency is a member of the Association of Author’s Agents (AAA) and abides by its code of conduct.
         </p>
-        <SubmissionButton label="Email your submission" />
+        <div  data-aos="fade-up">
+            <SubmissionButton label="Email your submission" />
+        </div>
     </div>
      );
 }

@@ -37,7 +37,7 @@ const BookInfo = ({ authorsName, image, genre, title, blurb, reviews, authorPg }
             {authorPg && <span className={authorStyles.bold}>
               {title}
             </span>}
-             by {authorsName}
+            <span> by {authorsName}</span>
           </h3>
           <p className={authorStyles.text}>
             {blurb}

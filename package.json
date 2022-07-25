@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "framer-motion": "^6.5.1",
     "gray-matter": "^4.0.3",
     "netlify-identity-widget": "^1.9.2",

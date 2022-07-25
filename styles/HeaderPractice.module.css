@@ -1,4 +1,5 @@
 .container {
+    
     display: flex;
     flex-direction: column;
     position: relative;
@@ -7,10 +8,10 @@
     margin: 0;
     align-items: center;
     background-color: #EBEAE7;
-    /* padding-top: 30rem; */
+    /* padding-top: 5rem; */
 }
 .lgContainer {
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 6rem);
     min-height: 760px;
 }
 .wrapper {
@@ -84,6 +85,10 @@
     }  
 }
 @media screen and (min-width: 1024px) {
+    .wrapper {
+        top: 65%;
+        transform: translate(0, -65%);
+    }
     .title {
         font-size: 2.8rem;
     }

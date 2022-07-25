@@ -161,17 +161,17 @@
         margin-left: 2.5rem;
     }
     .carousel div div:nth-child(3){
-        width: 24rem;
+        width: 22rem;
         max-width: 80%;
         margin-left:0.5rem;
     }
     /*center div*/
     .carousel div div:nth-child(4){
-        width: 24rem;
+        width: 22rem;
         max-width: 85%;
     }
     .carousel div div:nth-child(5){
-        width: 24rem;
+        width: 22rem;
         max-width: 80%;
         margin-left: -0.5rem;
     }

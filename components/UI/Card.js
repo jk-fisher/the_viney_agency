@@ -4,7 +4,7 @@ import SubmissionButton from './SubmissionButton';
 const Card = ({ pg, title, subTitle, content, image }) => {
 
     return ( <div className={styles.card}>
-        <div>
+        <div >
             <Image 
                 src={image.icon}
                 alt="Amberley Lowis"

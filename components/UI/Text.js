@@ -8,10 +8,10 @@ const Text = ({ state, moreText, lessText, content }) => {
     const moreBtn = useRef(null);
     const lessBtn = useRef(null);
 
-    const displayedText = content.split(' ').slice(0, 150).join(' ').concat('...')
+    const displayedText = content.split(' ').slice(0, 120).join(' ').concat('...')
     
     return ( <Fragment>
-        {content.split(' ').length < 150 ? 
+        {content.split(' ').length < 10 ? 
         <p className={styles.text}>{content}</p>
         :
         <Fragment>

@@ -5,15 +5,18 @@ const CardTemplate = ({ cardsContent, header }) => {
     console.log(cardsContent)
     const cards = cardsContent.map(({pg, title, subTitle, content, image}, index) => {
         return (
-            <li className={styles.list} key={index}>
-                <Card 
-                    pg={pg}
-                    title={title} 
-                    subTitle={subTitle} 
-                    content={content} 
-                    image={image}
-                />
-            </li>
+            <div  data-aos="fade-left">
+                <li className={styles.list} key={index}>
+                    <Card 
+                        pg={pg}
+                        title={title} 
+                        subTitle={subTitle} 
+                        content={content} 
+                        image={image}
+                    />
+                </li>
+
+            </div>
         )
     })
     return ( 
