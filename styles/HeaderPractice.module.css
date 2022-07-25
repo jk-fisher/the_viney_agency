@@ -10,12 +10,13 @@
     /* padding-top: 30rem; */
 }
 .lgContainer {
-    min-height: 680px;
+    height: calc(100vh - 5rem);
+    min-height: 760px;
 }
 .wrapper {
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    top: 55%;
+    transform: translate(0, -55%);
 }
 .textBox {
     position: relative;
