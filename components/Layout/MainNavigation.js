@@ -35,7 +35,7 @@ const MainNavigation = ({ allPageData }) => {
         console.log("Page scroll: ", latest, scrollY)
         prevScrollY.current = latest
     })
-    }, [])
+    }, [scrollY])
     
     const variants = {
         show: {y: "0rem"},
