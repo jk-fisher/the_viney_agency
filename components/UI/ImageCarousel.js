@@ -72,10 +72,10 @@ const ImageCarousel = ({ images }) => {
       /*most significant*/
       if (xDiff > 0) {
         /* left swipe */
-        setState({ goToSlide: state.goToSlide + 1 });
+        setState({ goToSlide: state.goToSlide + 1, offsetRadius: state.offsetRadius });
       } else {
         /* right swipe */
-        setState({ goToSlide: state.goToSlide - 1 });
+        setState({ goToSlide: state.goToSlide - 1, offsetRadius: state.offsetRadius });
       }
     } else {
       if (yDiff > 0) {
