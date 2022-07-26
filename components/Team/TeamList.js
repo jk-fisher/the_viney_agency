@@ -46,10 +46,12 @@ const TeamList = () => {
         )
     })
     return ( 
-        <div className={styles.container}>
-            <ul className={styles.gridWrapper}>
-                {listOfTeam}
-            </ul>
+        <div className={styles.container} >
+            <div data-aos="fade-up">
+                <ul className={styles.gridWrapper}>
+                    {listOfTeam}
+                </ul>
+            </div>
         </div>
      );
 }

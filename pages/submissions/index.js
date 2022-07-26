@@ -28,7 +28,7 @@ const Submissions = ({  }) => {
         </Head>
         <HeaderPractice title="Submissions" description={null}/>
         <Guidelines />
-        <CardTemplate header={header} cardsContent={cardsContent}/>
+        <CardTemplate header={header} cardsContent={cardsContent} />
     </Fragment> );
 }
 
