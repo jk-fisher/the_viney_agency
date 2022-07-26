@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion, useScroll } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
@@ -13,12 +13,11 @@ const slideTransition = {
     }
 }
 const MainNavigation = ({ allPageData }) => {
-    
 
     const [isOpen, setIsOpen] = useState(false); 
     const openMenu = () => setIsOpen(!isOpen);
 
-    const prevScrollY = 0;
+    const prevScrollY = useRef(0);
     const { scrollY } = useScroll()
     const [ showNavigation, setShowNavigation ] = useState(true)
 
@@ -26,15 +25,15 @@ const MainNavigation = ({ allPageData }) => {
         
         // console.log('scroll useeffect ran')
     return scrollY.onChange((latest) => {
-        if (latest > 200 && latest > prevScrollY){
+        if (latest > 200 && latest > prevScrollY.current){
             console.log('going down')
             setShowNavigation(false)
-        }else if(prevScrollY > latest){
+        }else if(prevScrollY.current > latest){
             console.log('goingup')
             setShowNavigation(true)
         }
         console.log("Page scroll: ", latest, scrollY)
-        prevScrollY = latest
+        prevScrollY.current = latest
     })
     }, [])
     
