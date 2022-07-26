@@ -6,8 +6,8 @@ const CardTemplate = ({ cardsContent, header }) => {
     const cards = cardsContent.map(({pg, title, subTitle, content, image}, index) => {
         console.log('index', index)
         return (
-            <div  data-aos="fade-left">
-                <li key={index} className={styles.list}>
+            <div key={index} data-aos="fade-left">
+                <li className={styles.list}>
                     <Card 
                         pg={pg}
                         title={title} 
