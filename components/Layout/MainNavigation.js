@@ -26,10 +26,10 @@ const MainNavigation = ({ allPageData }) => {
         // console.log('scroll useeffect ran')
     return scrollY.onChange((latest) => {
         if (latest > 200 && latest > prevScrollY.current){
-            console.log('going down')
+            // console.log('going down')
             setShowNavigation(false)
         }else if(prevScrollY.current > latest){
-            console.log('goingup')
+            // console.log('goingup')
             setShowNavigation(true)
         }
         console.log("Page scroll: ", latest, scrollY)

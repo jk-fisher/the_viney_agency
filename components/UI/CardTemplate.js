@@ -3,10 +3,11 @@ import Card from './Card.js'
 
 const CardTemplate = ({ cardsContent, header }) => {
     console.log(cardsContent)
-    const cards = cardsContent.map(({pg, title, subTitle, content, image}) => {
+    const cards = cardsContent.map(({pg, title, subTitle, content, image}, index) => {
+        console.log('index', index)
         return (
             <div  data-aos="fade-left">
-                <li className={styles.list} key={title}>
+                <li key={index} className={styles.list}>
                     <Card 
                         pg={pg}
                         title={title} 
