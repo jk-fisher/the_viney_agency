@@ -9,10 +9,11 @@
     color: #237d94;
 }
 .gridWrapper {
-    width:90%;
+    background-color: white;
+    width: 90%;
     max-width: 1200px;
-    margin: 4rem auto 4rem auto;
-    padding: 0;
+    margin: 0 auto;
+    padding: 4rem 3rem 4rem 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;

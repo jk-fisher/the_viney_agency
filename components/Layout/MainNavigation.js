@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react"
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 import logo from "../../public/assets/favicon.png"
@@ -14,6 +14,7 @@ const slideTransition = {
 }
 const MainNavigation = ({ allPageData }) => {
 
+
     const [isOpen, setIsOpen] = useState(false); 
     const openMenu = () => setIsOpen(!isOpen);
 
@@ -25,14 +26,14 @@ const MainNavigation = ({ allPageData }) => {
         
         // console.log('scroll useeffect ran')
     return scrollY.onChange((latest) => {
-        if (latest > 200 && latest > prevScrollY.current){
+        if (latest > 640 && latest > prevScrollY.current){
             // console.log('going down')
             setShowNavigation(false)
         }else if(prevScrollY.current > latest){
             // console.log('goingup')
             setShowNavigation(true)
         }
-        console.log("Page scroll: ", latest, scrollY)
+        // console.log("Page scroll: ", latest, scrollY)
         prevScrollY.current = latest
     })
     }, [scrollY])
