@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react"
-import { motion, useScroll, AnimatePresence } from "framer-motion"
+import { useState, useEffect, useRef, Fragment } from "react"
+import { motion, useScroll } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 import logo from "../../public/assets/favicon.png"
@@ -12,6 +12,11 @@ const slideTransition = {
         ease: "easeIn"
     }
 }
+
+const Backdrop = ({ onClose }) => {
+    return <div className={styles.backdrop} onClick={onClose} />
+}
+
 const MainNavigation = ({ allPageData }) => {
 
 
@@ -21,6 +26,10 @@ const MainNavigation = ({ allPageData }) => {
     const prevScrollY = useRef(0);
     const { scrollY } = useScroll()
     const [ showNavigation, setShowNavigation ] = useState(true)
+
+    const closeNavHandler = () => {
+        setIsOpen(false);
+    }   
 
     useEffect(() => {
         
@@ -50,7 +59,8 @@ const MainNavigation = ({ allPageData }) => {
     //     </li>
     // })
     // console.log('headers', headers)
-    return ( 
+    return ( <Fragment>
+
         <header className={styles.header}>
         <motion.nav 
             className={styles.navbar}
@@ -113,6 +123,10 @@ const MainNavigation = ({ allPageData }) => {
           </button>
         </motion.nav>
       </header>
+      {isOpen && <Backdrop 
+          className={styles.backdrop} 
+          onClose={closeNavHandler} />} 
+    </Fragment>
         
      );
 }
