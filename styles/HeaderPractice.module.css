@@ -1,5 +1,5 @@
 .container {
-    
+    min-height: 550px;
     display: flex;
     flex-direction: column;
     position: relative;
