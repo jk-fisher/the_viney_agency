@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { motion, AnimatePresence } from "framer-motion"
+
 import styles from '../../styles/Authors.module.css'
 import { getAllAuthorData } from '../../lib/authors'
 import { getAllPageData } from '../../lib/pages'
@@ -9,22 +11,33 @@ import { Fragment } from 'react'
 import PageHeader from '../../components/UI/PageHeader'
 import HeaderPractice from '../../components/UI/HeaderPractice'
 
+const variants = {
+    hidden: { opacity: 0, x: 0, y: +100 },
+    enter: { opacity: 1, x: 0, y: 0 },
+    // exit: { opacity: 0, x: 0, y: -100 },
+}
+
 const Authors = ({ allAuthorData }) => {
     // console.log(allAuthorData)
     const authors = allAuthorData.map((author) => {
         console.log(author)
         return (
-            <Link href={`/authors/${author.id}`} className={styles.gridItem} key={author.id}>
-                <a>
-                    <Image 
-                        src={author.image}
-                        alt={`${author.first_name} ${author.last_name}`}
-                        width={400}
-                        height={500}
-                    />
-                    <h2 className={styles.authorTitle}>{author.first_name} {author.last_name}</h2>
-                </a>
-            </Link>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link href={`/authors/${author.id}`} className={styles.gridItem} key={author.id}>
+                    <a>
+                        <Image 
+                            src={author.image}
+                            alt={`${author.first_name} ${author.last_name}`}
+                            width={400}
+                            height={500}
+                        
+                        />
+                        <h2 className={styles.authorTitle}>{author.first_name} {author.last_name}</h2>
+                    </a>
+                </Link>
+
+            </motion.div>
+
         )
     })
     console.log('authors', authors)
@@ -38,10 +51,19 @@ const Authors = ({ allAuthorData }) => {
                 <link rel="icon" href="/assets/tva_logo.png" />
             </Head>
             <HeaderPractice title="Meet our Authors"/>
-            {/* <PageHeader title='Meet our authors'/> */}
-            <div className={styles.gridWrapper}>
+            <AnimatePresence>
+                <motion.div 
+                    className={styles.gridWrapper}
+                    variants={variants} // Pass the variant object into Framer Motion 
+                    initial="hidden" // Set the initial state to variants.hidden
+                    animate="enter" // Animated state to variants.enter
+                    // exit="exit" // Exit state (used later) to variants.exit
+                    transition={{ type: 'linear', duration: 0.7 }} // Set the transition to linear>
+                    // key="authors"
+                    >  
                     {authors}
-            </div>
+                </motion.div>
+            </AnimatePresence>            
         </Fragment>
   )
 }
