@@ -6,10 +6,11 @@
     height: calc(100vh - 20vh - 5rem - 4rem);
     min-height: 420px;
 }
+
 .layer_01 {
     position: fixed;
     background-color: #EBEAE7;
-    height: 90vh;
+    height: 100vh;
     z-index: 1;
     top: 0;
     left: 0;
@@ -19,7 +20,7 @@
 .layer_02 {
     position: relative;
     /* margin-top: calc(100vh - 5rem); */
-    margin-top: 90vh;
+    margin-top: 100vh;
     background-color: white;
     z-index: 9;
     width: 100%;
@@ -27,11 +28,23 @@
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);;
 }
 .arrowContainer{
-    z-index: 10;
-    display: block;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    display: none;
+}
+@media screen and (min-height: 500px) {
+    .layer_01{
+        height: 90vh;
+    }
+    .layer_02{
+        margin-top: 90vh;
+    }
+    .arrowContainer{
+        z-index: 10;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
 }
 /* .slideDownContainer{
     display: none;

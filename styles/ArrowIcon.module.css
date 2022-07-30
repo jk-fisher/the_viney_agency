@@ -4,8 +4,11 @@
     /* width: 100%; */
     /* z-index: 9; */
 }
-.hide {
+.icon {
     display: none;
+}
+@media screen and (min-height) {
+    
 }
 .icon {
     display: flex; 
