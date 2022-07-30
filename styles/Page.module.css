@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 .mLg {
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 @media screen and (min-width: 1023px) {
     .flex {

@@ -67,13 +67,13 @@ const MainNavigation = ({ allPageData }) => {
             transition={slideTransition}
             animate={showNavigation ? "show" : "hide"}
             variants={variants}>
-            <div className={styles.navlogo}>
+            <motion.div className={styles.navlogo} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link href="/">
                     <a className={styles.button}>
                         <Image src={logo} alt="The Viney Agency Logo" />
                     </a>
                 </Link>
-            </div>
+            </motion.div>
           <ul className={isOpen === false ? 
                 styles.navmenu : styles.navmenu +' '+styles.active}>
             <li className={styles.navitem}>

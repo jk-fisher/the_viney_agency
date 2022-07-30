@@ -13,7 +13,7 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 3rem 4rem 3rem;
+    padding: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
@@ -22,7 +22,7 @@
     .gridWrapper {
         /* width: 80%; */
         grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
+        gap: 2.5rem;
     }
 }
 
