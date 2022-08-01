@@ -13,6 +13,9 @@ import booksStyles from '../../../styles/BookList.module.css'
 import AuthorInfo from '../../../components/Author/AuthorInfo'
 import BookInfo from '../../../components/Books/BookInfo'
 import BookList from '../../../components/Books/BookList'
+import markdownToHtml from '../../../lib/markdown'
+import DOMPurify from 'isomorphic-dompurify';
+
 
 const Author = ({authorData, allBookData}) => {
     // console.log('date object',typeof authorData.book_releases[0].release_date)
@@ -28,6 +31,7 @@ const Author = ({authorData, allBookData}) => {
     const bookGenre = allBookData[0].genre;
     const bookBlurb = allBookData[0].markdownBody;
     const reviews = allBookData[0].book_reviews;
+
 
     
     const releasedBooks = allBookData.map((book_release) => {
@@ -106,7 +110,9 @@ const getStaticProps = async ({params}) => {
   let dateObj = new Date(authorData.date)
   const uniqueID = `${dateObj.getDate()}${dateObj.getHours()}${dateObj.getMinutes()}`;
   authorData.date = uniqueID;
-
+  const body = await markdownToHtml(authorData.markdownBody);
+  console.log('body_markdownToHtml', body)
+  authorData.markdownBody = body;
   const allBookData = getAllBookData(authorData)
 
   return {

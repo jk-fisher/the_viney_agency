@@ -28,7 +28,7 @@ const Page = ({dynamicPageData}) => {
 
       ]
     
-    console.log('p', dynamicPageData)
+    // console.log('p', dynamicPageData)
     dynamicPageData.pageID
     return ( 
         <Fragment>
@@ -66,7 +66,7 @@ const Page = ({dynamicPageData}) => {
 
 const getStaticPaths = async () => {
     const paths = getAllPageIDs();
-    console.log(paths)
+    // console.log(paths)
     return {
         paths,
         fallback: false,
