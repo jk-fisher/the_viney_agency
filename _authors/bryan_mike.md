@@ -7,7 +7,7 @@ twitter: null
 instagram: null
 image: /images/author_images/bryan_mike.jpg
 book_releases: 
-  - test_book
+  - book_title: Test book
 ---
 INTERNAL
 
@@ -15,7 +15,7 @@ INTERNAL
 
 
 
-Mike Bryan has been visiting Romano British sites*since youth. Following a long career in publishing with Penguin Books where he was CEO of a number of Penguin’s international publishing companies, he is at present studying Roman Archaeology at Oxford University and evangelising to one and all on his favourite subject.*
+Mike Bryan has been visiting Romano British sites*since youth. Following a long career in publishing with Penguin Books where he was CEO of a number of Penguinï¿½s international publishing companies, he is at present studying Roman Archaeology at Oxford University and evangelising to one and all on his favourite subject.*
 
 *
 

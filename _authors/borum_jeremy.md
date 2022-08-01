@@ -7,7 +7,7 @@ twitter: null
 instagram: null
 image: /images/author_images/borum_jeremy.jpg
 book_releases: 
-  - test_book
+  - book_title: Test book
 ---
 Jeremy Borum is a film composer, orchestrator, producer, and performer. Among the first wave of working composers to see the digital de-monetization of music as a piece of history, not an on-going process, he built a successful music career in an uncertain industry that is re-inventing itself. He is credited on numerous features, shorts and albums. An active member of the Society of Composers and Lyricists, he is a contributing author to their quarterly journal The Score.
 

@@ -1,7 +1,7 @@
 ---
 authors_first_name: Philippa
 authors_last_name: Langley
-title: The Kings Grave
+title: Test Book
 publish_date: 2022-04-28T10:19:00.772Z
 genre: history
 image: /images/book_images/langley_the_kings_grave.jpg

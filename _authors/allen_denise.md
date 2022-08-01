@@ -7,13 +7,13 @@ twitter: null
 instagram: null
 image: /images/author_images/allen_denise.jpg
 book_releases: 
-  - test_book
+  - book_title: Test book
 ---
 INTERNAL
 
 INTERNAL
 
-Dr Denise Allen began her archaeological life as a ‘digger’, excavating throughout the 1970s, then specialised in Roman Glass (completing her PhD at Cardiff University, and later publishing the*Roman Glass in Britain, a popular introduction to the subject). She has worked in museums and taught in Continuing Education, and for nearly twenty years was a Director of Andante Travels, Britain’s leading archaeological tour company, designing the tours, writing brochures and field notes, and leading many tours.
+Dr Denise Allen began her archaeological life as a ï¿½diggerï¿½, excavating throughout the 1970s, then specialised in Roman Glass (completing her PhD at Cardiff University, and later publishing the*Roman Glass in Britain, a popular introduction to the subject). She has worked in museums and taught in Continuing Education, and for nearly twenty years was a Director of Andante Travels, Britainï¿½s leading archaeological tour company, designing the tours, writing brochures and field notes, and leading many tours.
 
 **
 

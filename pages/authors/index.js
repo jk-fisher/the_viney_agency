@@ -16,12 +16,15 @@ const Authors = ({ allAuthorData }) => {
         return (
             <Link href={`/authors/${author.id}`} className={styles.gridItem} key={author.id}>
                 <a>
-                    <Image 
-                        src={author.image}
-                        alt={`${author.first_name} ${author.last_name}`}
-                        width={400}
-                        height={500}
-                    />
+                        <Image 
+                            className={styles.img}
+                            src={author.image}
+                            alt={`${author.first_name} ${author.last_name}`}
+                            
+                            width={400}
+                            height={500}
+                            
+                        />
                     <h2 className={styles.authorTitle}>{author.first_name} {author.last_name}</h2>
                 </a>
             </Link>
@@ -50,12 +53,12 @@ const getStaticProps = async () => {
     const allAuthorData = getAllAuthorData();
     allAuthorData.map((author) => {
         console.log('author', author)
-        author.book_releases.map((book_release) => {
-            const dateObj = new Date(book_release.release_date)
-            const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
-            book_release.release_date = dateString;
-            return book_release;
-        })
+        // author.book_releases.map((book_release) => {
+        //     const dateObj = new Date(book_release.release_date)
+        //     const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
+        //     book_release.release_date = dateString;
+        //     return book_release;
+        // })
         const dateObj = new Date(author.date)
         const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
         author.date = dateString;
