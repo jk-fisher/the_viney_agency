@@ -5,7 +5,7 @@ first_name: Ele
 last_name: Fountain
 twitter: "@ElleFountain"
 instagram: "@ElleFountainInsta"
-image: /images/author_images/ele_fountain.jpg
+image: /images/author_images/fountain_ele.jpg
 book_releases:
   - book_title: Fake
 ---

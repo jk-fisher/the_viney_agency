@@ -5,7 +5,7 @@ first_name: Chris
 url: www.chrisbradford.co.uk
 twitter: YoungSamurai
 instagram:
-image: /images/author_images/chris_bradford.jpg
+image: /images/author_images/bradford_chris.jpg
 book_releases:
   - book_title: The Soul Hunters
 ---
