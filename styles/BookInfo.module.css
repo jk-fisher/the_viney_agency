@@ -24,11 +24,12 @@
 }
 .tag{ 
     position: relative;
-    margin-right: 0;
     text-align: right;
     display: block;
     color: #9BB1B8;
     font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    max-width: 360px;
 }
 .col_2::before {
     background-color: #0D4253;
