@@ -10,9 +10,9 @@ import PageHeader from '../../components/UI/PageHeader'
 import HeaderPractice from '../../components/UI/HeaderPractice'
 
 const Authors = ({ allAuthorData }) => {
-    // console.log(allAuthorData)
+    console.log(allAuthorData)
     const authors = allAuthorData.map((author) => {
-        // console.log(author)
+        // console.log(author.last_name)
         return (
             <Link href={`/authors/${author.id}`} className={styles.gridItem} key={author.id}>
                 <a>
@@ -30,7 +30,7 @@ const Authors = ({ allAuthorData }) => {
             </Link>
         )
     })
-    console.log('authors', authors)
+    // console.log('authors', authors)
     
     return (
         <Fragment>
