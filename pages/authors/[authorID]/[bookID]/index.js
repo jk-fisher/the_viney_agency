@@ -11,6 +11,7 @@ import BookInfo from '../../../../components/Books/BookInfo'
 import BookList from '../../../../components/Books/BookList'
 
 import booksStyles from '../../../../styles/BookList.module.css'
+import { motion } from 'framer-motion'
 
 const Book = ({bookData, authorData, allBookData}) => {
 
@@ -25,23 +26,25 @@ const Book = ({bookData, authorData, allBookData}) => {
     const releasedBooks = allBookData.map((book_release) => {
         return (
         book_release.markdownBody ?
-        <Link
-            href={{
-            pathname: '/authors/[authorID]/[bookID]',
-            query: {
-                        authorID: authorData.authorID,
-                        bookID: book_release.bookid  }
-                    }}
-            className={booksStyles.gridItem} key={book_release.bookid}>
-                    <a>
-                        <Image 
-                            src={book_release.image}
-                            alt={`${book_release.title}`}
-                            width={400}
-                            height={570}
-                        />
-                    </a>
-        </Link> :
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link
+                href={{
+                pathname: '/authors/[authorID]/[bookID]',
+                query: {
+                            authorID: authorData.authorID,
+                            bookID: book_release.bookid  }
+                        }}
+                className={booksStyles.gridItem} key={book_release.bookid}>
+                        <a>
+                            <Image 
+                                src={book_release.image}
+                                alt={`${book_release.title}`}
+                                width={400}
+                                height={570}
+                            />
+                        </a>
+            </Link> 
+        </motion.div> :
         <div className={booksStyles.gridItem} key={book_release.bookid}>
             <Image 
                 src={book_release.image}
