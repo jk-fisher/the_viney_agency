@@ -22,7 +22,7 @@ const Authors = ({ allAuthorData }) => {
     const authors = allAuthorData.map((author) => {
         console.log(author)
         return (
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <motion.div key={author.id} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link href={`/authors/${author.id}`} className={styles.gridItem} key={author.id}>
                     <a>
                         <Image 
