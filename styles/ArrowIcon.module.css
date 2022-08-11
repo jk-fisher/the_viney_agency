@@ -4,11 +4,8 @@
     /* width: 100%; */
     /* z-index: 9; */
 }
-.icon {
+.hide {
     display: none;
-}
-@media screen and (min-height) {
-    
 }
 .icon {
     display: flex; 
@@ -18,5 +15,5 @@
     /* z-index: 9; */
     align-items: center;
     width: 100%;
-    /* position: absolute; */
+
 }

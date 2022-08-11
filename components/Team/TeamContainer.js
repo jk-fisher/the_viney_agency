@@ -2,10 +2,10 @@ import styles from '../../styles/CardTemplate.module.css'
 import TeamList from './TeamList'
 
 const TeamContainer = () => {
-    return ( <div className={styles.container}>
+    return ( <section>
         <h2 className={styles.header}>Meet our Team</h2>
         <TeamList />
-    </div> );
+    </section> );
 }
  
 export default TeamContainer;

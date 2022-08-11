@@ -1,8 +1,6 @@
 .footer {
     background-color: #014f5f;
     width: 100%;
-    position: relative;
-    z-index: 99;
 }
 .wrapper {
     display: grid;
