@@ -22,7 +22,7 @@ const ArrowIcon = () => {
                 viewBox="0 0 44 30" 
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg">
-                <path id="Vector 3" d="M22 16L0 0L22 29.5L44 0L22 16Z" fill="#39778B"/>
+                <path d="M22 16L0 0L22 29.5L44 0L22 16Z" fill="#39778B"/>
             </motion.svg>
 
         </div>

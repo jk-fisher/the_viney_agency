@@ -110,9 +110,9 @@ const getStaticProps = async ({params}) => {
   let dateObj = new Date(authorData.date)
   const uniqueID = `${dateObj.getDate()}${dateObj.getHours()}${dateObj.getMinutes()}`;
   authorData.date = uniqueID;
-  // const body = await markdownToHtml(authorData.markdownBody);
-  // console.log('body_markdownToHtml', body)
-  // authorData.markdownBody = body;
+  const body = await markdownToHtml(authorData.markdownBody);
+  console.log('body_markdownToHtml', body)
+  authorData.markdownBody = body;
   const allBookData = getAllBookData(authorData)
 
   return {
