@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.201213Z
+date: 2022-08-12T11:08:56.647450Z
 first_name: Peter
 last_name: Cochrane
 url: null
@@ -7,9 +7,7 @@ twitter: PeterCochrane
 instagram: null
 image: /images/author_images/cochrane_peter.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Charlie Company
 ---
 Peter Cochrane was educated at Oxford University, where his studies were interrupted by the outbreak of the Second World war. Enlisting in the Army he served with the Cameron Highlanders. After the war he became a partner in publishers Chatto & Windus and subsequently with the printers Butler & Tanner.
 

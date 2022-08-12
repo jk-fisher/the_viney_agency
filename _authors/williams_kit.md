@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.632216Z
+date: 2022-08-12T11:08:57.422661Z
 first_name: Kit
 last_name: Williams
 url: null
@@ -7,9 +7,7 @@ twitter: KitWilliams
 instagram: null
 image: /images/author_images/williams_kit.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Masquerade
 ---
 Kit Williams is widely acknowledged as one of Britain's most innovative artists and craftsmen, whose highly detailed and original work is widely collected. Masquerade was published in 1979 and this intricately conceived, ground-breaking illustrated book became a global bestselling phenomenon with sales exceeding two million copies.
 

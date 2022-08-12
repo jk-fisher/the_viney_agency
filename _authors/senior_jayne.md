@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.566218Z
+date: 2022-08-12T11:08:57.307664Z
 first_name: Jayne
 last_name: Senior
 url: null
@@ -7,9 +7,7 @@ twitter: JayneSenior
 instagram: null
 image: /images/author_images/senior_jayne.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Broken And Betrayed
 ---
 Jayne Senior was born in Rotherham in in 1964 and has lived there all her life. In the late 1980s she became a youth worker and later managed a council-funded project called Risky Business, which worked with young girls involved in prostitution.
 

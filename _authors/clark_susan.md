@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.195213Z
+date: 2022-08-12T11:08:56.637339Z
 first_name: Susan
 last_name: Clark
 url: null
@@ -7,9 +7,7 @@ twitter: SusanClark
 instagram: null
 image: /images/author_images/clark_susan.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Loving You From Here
 ---
 Born in the two decades prior to World War I, George Patton, Bernard Montgomery, and Erwin Rommel became among the most recognized and successful military leaders of the 20th century. However, as acclaimed military historian Lloyd Clark reveals in his penetrating and insightful braided chronicle of their lives, they charted very different, often interrupted, paths to their ultimate leadership positions commanding hundreds of thousands of troops during World War II and celebrated as heroes in the United States, Britain, and Germany.
 

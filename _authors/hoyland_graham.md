@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.343217Z
+date: 2022-08-12T11:08:56.896412Z
 first_name: Graham
 last_name: Hoyland
 url: www.grahamhoyland.com
@@ -7,9 +7,9 @@ twitter: GrahamHoyland
 instagram: null
 image: /images/author_images/hoyland_graham.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Walking Through Spring
+  - book_title: Yeti - An Abominable History
+  - book_title: Merlin
 ---
 In 1993, Graham Hoyland became the 15th Englishman to climb Everest, having become obsessed by the mountain and the myth of what happened to Mallory and Irvine. It was his evidence that eventually led to the discovery of Mallory's body and it will be his evidence that may lead to the discovery of Sandy Irvine's. His Last Hours on Everest is the most detailed reconstruction of what happened after the two English climbing legends left the camp on that fateful day. Combining personal experience, the physical evidence found on the mountain and an insight into the hearts and minds of the two climbers, Graham Hoyland produces the most compelling description of what actually happened and the answer to that most intriguing of questions - did they actually climb Everest?
 

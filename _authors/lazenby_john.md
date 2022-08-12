@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.400219Z
+date: 2022-08-12T11:08:57.042413Z
 first_name: John
 last_name: Lazenby
 url: www.themediaanimal.co.uk
@@ -7,9 +7,8 @@ twitter: JohnLazenby
 instagram: null
 image: /images/author_images/lazenby_john.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: The Strangers Who Came Home
+  - book_title: Edging Towards Darkness
 ---
 John Lazenby is a journalist and author who began his career on local newspapers in Sussex more than 25 years ago. He joined the Press Association in London in 1989, working as an editor on the news desk before transferring to sport. In his role as a rugby and cricket writer, he travelled the UK and Europe, filing copy for morning and evening newspapers throughout the country. Since 1997, he has worked as a freelance journalist on national newspapers, including the Times, the Sunday Times, the Guardian, the Daily Telegraph, The Sunday Telegraph and the Independent. In addition to his career as a print journalist, he has worked as a freelance sports broadcaster for radio and television.
 

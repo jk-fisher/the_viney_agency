@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.457214Z
+date: 2022-08-12T11:08:57.151413Z
 first_name: Mark
 last_name: Mason
 url: www.theimportanceofbeingtrivial.com
@@ -7,9 +7,11 @@ twitter: MarkMason
 instagram: null
 image: /images/author_images/mason_mark.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Walk The Lines
+  - book_title: Move Along Please
+  - book_title: Mail Obsession
+  - book_title: Question Time
+  - book_title: The Book Of Seconds
 ---
 Mark Mason's non-fiction includes Walk the Lines, for which he walked the entire London Underground system overground ('awesome' - BBC6 Music; 'an extraordinary odyssey' - Robert Elms), and The Importance of Being Trivial, a look at why we're fascinated with trivia ('an irresistibly hapless charm' - The Guardian ; 'I loved the book' - Richard and Judy). 
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.464214Z
+date: 2022-08-12T11:08:57.164413Z
 first_name: Roisin
 last_name: Mcauley
 url: www.roisinmcauley.com
@@ -7,9 +7,11 @@ twitter: RoisinMcauley
 instagram: null
 image: /images/author_images/mcauley_roisin.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Singing Bird
+  - book_title: Meeting Point
+  - book_title: Finding Home
+  - book_title: French Secrets
+  - book_title: Bogman
 ---
 Roisin McAuley grew up in County Tyrone in Northern Ireland and now lives in Belfast. 
 

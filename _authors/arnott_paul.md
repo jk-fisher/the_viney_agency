@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.135245Z
+date: 2022-08-12T11:08:56.528417Z
 first_name: Paul
 last_name: Arnott
 url: null
@@ -7,9 +7,10 @@ twitter: PaulArnott
 instagram: null
 image: /images/author_images/arnott_paul.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Windrush The Soul Of A Ship
+  - book_title: Is Anybody Up There
+  - book_title: Let Me Eat Cake
+  - book_title: A Good Likeness
 ---
 Paul Arnott's career in media began at*The Independent*and*Time Out*as an arts correspondent before becoming a television producer, mainly with Channel Four - for whom he filmed arts documentaries from Bangalore to Johannesburg, New York to Cannes. His company, Edenwood Productions, has produced a diverse output, from the RSC film of*A Midsummer Night's Dream*to the BBC's*Love and Betrayal in India: White Mughals*presented by William Dalrymple.
 

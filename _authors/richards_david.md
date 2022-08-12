@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.559218Z
+date: 2022-08-12T11:08:57.296696Z
 first_name: David
 last_name: Richards
 url: null
@@ -7,9 +7,8 @@ twitter: DavidRichards
 instagram: null
 image: /images/author_images/richards_david.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Taking Command
+  - book_title: Gold Rush
 ---
 Jim Richards became obsessed with finding gold and diamonds in his teens, he went on to be closely involved in numerous mineral discoveries around the world. This includes the 'Omai' gold deposit in Guyana, which became the largest gold mine in South America, and the 'Railway' iron ore deposit in Western Australia.
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.189213Z
+date: 2022-08-12T11:08:56.628341Z
 first_name: Lloyd
 last_name: Clark
 url: null
@@ -7,9 +7,11 @@ twitter: LloydClark
 instagram: null
 image: /images/author_images/clark_lloyd.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Anzio The Friction Of War
+  - book_title: Arnhem - Jumping The Rhine 1944 And 1945
+  - book_title: Kursk The Greatest Tank Battle
+  - book_title: Blitzkrieg
+  - book_title: The Commanders
 ---
 Lloyd Clark is Professor of Modern War Studies and Contemporary Military History at University of Buckingham. He is also a senior academic in the Department of War Studies, The Royal Military Academy Sandhurst, a Fellow of the Royal Historical Society, a member of the British Commission for Military History and historian to the Airborne Assault Normandy Trust. 
 

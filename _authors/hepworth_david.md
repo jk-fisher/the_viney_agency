@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.310216Z
+date: 2022-08-12T11:08:56.839413Z
 first_name: David
 last_name: Hepworth
 url: www.whatsheonaboutnow.blogspot.co.uk 
@@ -7,9 +7,11 @@ twitter: DavidHepworth
 instagram: null
 image: /images/author_images/hepworth_david.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Never A Dull Moment
+  - book_title: Uncommon People
+  - book_title: Nothing Is Real
+  - book_title: A Fabulous Creation
+  - book_title: Overpaid Oversexed And Over There
 ---
 David Hepworth has been writing about, broadcasting about and speaking about music since the 70s. He was involved in the launch and/or editing of magazines like Smash Hits, Q, Mojo and The Word among many others. He was one of the presenters of the BBC rock music programme Whistle Test and one of the anchors of the Corporation's coverage of Live Aid in 1985. He has won the 'Editor of the Year' and 'Writer of the Year' awards from the Professional Publishers Association and the 'Mark Boxer Award' from the British Society of Magazine Editors. He is the radio columnist for the Saturday Guardian and a regular media correspondent for the newspaper.
 

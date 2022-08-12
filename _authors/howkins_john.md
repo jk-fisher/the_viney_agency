@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.336217Z
+date: 2022-08-12T11:08:56.884414Z
 first_name: John
 last_name: Howkins
 url: null
@@ -7,9 +7,7 @@ twitter: JohnHowkins
 instagram: null
 image: /images/author_images/howkins_john.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Invisible Work
 ---
 John Howkins is a leading figure in the global understanding of work and creativity. He is the author of the seminal The Creative Economy which has been translated into fourteen languages.
 

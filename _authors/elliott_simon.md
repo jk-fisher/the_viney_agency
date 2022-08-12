@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.265217Z
+date: 2022-08-12T11:08:56.754414Z
 first_name: Simon
 last_name: Elliott
 url: www.simonelliott.net
@@ -7,9 +7,11 @@ twitter: SimonElliott
 instagram: null
 image: /images/author_images/elliott_simon.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Sea Eagles Of Empire
+  - book_title: Empire State
+  - book_title: Septimius Severus In Scotland
+  - book_title: Julius Caesar - Rome'S Greatest Warlord
+  - book_title: The Legacy Of Rome
 ---
 Simon Elliott holds a PhD from the University of Kent where he studied the military presence in Britain during the Roman occupation, and where he is now an Honorary Research Fellow. He also has an MA in War Studies from KCL and an MA in Archaeology from UCL.
 

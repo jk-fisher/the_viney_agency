@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.419217Z
+date: 2022-08-12T11:08:57.073412Z
 first_name: David
 last_name: Loyn
 url: null
@@ -7,9 +7,8 @@ twitter: DavidLoyn
 instagram: null
 image: /images/author_images/loyn_david.jpg
 book_releases:
-  - book_title: We Need Snowflakes
+  - book_title: Frontline
   - book_title: The Long War
-  - book_title: Fake
 ---
 David Loyn has been a foreign correspondent for 30 years, mostly with the BBC. Among other prizes he is one of only two journalists to have won both of Britain's leading awards in television and radio news - Sony Radio Reporter of the Year and Royal Television Society Journalist of the Year.
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.168248Z
+date: 2022-08-12T11:08:56.589339Z
 first_name: Chris
 last_name: Bradford
 url: www.chrisbradford.co.uk
@@ -7,9 +7,22 @@ twitter: ChrisBradford
 instagram: null
 image: /images/author_images/bradford_chris.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Young Samurai - The Way Of The Warrior
+  - book_title: Young Samurai - The Way Of The Sword
+  - book_title: Young Samurai - The Ring Of Earth
+  - book_title: Young Samurai - The Way Of The Dragon
+  - book_title: Young Samurai - The Ring Of Fire
+  - book_title: Young Samurai - The Ring Of Water
+  - book_title: Young Samurai - The Ring Of Sky
+  - book_title: Young Samurai - The Ring Of Wind
+  - book_title: Bodyguard - Hostage
+  - book_title: Bodyguard - Ransom
+  - book_title: Bodyguard - Ambush
+  - book_title: Bodyguard - Target
+  - book_title: Bodyguard - Assassin
+  - book_title: Bodyguard - Fugitive
+  - book_title: Young Samurai The Return Of The Warrior
+  - book_title: The Soul Hunters
 ---
 Chris Bradford is a multi-million copy bestselling author who is renowned for his live events and for practising 'method writing'. 
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.584219Z
+date: 2022-08-12T11:08:57.338703Z
 first_name: Martin
 last_name: Spinelli
 url: null
@@ -7,9 +7,7 @@ twitter: MartinSpinelli
 instagram: null
 image: /images/author_images/spinelli_martin.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: After The Crash
 ---
 Martin Spinelli produced award-winning news features for National Public Radio.  In the mid-1990s he produced cutting-edge pieces heard on innovative stations around the world, as well as on BBC Radio 3 and Radio 4.  Both his benchmark radio art series Radio Radio and LINEbreak are included in the permanent collection of the Museum of Television and Radio in New York while all of his radio work and writing are archived in the Martin Spinelli Collection at the University at Buffalo Library.
 

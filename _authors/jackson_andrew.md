@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.356217Z
+date: 2022-08-12T11:08:56.919414Z
 first_name: Andrew
 last_name: Jackson
 url: null
@@ -7,9 +7,7 @@ twitter: AndrewJackson
 instagram: null
 image: /images/author_images/jackson_andrew.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: 1973 - Rock At The Crossroads
 ---
 Andrew Jackson has written for Yahoo! Movies, music magazines such as Burn Lounge and Mean Streets, and copy edited the Hollywood monthly Ingenue.  He also directed and co-wrote the feature film The Discontents (2004) starring Perry King and Amy Madigan. 
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.596219Z
+date: 2022-08-12T11:08:57.351662Z
 first_name: Mark
 last_name: Stevenson
 url: null
@@ -7,9 +7,8 @@ twitter: MarkStevenson
 instagram: null
 image: /images/author_images/stevenson_mark.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: An Optomist'S Tour Of The Future
+  - book_title: We Do Things Differently
 ---
 What do the CEO's of the world's largest corporations, the planet's biggest recording artists, senior government and military officials, influential NGOs and the most maverick investors have in common? They turn to Mark Stevenson to help them make sense of, and navigate, an uncertain future - so that we might create a better one.
 

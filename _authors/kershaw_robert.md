@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.388217Z
+date: 2022-08-12T11:08:57.006415Z
 first_name: Robert
 last_name: Kershaw
 url: www.robertjkershaw.com
@@ -7,9 +7,15 @@ twitter: RobertKershaw
 instagram: null
 image: /images/author_images/kershaw_robert.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Tank Men
+  - book_title: Never Surrender
+  - book_title: Sky Men
+  - book_title: 24 Hours At Waterloo
+  - book_title: A Street In Arnhem
+  - book_title: 24 Hours At The Somme
+  - book_title: 24 Hours At Balaclava
+  - book_title: Landing On The Edge Of Eternity
+  - book_title: Borodino Field
 ---
 Born in 1950 and a graduate of Reading University, Robert Kershaw joined the Parachute Regiment in 1973. He served numerous regimental appointments before being selected to command the 10th Battalion (10 PARA). His active service includes several tours in Northern Ireland, the First Gulf War and Bosnia. He has exercised in many parts of the world and served in the Middle East and Africa. His final army appointment was with the Intelligence Division at HQ NATO in Brussels Belgium.
 

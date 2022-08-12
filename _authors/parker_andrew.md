@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.514218Z
+date: 2022-08-12T11:08:57.216414Z
 first_name: Andrew
 last_name: Parker
 url: www.gtc.ox.ac.uk/andrew-parker
@@ -7,9 +7,9 @@ twitter: AndrewParker
 instagram: null
 image: /images/author_images/parker_andrew.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: The Blink Of An Eye
+  - book_title: Seven Deadly Colours
+  - book_title: The Genesis Enigma
 ---
 Professor Andrew Parker spent ten years studying marine biology and physics in Australia, working on structural colour in nature. Returning to the UK as a Royal Society University Research Fellow at Oxford University in 1999, he worked on colour, vision, biomimetics and evolution. In 2000, based on his 'Light Switch Theory' for the cause of the Big Bang in evolution, he was selected as one of the top eight scientists in the UK as a 'Scientist for the New Century' by The Royal Institution. The Light Switch Theory holds that the Big Bang of evolution, 520 million years ago, was triggered by the evolution of the eye. This is the uncontested solution to the most dramatic event in the history of life, most famously supported by Francis Crick (co-discoverer of the structure of DNA). Today he works at Oxford University's Templeton College. He is also Research Leader at The Natural History Museum, London and a Professor at Shanghai Jiao Tong University.
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.425218Z
+date: 2022-08-12T11:08:57.084416Z
 first_name: Monty
 last_name: Lyman
 url: www.montylyman.com
@@ -7,9 +7,8 @@ twitter: MontyLyman
 instagram: null
 image: /images/author_images/lyman_monty.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: The Remarkable Life Of The Skin
+  - book_title: The Painful Truth
 ---
 Monty Lyman is a medical doctor, author and research fellow at the University of Oxford. His clinical, research and writing interests focus on the relationship between mind and body. 
 

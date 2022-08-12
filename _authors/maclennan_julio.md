@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.444213Z
+date: 2022-08-12T11:08:57.128413Z
 first_name: Julio
 last_name: Maclennan
 url: null
@@ -7,9 +7,7 @@ twitter: JulioMaclennan
 instagram: null
 image: /images/author_images/maclennan_julio.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: Europa
 ---
 Julio MacLennan has followed an academic career mainly based in Oxford University. He has been Santander Iberian and European Studies Fellow at St. Antony's College Oxford, and Prince of Asturias Visiting Professor at Tufts University and Fletcher School of Diplomacy in Boston, among other academic posts in the USA, UK and Spain.
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-09T12:33:17.609216Z
+date: 2022-08-12T11:08:57.372696Z
 first_name: Michael
 last_name: Walsh
 url: null
@@ -7,9 +7,7 @@ twitter: MichaelWalsh
 instagram: null
 image: /images/author_images/walsh_michael.jpg
 book_releases:
-  - book_title: We Need Snowflakes
-  - book_title: The Long War
-  - book_title: Fake
+  - book_title: The King'S Bed
 ---
 Michael Walsh won several awards for investigative journalism and a Royal Television Society Award. 
 
