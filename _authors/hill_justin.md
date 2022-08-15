@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.851413Z
+date: 2022-08-09T12:33:17.317217Z
 first_name: Justin
 last_name: Hill
 url: null
@@ -7,9 +7,9 @@ twitter: JustinHill
 instagram: null
 image: /images/author_images/hill_justin.jpg
 book_releases:
-  - book_title: Passing Under Heaven
-  - book_title: Shieldwall
-  - book_title: Viking Fire
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 After leaving school, Justin Hill spent seven years as a volunteer with Voluntary Service Overseas in rural China and Africa. His first novel, The Drink and Dream Teahouse was chosen by the Washington Post as one of the Top Novels of 2001.  It went on to win the 2003 Geoffrey Faber Memorial Prize, the 2002 Betty Trask Award. It has been banned by the Chinese  government. 
 

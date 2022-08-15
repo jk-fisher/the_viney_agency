@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.676456Z
+date: 2022-08-09T12:33:17.222223Z
 first_name: Mark
 last_name: Cooper
 url: null
@@ -7,7 +7,9 @@ twitter: MarkCooper
 instagram: null
 image: /images/author_images/cooper_mark.jpg
 book_releases:
-  - book_title: Later
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Mark Cooper began writing about music when he reviewed The Sex Pistols' last ever show at San Francisco's Winterland for Record Mirror in January 1978 and then chronicled the new wave of British bands launching on the West Coast while writing features on Fleetwood Mac and The Jacksons. After returning to London he regularly wrote for Q, The Guardian, City Limits and Mojo.
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.737447Z
+date: 2022-08-09T12:33:17.253216Z
 first_name: Paul
 last_name: Dowswell
 url: www.pauldowswell.com
@@ -7,18 +7,9 @@ twitter: PaulDowswell
 instagram: null
 image: /images/author_images/dowswell_paul.jpg
 book_releases:
-  - book_title: Powder Monkey
-  - book_title: Prison Ship
-  - book_title: Battle Fleet
-  - book_title: Ausländer
-  - book_title: Cabinet Of Curiosities
-  - book_title: Sektion 20
-  - book_title: Eleven Eleven
-  - book_title: Red Shadow
-  - book_title: Bomber
-  - book_title: Wave
-  - book_title: Wolf Children
-  - book_title: The Great Revolt
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Paul Dowswell writes award-winning historical fiction for young adults. He is best known for his Bloomsbury novel Auslander, which won the 2019 Trinity Schools Book Award and the 2011 Hamelin Associazione Culturale Book Prize and been shortlisted for 19 other UK and international book awards since 2009. 
 

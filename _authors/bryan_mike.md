@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.608307Z
+date: 2022-08-09T12:33:17.177245Z
 first_name: Mike
 last_name: Bryan
 url: null
@@ -7,7 +7,9 @@ twitter: MikeBryan
 instagram: null
 image: /images/author_images/bryan_mike.jpg
 book_releases:
-  - book_title: Roman Britain And Where To Find It
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 INTERNAL
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.401669Z
+date: 2022-08-09T12:33:17.620217Z
 first_name: Roy
 last_name: Weekz
 url: null
@@ -7,7 +7,9 @@ twitter: RoyWeekz
 instagram: null
 image: /images/author_images/weekz_roy.jpg
 book_releases:
-  - book_title: The Best Of The Turnip Prize
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Trevor Prideaux was born in Lynton, North Devon where he was the youngest son of nine siblings. He is the founder of the Turnip Prize. He lives in Somerset.
 

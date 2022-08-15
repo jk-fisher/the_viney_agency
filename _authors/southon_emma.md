@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.328696Z
+date: 2022-08-09T12:33:17.578219Z
 first_name: Emma
 last_name: Southon
 url: www.emmasouthon.com 
@@ -7,8 +7,9 @@ twitter: EmmaSouthon
 instagram: null
 image: /images/author_images/southon_emma.jpg
 book_releases:
-  - book_title: Agrippina
-  - book_title: A Fatal Thing Happened On The Way To The Forum
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Dr Emma Southon has a PhD in Ancient History from the University of Birmingham. A version of her thesis was published in 2016 as Marriage, Sex and Death: The Family and the Fall of the Roman West. After a few years teaching Ancient and Medieval history, followed by some years teaching academic writing she quit academia and started writing for her own enjoyment. 
 

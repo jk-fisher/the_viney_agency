@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.930414Z
+date: 2022-08-09T12:33:17.363217Z
 first_name: Hannah
 last_name: Jewell
 url: null
@@ -7,9 +7,9 @@ twitter: HannahJewell
 instagram: null
 image: /images/author_images/jewell_hannah.jpg
 book_releases:
-  - book_title: 100 Nasty Women Of History
-  - book_title: She Caused A Riot
   - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Hannah Jewell is a former senior writer at BuzzFeed UK, where she became known for her humour writing about gender and her satire of UK and US politics. She presented BuzzFeed's live 2016 election night show, which was watched by nearly 7 million people. Born in the UK, she grew up in California and did her undergraduate study at UC Berkeley in Middle East Studies, then moved to the UK for an MPhil in International Relations and Politics at Cambridge. 
 

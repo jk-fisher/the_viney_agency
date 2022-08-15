@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.206413Z
+date: 2022-08-09T12:33:17.508218Z
 first_name: Aleksandr
 last_name: Orlov
 url: null
@@ -7,7 +7,9 @@ twitter: AleksandrOrlov
 instagram: null
 image: /images/author_images/orlov_aleksandr.jpg
 book_releases:
-  - book_title: Meerkat Tales
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Aleksandr Orlov is businessman, website creator, movie mogul, boss of Sergei and now a mega-bestselling author. He comes from a long line of courageous meerkats originally from the Kalahari region.
 

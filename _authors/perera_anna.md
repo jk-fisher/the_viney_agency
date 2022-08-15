@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.227413Z
+date: 2022-08-09T12:33:17.521218Z
 first_name: Anna
 last_name: Perera
 url: www.annaperera.com
@@ -7,8 +7,9 @@ twitter: AnnaPerera
 instagram: null
 image: /images/author_images/perera_anna.jpg
 book_releases:
-  - book_title: Guantanamo Boy
-  - book_title: The Glass Collector
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Anna Perera has been a part time chambermaid, waitress, post-mistress, anything to bring in cash when she was growing up twenty miles from London before training as a teacher. She taught English in two London secondary schools before running a unit for teenage boys excluded from mainstream school. 
 

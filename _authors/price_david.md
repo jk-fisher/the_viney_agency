@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.247702Z
+date: 2022-08-09T12:33:17.533219Z
 first_name: David
 last_name: Price
 url: www.engagedlearning.co.uk/
@@ -7,11 +7,9 @@ twitter: DavidPrice
 instagram: null
 image: /images/author_images/price_david.jpg
 book_releases:
-  - book_title: A Bomber Crew Mystery
-  - book_title: The Crew
-  - book_title: Mosquito Men
-  - book_title: Open
-  - book_title: The Power Of Us
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 David Price is a writer, learning futurist, director of Educational Arts and a senior associate at the Innovation Unit. His field of expertise is learning - specifically how to make learning engaging.
 

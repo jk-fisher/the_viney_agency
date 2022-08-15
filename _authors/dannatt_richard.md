@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.711418Z
+date: 2022-08-09T12:33:17.240216Z
 first_name: Richard
 last_name: Dannatt
 url: null
@@ -7,8 +7,9 @@ twitter: RichardDannatt
 instagram: null
 image: /images/author_images/dannatt_richard.jpg
 book_releases:
-  - book_title: Leading From The Front
-  - book_title: Boots On The Ground
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 General Lord Richard Dannatt was commissioned into The Green Howards regiment in 1971. He served with the 1st Battalion in Northern Ireland (where he won the Military Cross), Cyprus and Germany and commanded the Battalion in the Airmobile role from 1989 to 1991. From 1994 to 1996 he commanded 4th Armoured Brigade in Germany and Bosnia. He took command of the 3rd (United Kingdom) Division in January 1999, also serving in Kosovo that year as Commander British Forces. In 2000 he returned to Bosnia as the Deputy Commander Operations of the Stabilisation Force, and from 2001 to 2002 he was the Assistant Chief of the General Staff in the Ministry of Defence before taking command of NATO's Allied Rapid Reaction Corps. In 2005 he became Commander-in-Chief, Land Command.
 

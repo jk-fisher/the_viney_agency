@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.286661Z
+date: 2022-08-09T12:33:17.553219Z
 first_name: Tom
 last_name: Pugh
 url: www.tompughwriter.com/
@@ -7,9 +7,9 @@ twitter: TomPugh
 instagram: null
 image: /images/author_images/pugh_tom.jpg
 book_releases:
-  - book_title: The Devil'S Library
-  - book_title: The Golden Cage
-  - book_title: The Lord Of Worlds
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Tom Pugh has a First in Art history and works as a copywriter and speechwriter for a London-based public affairs firm, an international auction house and a Japanese publisher. He lives in Berlin.
 

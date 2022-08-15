@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.953418Z
+date: 2022-08-09T12:33:17.375217Z
 first_name: Don
 last_name: Jordan
 url: null
@@ -7,7 +7,9 @@ twitter: DonJordan
 instagram: null
 image: /images/author_images/jordan_don.jpg
 book_releases:
-  - book_title: The King'S City
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Don Jordan was born in Northern Ireland, but has lived for many years in London and considers the city his home. His first paid writing job was reporting on a dog show for a local newspaper in Lincolnshire. An allergy to dog hair drove him into a job with the BBC, first in London on the daily current affairs programme Nationwide, and then to the BBC's Belfast office. He next joined the flagship ITV current affairs programme World in Action, where he worked as a producer and director for twelve years.
 

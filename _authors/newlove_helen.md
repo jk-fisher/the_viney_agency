@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.188413Z
+date: 2022-08-09T12:33:17.489219Z
 first_name: Helen
 last_name: Newlove
 url: null
@@ -7,7 +7,9 @@ twitter: HelenNewlove
 instagram: null
 image: /images/author_images/newlove_helen.jpg
 book_releases:
-  - book_title: It Could Happen To You
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Helen Newlove was born in 1961 and grew up in the close community of Irlam, Manchester, a place which respected the values of hard work and good neighbourliness. When she was 20, she met Garry Newlove at a local disco. They married in June 1986 and had three daughters. On August 10 2007 her husband was brutally beaten by a gang of youths outside the family home in Warrington. He died two days later. It was an act of violence that shocked the nation and would have a profound impact on the lives of Helen and their children. 
 

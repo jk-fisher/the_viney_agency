@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.551341Z
+date: 2022-08-09T12:33:17.148247Z
 first_name: Chris
 last_name: Blackhurst
 url: null
@@ -7,7 +7,9 @@ twitter: ChrisBlackhurst
 instagram: null
 image: /images/author_images/blackhurst_chris.jpg
 book_releases:
-  - book_title: Too Big To Jail
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Chris Blackhurst is widely acknowledged as one of the world's foremost financial journalists and commentators, writing across a broad range of subjects.
 

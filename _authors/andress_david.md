@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.515307Z
+date: 2022-08-09T12:33:17.129212Z
 first_name: David
 last_name: Andress
 url: null
@@ -7,11 +7,9 @@ twitter: DavidAndress
 instagram: null
 image: /images/author_images/andress_david.jpg
 book_releases:
-  - book_title: The Terror
-  - book_title: 1789
-  - book_title: The Savage Storm
-  - book_title: Cultural Dementia
-  - book_title: The French Revolution
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 David Andress is Professor of Modern History at the University of Portsmouth, where he has taught since 1994. He studied History at the University of York between 1987 and 1990, and returned there for a doctorate, awarded in 1995.
 

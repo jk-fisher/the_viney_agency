@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.116417Z
+date: 2022-08-09T12:33:17.438218Z
 first_name: Katherine
 last_name: Macinnes
 url: null
@@ -7,8 +7,9 @@ twitter: KatherineMacinnes
 instagram: null
 image: /images/author_images/macinnes_katherine.jpg
 book_releases:
-  - book_title: Woman With The Iceberg Eyes
-  - book_title: Snow Widows
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Katherine MacInnes has written three plays and Woman with the Iceberg Eyes, a biography of Oriana Wilson published by the History Press in 2019. 
 

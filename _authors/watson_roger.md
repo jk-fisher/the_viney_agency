@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.382664Z
+date: 2022-08-09T12:33:17.614216Z
 first_name: Roger
 last_name: Watson
 url: null
@@ -7,7 +7,9 @@ twitter: RogerWatson
 instagram: null
 image: /images/author_images/watson_roger.jpg
 book_releases:
-  - book_title: Capturing The Light
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Roger Watson was born in rural Tennessee and began his museum career at the Kresge Art Museum. After several years of consulting work with various private and institutional collections he returned to the museum world, working at the George Eastman House in Rochester, New York where he curated several exhibitions and helped create the Historic Process Workshops which revived 19th century photographic practices.
 

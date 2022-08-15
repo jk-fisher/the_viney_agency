@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.063412Z
+date: 2022-08-09T12:33:17.412217Z
 first_name: Grevel
 last_name: Lindop
 url: www.grevel.co.uk
@@ -7,7 +7,9 @@ twitter: GrevelLindop
 instagram: null
 image: /images/author_images/lindop_grevel.jpg
 book_releases:
-  - book_title: Travels On The Dance Floor
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 I was born in Liverpool and educated at Oxford, where I read English. In 1977 I published my first full-length collection of poems, Fools' Paradise. That book has been followed by five other books of poems: Tourists (1987), A Prismatic Toy (1991), Selected Poems (2000); then - published by Wave Books in Australia - the first four sections of my long poem-in-progress on the life of the Buddha, Touching the Earth, and another collection of poems, Playing With Fire, from Carcanet Press in 2006. My new collection, Luna Park, was published by Carcanet in 2015.
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.574340Z
+date: 2022-08-09T12:33:17.160212Z
 first_name: Jeremy
 last_name: Borum
 url: www.jeremyborum.com
@@ -7,7 +7,9 @@ twitter: JeremyBorum
 instagram: null
 image: /images/author_images/borum_jeremy.jpg
 book_releases:
-  - book_title: Guerilla Film Scoring
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Jeremy Borum is a film composer, orchestrator, producer, and performer. Among the first wave of working composers to see the digital de-monetization of music as a piece of history, not an on-going process, he built a successful music career in an uncertain industry that is re-inventing itself. He is credited on numerous features, shorts and albums. An active member of the Society of Composers and Lyricists, he is a contributing author to their quarterly journal The Score.
 

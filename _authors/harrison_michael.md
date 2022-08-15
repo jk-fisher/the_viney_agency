@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.826415Z
+date: 2022-08-09T12:33:17.303217Z
 first_name: Michael
 last_name: Harrison
 url: null
@@ -7,8 +7,9 @@ twitter: MichaelHarrison
 instagram: null
 image: /images/author_images/harrison_michael.jpg
 book_releases:
-  - book_title: Mr Charming
-  - book_title: Five Minutes To Midnight
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Michael Harrison is a journalist, writer and former corporate adviser. He was one of the founder members of The Independent in 1986, going on to become the newspaper's Business Editor and Deputy City Editor of the Evening Standard.
 

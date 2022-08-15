@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.539307Z
+date: 2022-08-09T12:33:17.141211Z
 first_name: Stephen
 last_name: Bates
 url: www.stephenbateswriter.com
@@ -7,12 +7,9 @@ twitter: StephenBates
 instagram: null
 image: /images/author_images/bates_stephen.jpg
 book_releases:
-  - book_title: The Photographer'S Boy
-  - book_title: The Poisoner
-  - book_title: Two Nations - Britain In 1846
-  - book_title: Regency Britain In The Year Of Waterloo
-  - book_title: Royalty Inc
-  - book_title: The Poisonous Solicitor
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Stephen Bates was educated at Oxford University, where he took a degree in Modern History. He was a journalist for 36 years, working for the BBC, Daily Telegraph and Daily Mail before joining the Guardian where he was subsequently education editor, political correspondent, European Affairs Editor, based in Brussels for five years, and finally the paper's religious affairs and royal correspondent. He reported from more than 40 countries on everything from wars and elections to royal visits, was named British religion writer of the year in 2005 and 2006 and is the author of three previous books: A Church at War: Anglicans and Homosexuality (Hodder and Stoughton); Asquith (Haus), a biography of the Edwardian prime minister and God's Own Country: Religion and Politics in the US (Hodder and Stoughton). A regular broadcaster, he also writes for the Spectator, New Statesman and Time magazine. He lives in Kent.
 

@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.979416Z
+date: 2022-08-09T12:33:17.381217Z
 first_name: Miranda
 last_name: Kaufmann
 url: www.mirandakaufmann.com
@@ -7,7 +7,9 @@ twitter: MirandaKaufmann
 instagram: null
 image: /images/author_images/kaufmann_miranda.jpg
 book_releases:
-  - book_title: Black Tudors
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Miranda Kaufmann read History at Christ Church, Oxford, where she completed her doctorate on 'Africans in Britain, 1500-1640'. She has published articles in journals such as Historical Research and Notes & Queries as well as contributing to reference works on both sides of the Atlantic, including the Oxford Dictionary of National Biography (OUP) the Oxford Companion to Black British History (OUP), and the Encyclopaedia of Blacks in European History and Culture (Greenwood).
 

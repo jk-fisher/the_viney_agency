@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.872412Z
+date: 2022-08-09T12:33:17.329217Z
 first_name: Mark
 last_name: Hollingsworth
 url: null
@@ -7,8 +7,9 @@ twitter: MarkHollingsworth
 instagram: null
 image: /images/author_images/hollingsworth_mark.jpg
 book_releases:
-  - book_title: Saudi Babylon
-  - book_title: Londongrad
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Mark Hollingsworth is the author of Londongrad - From Russia With Cash (HarperCollins, 2012) and an expert on the activities of Russian Oligarchs.
 

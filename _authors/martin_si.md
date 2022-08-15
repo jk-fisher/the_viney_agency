@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.138413Z
+date: 2022-08-09T12:33:17.451214Z
 first_name: Si
 last_name: Martin
 url: www.simartin.org.uk
@@ -7,7 +7,9 @@ twitter: SiMartin
 instagram: null
 image: /images/author_images/martin_si.jpg
 book_releases:
-  - book_title: Incomparable World
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 S.I. Martin works with museums, archives and the education sector to bring diverse histories to wider audiences. He has published five books of historical fiction and non-fiction for adult and teenage readers.
 

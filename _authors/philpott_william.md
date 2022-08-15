@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.237449Z
+date: 2022-08-09T12:33:17.527218Z
 first_name: William
 last_name: Philpott
 url: null
@@ -7,8 +7,9 @@ twitter: WilliamPhilpott
 instagram: null
 image: /images/author_images/philpott_william.jpg
 book_releases:
-  - book_title: Bloody Victory
-  - book_title: War Of Attrition
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Professor William Philpott teaches the history of warfare in the Department of War Studies, King' College London, an internationally renowned centre for the study of war and conflict. He taught modern European and international history in a number of British universities, before joining King's College in 2001 as their historian of the First World War. He specialises in the history of Anglo-French relations, British strategy, and the military operations of the French army, and has published several books and more than twenty scholarly articles and chapters on these subjects.
 

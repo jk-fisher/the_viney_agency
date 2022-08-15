@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.907416Z
+date: 2022-08-09T12:33:17.349217Z
 first_name: Robin
 last_name: Ince
 url: www.robinince.com
@@ -7,10 +7,9 @@ twitter: RobinInce
 instagram: null
 image: /images/author_images/ince_robin.jpg
 book_releases:
-  - book_title: How To Build A Universe
-  - book_title: I'M A Joke And So Are You
-  - book_title: The Importance Of Being Interested
-  - book_title: Bibliomaniac
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Robin Ince is widely recognised as one of the UK's most accomplished, versatile comedians and writers, with a string of awards and media appearances to his name.
 

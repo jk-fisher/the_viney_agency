@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:56.690413Z
+date: 2022-08-09T12:33:17.228216Z
 first_name: Charlie
 last_name: Croker
 url: www.lostintranslationbook.com
@@ -7,11 +7,9 @@ twitter: CharlieCroker
 instagram: null
 image: /images/author_images/croker_charlie.jpg
 book_releases:
-  - book_title: Lost In Translation
-  - book_title: Still Lost In Translation
-  - book_title: 8 Out Of 10 Brits
-  - book_title: Terms Of Unemployment
-  - book_title: Utterly Lost In Translation
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Several years ago, someone told Charlie Croker about a Japanese car hire leaflet that read 'When passenger of foot heave in sight, tootle the horn. Trumpet him melodiously at first, but if he still obstacles your passage then tootle him with vigor.' A short while later Croker found himself on a ferry to the Spanish island of La Gomera, reading the instruction 'Keep this ticket up the end of your trip' and found himself thinking 'there might be a book in this …'
 

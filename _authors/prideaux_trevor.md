@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.275661Z
+date: 2022-08-09T12:33:17.547218Z
 first_name: Trevor
 last_name: Prideaux
 url: null
@@ -7,7 +7,9 @@ twitter: TrevorPrideaux
 instagram: null
 image: /images/author_images/prideaux_trevor.jpg
 book_releases:
-  - book_title: The Best Of The Turnip Prize
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 INTERNAL
 

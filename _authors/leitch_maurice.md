@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.053412Z
+date: 2022-08-09T12:33:17.406217Z
 first_name: Maurice
 last_name: Leitch
 url: null
@@ -7,8 +7,9 @@ twitter: MauriceLeitch
 instagram: null
 image: /images/author_images/leitch_maurice.jpg
 book_releases:
-  - book_title: Seeking Mr Hare
-  - book_title: Gone To Earth
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Maurice Leitch is author of The Liberty Lad, Poor Lazarus, Silver's City and many other works. In 1969, he moved to London from his native Northern Ireland to become a producer in the BBC's radio drama department. In 1977 he became editor of A Book at Bedtime on Radio Four until leaving in 1989 to write full-time. 
 

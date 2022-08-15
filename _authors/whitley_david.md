@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.411701Z
+date: 2022-08-09T12:33:17.626216Z
 first_name: David
 last_name: Whitley
 url: www.davidwhitley.co.uk
@@ -7,9 +7,9 @@ twitter: DavidWhitley
 instagram: null
 image: /images/author_images/whitley_david.jpg
 book_releases:
-  - book_title: The Midnight Charter
-  - book_title: The Children Of The Lost
-  - book_title: Canticle Of Whispers
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 David Whitley was born in Chester in 1984 and began composing stories shortly afterwards. His dream of writing Young Adult fiction was hugely encouraged when, at age 17 he was shortlisted for the Kathleen Fidler Award for a children's novel and at 20 he won the Cheshire Prize for Literature for a children's short story.
 

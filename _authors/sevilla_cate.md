@@ -1,5 +1,5 @@
 ---
-date: 2022-08-12T11:08:57.317697Z
+date: 2022-08-09T12:33:17.572219Z
 first_name: Cate
 last_name: Sevilla
 url: www.catesevilla.com
@@ -7,7 +7,9 @@ twitter: CateSevilla
 instagram: null
 image: /images/author_images/sevilla_cate.jpg
 book_releases:
-  - book_title: How To Work Without Losing Your Mind
+  - book_title: We Need Snowflakes
+  - book_title: The Long War
+  - book_title: Fake
 ---
 Cate Sevilla is an editor and journalist who has led and managed editorial teams for some of the world's largest media and technology companies - including Google, BuzzFeed and Microsoft. In 2021 she was appointed Editor-in-Chief of Huffpost UK.
 
