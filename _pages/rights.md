@@ -1,6 +1,8 @@
 ---
 title: Translation Rights
 image: /images/tv_film.jpg
-summary:
+about_summary:
 ---
-This is Rights page content...This is Rights page content...
+The Viney Agency sells English language rights directly to the United Kingdom and separately to North America. Foreign language sales are handled by the UK’s leading foreign rights team Intercontinental Literary Agency (ILA).
+
+For more information visit *[www.ila-agency.co.uk](http://www.ila-agency.co.uk/)* or email *[ila@ila-agency.co.uk](mailto:ila@ila-agency.co.uk)*
