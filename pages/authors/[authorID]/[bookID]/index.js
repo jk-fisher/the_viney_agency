@@ -10,6 +10,7 @@ import { Fragment } from 'react'
 import BookInfo from '../../../../components/Books/BookInfo'
 import BookList from '../../../../components/Books/BookList'
 
+import styles from '../../../../styles/BookID.module.css'
 import booksStyles from '../../../../styles/BookList.module.css'
 import { motion } from 'framer-motion'
 
@@ -35,22 +36,22 @@ const Book = ({bookData, authorData, allBookData}) => {
                             bookID: book_release.bookid  }
                         }}
                 className={booksStyles.gridItem} key={book_release.bookid}>
-                        <a>
+                        <a className={styles.imageContainer}>
                             <Image 
                                 src={book_release.image}
                                 alt={`${book_release.title}`}
-                                width={400}
-                                height={570}
+                                className={styles.image}
+                                layout="fill"
                             />
                         </a>
             </Link> 
         </motion.div> :
-        <div className={booksStyles.gridItem} key={book_release.bookid}>
+        <div className={`${booksStyles.gridItem} ${styles.imageContainer}`} key={book_release.bookid}>
             <Image 
                 src={book_release.image}
                 alt={`${book_release.title}`}
-                width={400}
-                height={570}
+                className={styles.image}
+                layout="fill"
             />
             
         </div>

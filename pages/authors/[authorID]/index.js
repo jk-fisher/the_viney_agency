@@ -9,12 +9,12 @@ import { getAllBookData } from '../../../lib/books'
 import { getLayout } from '../../../components/Layout/Layout'
 
 import booksStyles from '../../../styles/BookList.module.css'
-
+import styles from '../../../styles/BookID.module.css'
 import AuthorInfo from '../../../components/Author/AuthorInfo'
 import BookInfo from '../../../components/Books/BookInfo'
 import BookList from '../../../components/Books/BookList'
 import markdownToHtml from '../../../lib/markdown'
-import DOMPurify from 'isomorphic-dompurify';
+import { motion } from 'framer-motion'
 
 
 const Author = ({authorData, allBookData}) => {
@@ -37,29 +37,31 @@ const Author = ({authorData, allBookData}) => {
     const releasedBooks = allBookData.map((book_release) => {
       return (
         book_release.markdownBody ?
-        <Link
-            href={{
-            pathname: '/authors/[authorID]/[bookID]',
-            query: {
-                        authorID: authorData.authorID,
-                        bookID: book_release.bookid  }
-                    }}
-            className={booksStyles.gridItem} key={book_release.bookid}>
-                    <a>
-                        <Image 
-                            src={book_release.image}
-                            alt={`${book_release.title}`}
-                            width={400}
-                            height={500}
-                        />
-                    </a>
-        </Link> :
-        <div className={booksStyles.gridItem} key={book_release.bookid}>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link
+              href={{
+              pathname: '/authors/[authorID]/[bookID]',
+              query: {
+                          authorID: authorData.authorID,
+                          bookID: book_release.bookid  }
+                      }}
+              className={booksStyles.gridItem} key={book_release.bookid}>
+                      <a className={styles.imageContainer}>
+                          <Image 
+                              src={book_release.image}
+                              alt={`${book_release.title}`}
+                              className={styles.image}
+                              layout="fill"
+                          />
+                      </a>
+          </Link> 
+        </motion.div> :
+        <div className={`${booksStyles.gridItem} ${styles.imageContainer}`} key={book_release.bookid}>
             <Image 
                 src={book_release.image}
                 alt={`${book_release.title}`}
-                width={400}
-                height={500}
+                className={styles.image}
+                layout="fill"
             />
             
         </div>
@@ -106,12 +108,11 @@ const getStaticPaths = async () => {
 }
 const getStaticProps = async ({params}) => {
   const allPageData = getAllPageData();
-  const authorData = getAuthorData(params.authorID)
-  let dateObj = new Date(authorData.date)
+  const authorData = getAuthorData(params.authorID);
+  let dateObj = new Date(authorData.date);
   const uniqueID = `${dateObj.getDate()}${dateObj.getHours()}${dateObj.getMinutes()}`;
   authorData.date = uniqueID;
   const body = await markdownToHtml(authorData.markdownBody);
-  console.log('body_markdownToHtml', body)
   authorData.markdownBody = body;
   const allBookData = getAllBookData(authorData)
 
