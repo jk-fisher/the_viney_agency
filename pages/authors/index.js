@@ -26,6 +26,7 @@ const Authors = ({ allAuthorData }) => {
                 <Link href={`/authors/${author.id}`} className={styles.gridItem} key={author.id}>
                     <a>
                         <Image 
+                            className={styles.img}
                             src={author.image}
                             alt={`${author.first_name} ${author.last_name}`}
                             width={400}
