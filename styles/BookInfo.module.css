@@ -4,10 +4,11 @@
 }
 .bookWrapper{
     max-width: 100%;
-    margin: 0 auto 0 auto;    
+    margin: 0 auto 0 auto;   
+    margin-top: 0; 
 }
 .mtLg {
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 .col_1{
     position: relative;
@@ -23,11 +24,12 @@
 }
 .tag{ 
     position: relative;
-    margin-right: 0;
     text-align: right;
     display: block;
     color: #9BB1B8;
     font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    max-width: 360px;
 }
 .col_2::before {
     background-color: #0D4253;
@@ -55,6 +57,9 @@
     .col_1{
         padding: 3rem;
     }
+    .mtLg {
+        padding-top: 8rem;
+    }
 }
 @media screen and (min-width: 1024px){
     .bookWrapper{
@@ -63,6 +68,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 0rem;
+        
     }
     .col_1 {
         grid-row-start: 1;

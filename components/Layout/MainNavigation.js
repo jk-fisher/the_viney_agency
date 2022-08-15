@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, Fragment } from "react"
 import { motion, useScroll } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
@@ -12,6 +12,11 @@ const slideTransition = {
         ease: "easeIn"
     }
 }
+
+const Backdrop = ({ onClose }) => {
+    return <div className={styles.backdrop} onClick={onClose} />
+}
+
 const MainNavigation = ({ allPageData }) => {
 
     const [isOpen, setIsOpen] = useState(false); 
@@ -21,18 +26,18 @@ const MainNavigation = ({ allPageData }) => {
     const { scrollY } = useScroll()
     const [ showNavigation, setShowNavigation ] = useState(true)
 
+    const closeNavHandler = () => {
+        setIsOpen(false);
+    }   
+
     useEffect(() => {
         
-        // console.log('scroll useeffect ran')
     return scrollY.onChange((latest) => {
         if (latest > 200 && latest > prevScrollY.current){
-            // console.log('going down')
             setShowNavigation(false)
         }else if(prevScrollY.current > latest){
-            // console.log('goingup')
             setShowNavigation(true)
         }
-        console.log("Page scroll: ", latest, scrollY)
         prevScrollY.current = latest
     })
     }, [scrollY])
@@ -49,20 +54,21 @@ const MainNavigation = ({ allPageData }) => {
     //     </li>
     // })
     // console.log('headers', headers)
-    return ( 
+    return ( <Fragment>
+
         <header className={styles.header}>
         <motion.nav 
             className={styles.navbar}
             transition={slideTransition}
             animate={showNavigation ? "show" : "hide"}
             variants={variants}>
-            <div className={styles.navlogo}>
+            <motion.div className={styles.navlogo} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link href="/">
                     <a className={styles.button}>
                         <Image src={logo} alt="The Viney Agency Logo" />
                     </a>
                 </Link>
-            </div>
+            </motion.div>
           <ul className={isOpen === false ? 
                 styles.navmenu : styles.navmenu +' '+styles.active}>
             <li className={styles.navitem}>
@@ -112,6 +118,10 @@ const MainNavigation = ({ allPageData }) => {
           </button>
         </motion.nav>
       </header>
+      {isOpen && <Backdrop 
+          className={styles.backdrop} 
+          onClose={closeNavHandler} />} 
+    </Fragment>
         
      );
 }

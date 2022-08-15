@@ -14,10 +14,6 @@
         height: calc(100vh - 20vh - 7rem - 4rem);
         min-height: 480px;
     }
-    .slideDownContainer{
-        display: block;
-        background-color: white;
-    }
 }
 @media screen and (min-width: 1024px) {
     .flex {

@@ -50,7 +50,7 @@ const Author = ({authorData, allBookData}) => {
                             src={book_release.image}
                             alt={`${book_release.title}`}
                             width={400}
-                            height={570}
+                            height={500}
                         />
                     </a>
         </Link> :
@@ -59,7 +59,7 @@ const Author = ({authorData, allBookData}) => {
                 src={book_release.image}
                 alt={`${book_release.title}`}
                 width={400}
-                height={570}
+                height={500}
             />
             
         </div>
