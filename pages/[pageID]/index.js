@@ -1,14 +1,17 @@
-import { getAllPageData, getAllPageIDs, getPageData } from '../../lib/pages'
-import { getLayout } from '../../components/Layout/Layout'
-import markdownToHtml from '../../lib/markdown';
-import { Fragment } from 'react';
 import Image from 'next/image';
+import { Fragment } from 'react';
+import Head from 'next/head';
+
+import { getAllPageData, getAllPageIDs, getPageData } from '../../lib/pages';
+import { getLayout } from '../../components/Layout/Layout';
+import markdownToHtml from '../../lib/markdown';
 import styles from '../../styles/Page.module.css'
 import HeaderPractice from '../../components/UI/HeaderPractice';
 import ArrowIcon from '../../components/UI/ArrowIcon';
 import CardTemplate from '../../components/UI/CardTemplate';
-import headshot_1 from '../../public/images/staff_images/charlie.jpg'
-import headshot_2 from '../../public/images/staff_images/amberley.jpg'
+
+import headshot_1 from '../../public/images/staff_images/charlie.jpg';
+import headshot_2 from '../../public/images/staff_images/amberley.jpg';
 
 const Page = ({dynamicPageData}) => {
 
@@ -33,9 +36,14 @@ const Page = ({dynamicPageData}) => {
     dynamicPageData.pageID
     return ( 
         <Fragment>
+            <Head>
+                <title>{`${dynamicPageData.title} - The Viney Agency`}</title>
+                <meta name="description" content={dynamicPageData.summary} />
+                <link rel="icon" href="/assets/tva_logo.png" />
+            </Head>
             {dynamicPageData.pageID === "about" && 
                 <div>
-                    <HeaderPractice title="About the Agency" description={dynamicPageData.about_summary} />
+                    <HeaderPractice title="About the Agency" description={dynamicPageData.summary} />
                     <ArrowIcon />
                 </div>
                 }

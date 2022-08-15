@@ -24,13 +24,18 @@
 }
 .pgHeader {
     color: #39778B;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     letter-spacing: 0.5rem;
     font-family: 'Garamond', serif;
     text-transform: uppercase;
     font-weight: 700;
     border-bottom: 1px solid #c5c8c9;
     padding-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+    .pgHeader {
+        font-size: 2.2rem;
+    }
 }
 .header {
     font-family: 'Garamond', serif;
