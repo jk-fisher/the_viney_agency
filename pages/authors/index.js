@@ -18,14 +18,15 @@ const variants = {
 }
 
 const Authors = ({ allAuthorData }) => {
-    // console.log(allAuthorData)
+    console.log(allAuthorData)
     const authors = allAuthorData.map((author) => {
-        console.log(author)
+        // console.log(author.last_name)
         return (
             <motion.div key={author.id} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link href={`/authors/${author.id}`} className={styles.gridItem} key={author.id}>
                     <a>
                         <Image 
+                            className={styles.img}
                             src={author.image}
                             alt={`${author.first_name} ${author.last_name}`}
                             width={400}
@@ -40,7 +41,7 @@ const Authors = ({ allAuthorData }) => {
 
         )
     })
-    console.log('authors', authors)
+    // console.log('authors', authors)
     
     return (
         <Fragment>
@@ -68,13 +69,13 @@ const Authors = ({ allAuthorData }) => {
 const getStaticProps = async () => {
     const allAuthorData = getAllAuthorData();
     allAuthorData.map((author) => {
-        console.log('author', author)
-        author.book_releases.map((book_release) => {
-            const dateObj = new Date(book_release.release_date)
-            const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
-            book_release.release_date = dateString;
-            return book_release;
-        })
+        // console.log('author', author)
+        // author.book_releases.map((book_release) => {
+        //     const dateObj = new Date(book_release.release_date)
+        //     const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
+        //     book_release.release_date = dateString;
+        //     return book_release;
+        // })
         const dateObj = new Date(author.date)
         const dateString = dateObj.toLocaleDateString("en-GB", { day: 'numeric', month: 'long', year: 'numeric' })
         author.date = dateString;

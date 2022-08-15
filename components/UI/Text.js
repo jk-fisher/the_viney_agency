@@ -11,8 +11,8 @@ const Text = ({ state, moreText, lessText, content }) => {
     const displayedText = content.split(' ').slice(0, 120).join(' ').concat('...')
     
     return ( <Fragment>
-        {content.split(' ').length < 10 ? 
-        <p className={styles.text}>{content}</p>
+        {content.split(' ').length < 100 ? 
+        <div className={styles.text}dangerouslySetInnerHTML={{ __html: content }} />
         :
         <Fragment>
             {/* <p>{!props.state ? displayedText : props.content}</p> */}
@@ -31,9 +31,8 @@ const Text = ({ state, moreText, lessText, content }) => {
                     }}
                 >
                 <div ref={moreBtn}>
-                    <p className={styles.text}>
-                        {displayedText}
-                    </p>
+                    <div className={styles.text} dangerouslySetInnerHTML={{ __html: displayedText }}
+                    />
                     <button className={styles.textButton} onClick={moreText}>
                     Read More
                     <FaAngleDown className={styles.icon} />
@@ -56,9 +55,7 @@ const Text = ({ state, moreText, lessText, content }) => {
                         exitActive: styles["fade-exit-active"]
                     }}>
                 <div ref={lessBtn}>
-                        <p className={styles.text}>
-                            {content}
-                        </p>
+                <div className={styles.text}dangerouslySetInnerHTML={{ __html: content }} />
                         <button className={styles.textButton} onClick={lessText}>
                         Read Less 
                         <FaAngleUp className={styles.icon}/>

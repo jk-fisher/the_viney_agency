@@ -1,5 +1,6 @@
 import { getAllPageData, getAllPageIDs, getPageData } from '../../lib/pages'
 import { getLayout } from '../../components/Layout/Layout'
+import markdownToHtml from '../../lib/markdown';
 import { Fragment } from 'react';
 import Image from 'next/image';
 import styles from '../../styles/Page.module.css'
@@ -28,7 +29,7 @@ const Page = ({dynamicPageData}) => {
 
       ]
     
-    console.log('p', dynamicPageData)
+    // console.log('p', dynamicPageData)
     dynamicPageData.pageID
     return ( 
         <Fragment>
@@ -66,7 +67,7 @@ const Page = ({dynamicPageData}) => {
 
 const getStaticPaths = async () => {
     const paths = getAllPageIDs();
-    console.log(paths)
+    // console.log(paths)
     return {
         paths,
         fallback: false,
@@ -74,8 +75,11 @@ const getStaticPaths = async () => {
 }
 const getStaticProps = async ({params}) => {
     const dynamicPageData = getPageData(params.pageID);
-    const allPageData = getAllPageData()
-    console.log('dd', dynamicPageData)
+    const allPageData = getAllPageData();
+    const body = await markdownToHtml(allPageData.markdownBody);
+    // console.log('body_markdownToHtml', body)
+    allPageData.markdownBody = body;
+    // console.log('dd', dynamicPageData)
   return {
       props: {
         allPageData,
