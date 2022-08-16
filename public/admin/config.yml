@@ -63,9 +63,9 @@ collections:
        - {label: "Review Written By", name: "by", widget: "string", required: true}
   - name: 'carousel'
     label: 'Carousel'
-    media_folder: ""
-    public_folder: ""
-    folder: "/public/images/carousel_images"
+    media_folder: "/{{media_folder}}/carousel_images"
+    public_folder: "/{{public_folder}}/carousel_images"
+    folder: "_carousel"
     create: false
     slug: "{{name}}"
     fields: 
