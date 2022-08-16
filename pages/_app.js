@@ -10,8 +10,6 @@ function MyApp({ Component, pageProps }) {
     AOS.init({ 
         duration: 2000,
         easing: "ease-out-cubic",
-        // offset: 190,
-        //once: true;
         })
   }, []);
 
@@ -19,12 +17,5 @@ function MyApp({ Component, pageProps }) {
 
   return getLayout(<Component {...pageProps} />, pageProps);
 }
-//   return (
-//     <Layout>
-//       <Component {...pageProps} />
-//     </Layout>
-    
-//   )
-// }
 
 export default MyApp

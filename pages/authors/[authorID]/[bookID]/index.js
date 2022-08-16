@@ -27,7 +27,7 @@ const Book = ({bookData, authorData, allBookData}) => {
     const releasedBooks = allBookData.map((book_release) => {
         return (
         book_release.markdownBody ?
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+        <motion.div key={book_release.bookid} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
                 href={{
                 pathname: '/authors/[authorID]/[bookID]',
@@ -46,7 +46,7 @@ const Book = ({bookData, authorData, allBookData}) => {
                         </a>
             </Link> 
         </motion.div> :
-        <div className={`${booksStyles.gridItem} ${styles.imageContainer}`} key={book_release.bookid}>
+        <div key={book_release.bookid} className={`${booksStyles.gridItem} ${styles.imageContainer}`}>
             <Image 
                 src={book_release.image}
                 alt={`${book_release.title}`}
