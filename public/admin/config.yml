@@ -69,10 +69,12 @@ collections:
     create: false
     slug: "{{images}}"
     fields: 
+      - {label: "Name", name: "name", widget: "string", required: true}
       - label: "Images"
         name: images
         widget: "list"
         required: true
-        create: true, 
-        fields: { label: "Image", name: "image", widget: "image"}
+        create: true
+        fields: 
+        - { label: "Image", name: "image", widget: "image"}
      
