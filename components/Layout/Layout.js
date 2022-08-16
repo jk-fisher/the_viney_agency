@@ -4,7 +4,6 @@ import styles from "../../styles/Layout.module.css";
 
 
 export const Layout = ({children, allPageData }) => {
-  console.log('layout', allPageData)
   return ( 
       <div className={styles.container}>
         <MainNavigation allPageData={allPageData}/>  

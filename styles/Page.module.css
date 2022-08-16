@@ -31,6 +31,7 @@
     font-weight: 700;
     border-bottom: 1px solid #c5c8c9;
     padding-bottom: 2rem;
+    margin-top: 0rem;
 }
 @media screen and (min-width: 768px) {
     .pgHeader {
@@ -46,6 +47,13 @@
     color: #A3AEB1;
 }
 .text {
+    margin-top: 2rem;
+    line-height: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #676767;
+    font-size: 1rem;
+}
+.styledText {
     font-family: 'Garamond', serif;
     color: #39778B;
     margin-top: 2rem;

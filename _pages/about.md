@@ -1,6 +1,6 @@
 ---
 title: About
-image: images/about_page.jpg
+image: /images/about.jpg
 summary: A passionate and established literary agency, representing a
   diverse range of award-winning and bestselling authors. We are committed to
   launching debut authors and developing our clients’ long-term writing career

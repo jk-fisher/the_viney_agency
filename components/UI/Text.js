@@ -12,7 +12,7 @@ const Text = ({ state, moreText, lessText, content }) => {
     
     return ( <Fragment>
         {content.split(' ').length < 100 ? 
-        <div className={styles.text}dangerouslySetInnerHTML={{ __html: content }} />
+        <div className={styles.text} dangerouslySetInnerHTML={{ __html: content }} />
         :
         <Fragment>
             {/* <p>{!props.state ? displayedText : props.content}</p> */}

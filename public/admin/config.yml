@@ -69,5 +69,10 @@ collections:
     slug: "{{name}}"
     fields: 
       - {label: "Name", name: "name", widget: "string", required: true}
-      - {label: "Image", name: image, widget: "list", required: true, create: true, field: { label: "Image", name: "image", widget: "image"}}
+      - label: "Image"
+        name: image
+        widget: "list"
+        required: true
+        create: true, 
+        fields: { label: "Image", name: "image", widget: "image"}
      

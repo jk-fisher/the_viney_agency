@@ -28,12 +28,9 @@ const Page = ({dynamicPageData}) => {
         subTitle: "Literary Agent",
         content: "I’m actively building my list and looking for debut commercial, reading group and literary fiction. I love beautifully crafted, evocative and original storytelling. I am also very interested in a broad range of lively and original non-fiction, particularly in the areas of narrative non-fiction, biography, memoir and cookery. I am also developing a children’s and young adult fiction list. \n I joined The Viney Agency in 2021, having spent the previous five years at the Abner Stein literary agency. Before that I worked in editorial at Kyle Books publishing house.",
         image: {icon: headshot_2}
-      }
-
-      ]
+      }]
     
-    // console.log('p', dynamicPageData)
-    dynamicPageData.pageID
+
     return ( 
         <Fragment>
             <Head>
@@ -61,8 +58,11 @@ const Page = ({dynamicPageData}) => {
                     </h1>
                     <h2 className={styles.header}>
                         The Viney Agency
-                    </h2>
-                    <p className={styles.text}>{ dynamicPageData.markdownBody }</p>
+                    </h2> 
+                    <div 
+                        className={dynamicPageData.pageID === "about" ? styles.text : styles.styledText} 
+                        dangerouslySetInnerHTML={{ __html: dynamicPageData.markdownBody }}/>
+                            
                 </div>
             </div>
             {dynamicPageData.pageID === "about" && 
@@ -75,7 +75,6 @@ const Page = ({dynamicPageData}) => {
 
 const getStaticPaths = async () => {
     const paths = getAllPageIDs();
-    // console.log(paths)
     return {
         paths,
         fallback: false,
@@ -84,10 +83,8 @@ const getStaticPaths = async () => {
 const getStaticProps = async ({params}) => {
     const dynamicPageData = getPageData(params.pageID);
     const allPageData = getAllPageData();
-    const body = await markdownToHtml(allPageData.markdownBody);
-    // console.log('body_markdownToHtml', body)
-    allPageData.markdownBody = body;
-    // console.log('dd', dynamicPageData)
+    const body = await markdownToHtml(dynamicPageData.markdownBody);
+    dynamicPageData.markdownBody = body;
   return {
       props: {
         allPageData,
