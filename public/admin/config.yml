@@ -67,11 +67,10 @@ collections:
     public_folder: "/{{public_folder}}/carousel_images"
     folder: "_carousel"
     create: false
-    slug: "{{name}}"
+    slug: "{{images}}"
     fields: 
-      - {label: "Name", name: "name", widget: "string", required: true}
-      - label: "Image"
-        name: image
+      - label: "Images"
+        name: images
         widget: "list"
         required: true
         create: true, 
