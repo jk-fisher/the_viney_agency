@@ -13,12 +13,11 @@ import styles from '../../../styles/BookID.module.css'
 import AuthorInfo from '../../../components/Author/AuthorInfo'
 import BookInfo from '../../../components/Books/BookInfo'
 import BookList from '../../../components/Books/BookList'
-import markdownToHtml from '../../../lib/markdown'
+import markdownToHtml from '../../../lib/handleMarkdown'
 import { motion } from 'framer-motion'
 
 
 const Author = ({authorData, allBookData}) => {
-    // console.log('date object',typeof authorData.book_releases[0].release_date)
     const authorsName = `${authorData.first_name} ${authorData.last_name}`
     const authorImage = authorData.image;
     const authorBio = authorData.markdownBody;
@@ -109,9 +108,6 @@ const getStaticPaths = async () => {
 const getStaticProps = async ({params}) => {
   const allPageData = getAllPageData();
   const authorData = getAuthorData(params.authorID);
-  let dateObj = new Date(authorData.date);
-  const uniqueID = `${dateObj.getDate()}${dateObj.getHours()}${dateObj.getMinutes()}`;
-  authorData.date = uniqueID;
   const body = await markdownToHtml(authorData.markdownBody);
   authorData.markdownBody = body;
   const allBookData = getAllBookData(authorData)

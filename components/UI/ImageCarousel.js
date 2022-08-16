@@ -19,8 +19,6 @@ const ImageCarousel = ({ images }) => {
             config: config.gentle
     });
 
-    console.log('images', images)
-
     const imageArray = images.slice(1).map((imageId, index) => {
         return {
             key: imageId,
@@ -48,7 +46,7 @@ const ImageCarousel = ({ images }) => {
     const getTouches = (evt) => {
         return (
         evt.touches || evt.originalEvent.touches // browser API
-        ); // jQuery
+        ); 
     };
 
     const handleTouchStart = (evt) => {
@@ -91,7 +89,6 @@ const ImageCarousel = ({ images }) => {
 
   const tick = () => {
     setState((prevIndex) => { 
-        console.log('tick', prevIndex)
         return { ...prevIndex, goToSlide: prevIndex.goToSlide + 1 }
     })
   }

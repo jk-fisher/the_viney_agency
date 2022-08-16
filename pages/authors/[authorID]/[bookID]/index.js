@@ -78,7 +78,6 @@ const Book = ({bookData, authorData, allBookData}) => {
 
 const getStaticPaths = async () => {
     const paths = getAllBookIDs();
-    // console.log('paths', paths)
     return {
         paths,
         fallback: false,
@@ -86,12 +85,9 @@ const getStaticPaths = async () => {
 }
 const getStaticProps = async ({params}) => {
     const allPageData = getAllPageData();
-
-    const bookData = getBookData(params.bookID)
-
-    const authorData = getAuthorData(params.authorID)
-
-    const allBookData = getAllBookData(authorData)
+    const bookData = getBookData(params.bookID);
+    const authorData = getAuthorData(params.authorID);
+    const allBookData = getAllBookData(authorData);
     return {
         props: {
             bookData,

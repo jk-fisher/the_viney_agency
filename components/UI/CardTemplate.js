@@ -2,9 +2,7 @@ import styles from '../../styles/CardTemplate.module.css'
 import Card from './Card.js'
 
 const CardTemplate = ({ cardsContent, header }) => {
-    console.log(cardsContent)
     const cards = cardsContent.map(({pg, title, subTitle, content, image}, index) => {
-        console.log('index', index)
         return (
             <div key={index} data-aos="fade-left">
                 <li className={styles.list}>

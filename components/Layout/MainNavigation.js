@@ -46,14 +46,7 @@ const MainNavigation = ({ allPageData }) => {
         show: {y: "0rem"},
         hide: {y: "-10rem"}
     }
-    // const headers = allPageData.map((page) => {
-    //     return <li className={styles.navitem} key={page.id}>
-    //         <Link href={`/pages/${page.id}`}>
-    //             <a classname={styles.navlink} onClick={() => setIsOpen(false)}>{page.title}</a>
-    //         </Link>
-    //     </li>
-    // })
-    // console.log('headers', headers)
+
     return ( <Fragment>
 
         <header className={styles.header}>

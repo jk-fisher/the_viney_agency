@@ -13,10 +13,7 @@ import ImageCarousel from '../components/UI/ImageCarousel'
 import TeamContainer from '../components/Team/TeamContainer'
 import { getSortedImages  } from '../lib/carousel'
 
-const Home = ({ carouselImages }) => {
-  
-  console.log('carouselimgs', carouselImages)
-  
+const Home = ({ carouselImages }) => {  
   return (<Fragment>
         <Head>
           <title>Home - The Viney Agency</title>

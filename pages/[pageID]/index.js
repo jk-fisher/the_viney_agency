@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 import { getAllPageData, getAllPageIDs, getPageData } from '../../lib/pages';
 import { getLayout } from '../../components/Layout/Layout';
-import markdownToHtml from '../../lib/markdown';
+import markdownToHtml from '../../lib/handleMarkdown';
 import styles from '../../styles/Page.module.css'
 import HeaderPractice from '../../components/UI/HeaderPractice';
 import ArrowIcon from '../../components/UI/ArrowIcon';
