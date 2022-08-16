@@ -13,6 +13,7 @@ collections:
     fields: 
      - {label: "Title", name: "title", widget: "string"}
      - {label: "Featured Image", name: "image", widget: "image"}
+     - {label: "Summary", name: "summary", widget: "string"}
      - {label: "Body", name: "body", widget: "markdown"}
   - name: "author"
     label: "Author"
