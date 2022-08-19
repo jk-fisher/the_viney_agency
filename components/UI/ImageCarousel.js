@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+
+import Link from "next/link";
 import { config } from "react-spring";
 import Image from "next/image";
 import styles from "../../styles/ImageCarousel.module.css";
@@ -14,17 +16,32 @@ const ImageCarousel = ({ images }) => {
 
     const [state, setState] = useState({
             goToSlide: 0,
-            offsetRadius: 6,
+            offsetRadius: 3,
             showNavigation: false,
             config: config.gentle
     });
 
-    const imageArray = images.slice(1).map((imageId, index) => {
-        return {
+    const imageArray = images.map((imageId, index) => {
+        if( index === 0 ){
+          console.log(imageId)
+          return {
             key: imageId,
-            content: <Image className={styles.image} src={`/images/carousel_images/${imageId}.jpg`} alt={index} width={1000}
-            height={1000} onClick={() => setState({ goToSlide: index, offsetRadius: state.offsetRadius })}/>
-        } 
+            content: 
+            <Link>
+              <a>
+                <Image className={styles.image} src={`/images/carousel_images/${imageId}.jpg`} alt={index} width={1000}
+              height={1000}/>
+              </a>
+            </Link>
+            
+          }
+        } else {
+          return {
+              key: imageId,
+              content: <Image className={styles.image} src={`/images/carousel_images/${imageId}.jpg`} alt={index} width={1000}
+              height={1000} onClick={() => setState({ goToSlide: index, offsetRadius: state.offsetRadius })}/>
+          } 
+        }
     })
     imageArray.map((slide, index) => {
       return slide
@@ -87,18 +104,18 @@ const ImageCarousel = ({ images }) => {
     yDown = null;
   };
 
-  const tick = () => {
-    setState((prevIndex) => { 
-        return { ...prevIndex, goToSlide: prevIndex.goToSlide + 1 }
-    })
-  }
+  // const tick = () => {
+  //   setState((prevIndex) => { 
+  //       return { ...prevIndex, goToSlide: prevIndex.goToSlide + 1 }
+  //   })
+  // }
 
-  useEffect(() => {
-    timer.current = setInterval(() => {
-      tick()
-    }, 3800);
-    return () => clearInterval(timer.current);
-  }, []);
+  // useEffect(() => {
+  //   timer.current = setInterval(() => {
+  //     tick()
+  //   }, 3800);
+  //   return () => clearInterval(timer.current);
+  // }, []);
 
   return (
 

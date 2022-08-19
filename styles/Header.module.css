@@ -30,13 +30,14 @@
         /* margin-top: 1.7rem; */
         min-height: 190px;
         font-size: 3rem;
-        padding-bottom: 1rem;;
+        padding-bottom: 1rem;
     }
 }
 @media screen and (min-width: 1024px){
     .header {
         font-size: 3.8rem;
         letter-spacing: 1.2rem;
+        min-height: 200px;
     }
 }
 
