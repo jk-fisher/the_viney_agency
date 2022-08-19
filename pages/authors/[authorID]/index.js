@@ -110,7 +110,7 @@ const getStaticProps = async ({params}) => {
   const authorData = getAuthorData(params.authorID);
   const body = await markdownToHtml(authorData.markdownBody);
   authorData.markdownBody = body;
-  const allBookData = getAllBookData(authorData)
+  const allBookData = getAllBookData(authorData);
 
   return {
       props: {

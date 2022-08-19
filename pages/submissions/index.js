@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import HeaderPractice from '../../components/UI/HeaderPractice'
+import DynamicHeader from '../../components/UI/DynamicHeader'
 import { getAllPageData } from '../../lib/pages'
 import { getLayout } from '../../components/Layout/Layout';
 import { Fragment } from 'react';
@@ -25,7 +25,7 @@ const Submissions = ({  }) => {
           <meta name="description" content="Submission guidelines, literary agents looking for new authors, uk literary agents accepting submissions" />
           <link rel="icon" href="/assets/tva_logo.png" />
         </Head>
-        <HeaderPractice title="Submissions" description={null}/>
+        <DynamicHeader title="Submissions" description={null}/>
         <Guidelines />
         <CardTemplate header={header} cardsContent={cardsContent} />
     </Fragment> );

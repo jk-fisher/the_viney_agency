@@ -6,7 +6,7 @@ import { getAllPageData, getAllPageIDs, getPageData } from '../../lib/pages';
 import { getLayout } from '../../components/Layout/Layout';
 import markdownToHtml from '../../lib/handleMarkdown';
 import styles from '../../styles/Page.module.css'
-import HeaderPractice from '../../components/UI/HeaderPractice';
+import DynamicHeader from '../../components/UI/DynamicHeader';
 import ArrowIcon from '../../components/UI/ArrowIcon';
 import CardTemplate from '../../components/UI/CardTemplate';
 
@@ -40,7 +40,7 @@ const Page = ({dynamicPageData}) => {
             </Head>
             {dynamicPageData.pageID === "about" && 
                 <div>
-                    <HeaderPractice title="About the Agency" description={dynamicPageData.summary} />
+                    <DynamicHeader title="About the Agency" description={dynamicPageData.summary} />
                     <ArrowIcon />
                 </div>
                 }

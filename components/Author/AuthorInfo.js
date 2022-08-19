@@ -23,7 +23,10 @@ const AuthorInfo = ({ image, authorsName, biography, twitter, instagram, web }) 
           <h3 className={`${authorStyles.headerSm} ${authorStyles.headerGrey}`}>Author</h3>
           <ShowMoreText content={biography}/>
         </div>
-        <div  className={authorStyles.col_3}>
+        {biography &&
+        twitter &&
+        web &&
+        <div className={authorStyles.col_3}>
           <h3 className={`${authorStyles.headerSm} ${authorStyles.headerBlue}`}>Social Links</h3>
           <ul className={authorStyles.socialLinks}>
             {twitter && 
@@ -59,6 +62,7 @@ const AuthorInfo = ({ image, authorsName, biography, twitter, instagram, web }) 
               </li>}
           </ul>
         </div>
+      }
     </section>  );
 }
  

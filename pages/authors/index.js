@@ -9,7 +9,7 @@ import styles from '../../styles/Authors.module.css'
 import { getAllAuthorData } from '../../lib/authors'
 import { getAllPageData } from '../../lib/pages'
 import { getLayout } from '../../components/Layout/Layout'
-import HeaderPractice from '../../components/UI/HeaderPractice'
+import DynamicHeader from '../../components/UI/DynamicHeader'
 
 const variants = {
     hidden: { opacity: 0, x: 0, y: +100 },
@@ -47,7 +47,7 @@ const Authors = ({ allAuthorData }) => {
                 <meta name="description" content="The Viney Agency represents a diverse range of award-winning and bestselling authors." />
                 <link rel="icon" href="/assets/tva_logo.png" />
             </Head>
-            <HeaderPractice title="Meet our Authors"/>
+            <DynamicHeader title="Meet our Authors"/>
                 <motion.div 
                     className={styles.gridWrapper}
                     variants={variants} // Pass the variant object into Framer Motion 
@@ -64,7 +64,7 @@ const Authors = ({ allAuthorData }) => {
 
 const getStaticProps = async () => {
     const allAuthorData = getAllAuthorData();
-    const allPageData = getAllPageData()
+    const allPageData = getAllPageData();
     return {
         props: {
             allPageData,

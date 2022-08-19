@@ -1,9 +1,9 @@
-import styles from '../../styles/HeaderPractice.module.css'
+import styles from '../../styles/DynamicHeader.module.css'
 import Logo from '../../public/assets/faded_icon.png'
 import Image from 'next/image'
 import { Fragment } from 'react'
 
-const HeaderPractice = ({ title, description }) => {
+const DynamicHeader = ({ title, description }) => {
     return ( <Fragment>
         <div className={`${styles.container} ${description ? styles.lgContainer : ''}`}>
             <div className={styles.wrapper}>
@@ -26,4 +26,4 @@ const HeaderPractice = ({ title, description }) => {
      );
 }
  
-export default HeaderPractice;
+export default DynamicHeader;
