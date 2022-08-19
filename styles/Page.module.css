@@ -1,22 +1,10 @@
 .flex {
     display: block;
-    padding: 5rem 3rem;
+    padding: 5rem 2rem;
     margin: 0 auto;
 }
 .mLg {
     margin-top: 5rem;
-}
-@media screen and (min-width: 1023px) {
-    .flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex: 50%
-    }
-    .flexItem {
-        margin: 3rem;
-        flex-basis: 100%;
-    }
 }
 .icon {
     transform: rotateY(0deg) rotate(135deg); 
@@ -31,7 +19,7 @@
     font-weight: 700;
     border-bottom: 1px solid #c5c8c9;
     padding-bottom: 2rem;
-    margin-top: 0rem;
+    margin-top: 5rem;
 }
 @media screen and (min-width: 768px) {
     .pgHeader {
@@ -59,4 +47,19 @@
     margin-top: 2rem;
     line-height: 2.2rem;
     font-size: 1.6rem;
+}
+@media screen and (min-width: 1023px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex: 50%;
+    }
+    .flexItem {
+        margin: 3rem;
+        flex-basis: 100%;
+    }
+    .pgHeader {
+        margin-top: 0rem;
+    }
 }
