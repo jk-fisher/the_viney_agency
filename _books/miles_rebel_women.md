@@ -1,8 +1,8 @@
 ---
 publish_date: 2022-07-01T00:00:00.000000Z
-author_first_name: Katherine
-author_last_name: Macinnes
-title: Fake
+author_first_name: Rosalind
+author_last_name: Miles
+title: Rebel Women
 genre: null
 image: /images/book_images/fake.jpg
 book_reviews:

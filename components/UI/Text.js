@@ -9,13 +9,11 @@ const Text = ({ state, moreText, lessText, content }) => {
     const lessBtn = useRef(null);
 
     const displayedText = content.split(' ').slice(0, 120).join(' ').concat('...')
-    
     return ( <Fragment>
         {content.split(' ').length < 100 ? 
         <div className={styles.text} dangerouslySetInnerHTML={{ __html: content }} />
         :
         <Fragment>
-            {/* <p>{!props.state ? displayedText : props.content}</p> */}
             <CSSTransition
                     nodeRef={moreBtn}
                     in={!state}

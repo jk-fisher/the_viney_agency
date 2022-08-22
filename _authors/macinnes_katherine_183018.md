@@ -7,7 +7,7 @@ twitter: KatherineMacinnes
 instagram: null
 image: /images/author_images/macinnes_katherine.jpg
 book_releases:
-  - book_title: Fake
+  - book_title: Snow Widows
   - book_title: The Long War
   - book_title: We Need Snowflakes
 ---
@@ -15,6 +15,6 @@ Katherine MacInnes has written three plays and Woman with the Iceberg Eyes, a bi
 
 Her Snow Widows - The Scott Expedition and The Women They Left Behind was sold at auction to William Collins in 2019 and published to acclaim in 2022. She is a member of the Society of Authors and the Biographers Club.
 
-'An elegant, densely textured work, like a tapestry … A welcome contribution to polar studies.' Sarah Wheeler, Spectator
+'An elegant, densely textured work, like a tapestry ï¿½ A welcome contribution to polar studies.' Sarah Wheeler, Spectator
 
-'MacInnes handles the whole thing with masterly skill…takes us to the heart of the hope, love, anguish and grief' The Times
+'MacInnes handles the whole thing with masterly skillï¿½takes us to the heart of the hope, love, anguish and grief' The Times

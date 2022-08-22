@@ -11,37 +11,52 @@ const Carousel = dynamic(() => import("react-spring-3d-carousel-2"), {
   ssr: false,
 });
 
-const ImageCarousel = ({ images }) => {
+const ImageCarousel = ({ images, data }) => {
     const timer = useRef();
 
     const [state, setState] = useState({
             goToSlide: 0,
             offsetRadius: 3,
             showNavigation: false,
-            config: config.gentle
+            config: config.gentle, 
+            autoPlay: true
     });
 
-    const imageArray = images.map((imageId, index) => {
-        if( index === 0 ){
-          console.log(imageId)
-          return {
-            key: imageId,
-            content: 
-            <Link>
-              <a>
-                <Image className={styles.image} src={`/images/carousel_images/${imageId}.jpg`} alt={index} width={1000}
-              height={1000}/>
-              </a>
-            </Link>
-            
-          }
-        } else {
-          return {
-              key: imageId,
-              content: <Image className={styles.image} src={`/images/carousel_images/${imageId}.jpg`} alt={index} width={1000}
-              height={1000} onClick={() => setState({ goToSlide: index, offsetRadius: state.offsetRadius })}/>
-          } 
-        }
+    const imageArray = data.map((image, index) => {
+        const current_slide = state.goToSlide % data.length;
+        console.log("slide", state.goToSlide)//, "mod", state.goToSlide % 9, "index", index)
+        if(index == current_slide){
+              return {
+                key: index,
+                content: 
+                <Link 
+                  href={{
+                  pathname: '/authors/[authorID]/[bookID]',
+                  query: {
+                              authorID: image.authorID,
+                              bookID: image.bookID
+                                }
+                          }}
+                  as={`/authors/${image.authorID}/${image.bookID}`}>
+                  <a>
+                    <Image className={styles.image} src={`/images/carousel_images/${image.bookID}.jpg`} alt={index} width={250}
+                  height={350}/>
+                  </a>
+                </Link>}
+        }else{
+              return {
+                      key: index,
+                      content: <Image className={styles.image} src={`/images/carousel_images/${image.bookID}.jpg`} alt={index} width={1000}
+                      height={1000} onClick={() => setState({ goToSlide: index, offsetRadius: state.offsetRadius })}/>
+            }
+            }
+        // } else {
+        //   return {
+        //       key: imageID,
+        //       content: <Image className={styles.image} src={`/images/carousel_images/${imageID}.jpg`} alt={index} width={1000}
+        //       height={1000} onClick={() => setState({ goToSlide: index, offsetRadius: state.offsetRadius })}/>
+        //   } 
+        // }
     })
     imageArray.map((slide, index) => {
       return slide
@@ -104,18 +119,18 @@ const ImageCarousel = ({ images }) => {
     yDown = null;
   };
 
-  // const tick = () => {
-  //   setState((prevIndex) => { 
-  //       return { ...prevIndex, goToSlide: prevIndex.goToSlide + 1 }
-  //   })
-  // }
+  const tick = () => {
+    setState((prevIndex) => { 
+        return { ...prevIndex, goToSlide: prevIndex.goToSlide + 1 }
+    })
+  }
 
-  // useEffect(() => {
-  //   timer.current = setInterval(() => {
-  //     tick()
-  //   }, 3800);
-  //   return () => clearInterval(timer.current);
-  // }, []);
+  useEffect(() => {
+    timer.current = setInterval(() => {
+      tick()
+    }, 3800);
+    return () => clearInterval(timer.current);
+  }, []);
 
   return (
 

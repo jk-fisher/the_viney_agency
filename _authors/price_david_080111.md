@@ -8,7 +8,7 @@ instagram: null
 image: /images/author_images/price_david.jpg
 book_releases:
   - book_title: Fake
-  - book_title: The Long War
+  - book_title: The Crew
   - book_title: We Need Snowflakes
 ---
 David Price is a writer, learning futurist, director of Educational Arts and a senior associate at the Innovation Unit. His field of expertise is learning - specifically how to make learning engaging.

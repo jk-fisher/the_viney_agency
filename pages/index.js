@@ -11,9 +11,11 @@ import Summary from '../components/UI/Summary'
 import ArrowIcon from '../components/UI/ArrowIcon'
 import ImageCarousel from '../components/UI/ImageCarousel'
 import TeamContainer from '../components/Team/TeamContainer'
-import { getSortedImages  } from '../lib/carousel'
+import { getSortedImages, getCarouselParams  } from '../lib/carousel'
 
-const Home = ({ carouselImages }) => {  
+const Home = ({ carouselImages, carouselData }) => {  
+  console.log(carouselData)
+
   return (<Fragment>
         <Head>
           <title>Home - The Viney Agency</title>
@@ -22,7 +24,7 @@ const Home = ({ carouselImages }) => {
         </Head>
         <Header />
         <div className={styles.flex}>
-          <ImageCarousel images={carouselImages} />
+          <ImageCarousel images={carouselImages} data={carouselData}/>
           <Summary />
         </div>
         <div className={styles.slideDownContainer}>
@@ -34,13 +36,16 @@ const Home = ({ carouselImages }) => {
 )
 }
 
+
 const getStaticProps = async () => {
   const allPageData = getAllPageData();
   const carouselImages = getSortedImages();
+  const carouselData = getCarouselParams();
   return {
       props: {
         allPageData,
-        carouselImages
+        carouselImages, 
+        carouselData
       } 
   }
 }
