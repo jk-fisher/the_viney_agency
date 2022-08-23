@@ -53,6 +53,7 @@
     }
     .col_2::before {
         width: 60%;
+        top: -8rem;
     }
     .col_1{
         padding: 3rem;

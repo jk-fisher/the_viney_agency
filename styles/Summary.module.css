@@ -9,7 +9,7 @@
 .text{
     width:95%;
     max-width: 900px;
-    margin: auto;
+    margin: -0.5rem auto 0 auto;
     text-align: center;
     position: relative;
     color: #0D4253;

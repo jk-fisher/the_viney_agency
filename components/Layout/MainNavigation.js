@@ -32,15 +32,15 @@ const MainNavigation = ({ allPageData }) => {
 
     useEffect(() => {
         
-    return scrollY.onChange((latest) => {
-        if (latest > 200 && latest > prevScrollY.current){
-            setShowNavigation(false)
-        }else if(prevScrollY.current > latest){
-            setShowNavigation(true)
-        }
-        prevScrollY.current = latest
-    })
-    }, [scrollY])
+        return scrollY.onChange((latest) => {
+            if (!isOpen && latest > 200 && latest > prevScrollY.current){
+                setShowNavigation(false)
+            }else if(prevScrollY.current > latest){
+                setShowNavigation(true)
+            }
+            prevScrollY.current = latest
+        })
+    }, [scrollY, isOpen])
     
     const variants = {
         show: {y: "0rem"},

@@ -1,4 +1,7 @@
 
+.carousel:focus {
+    outline: none;
+}
 .carousel{
     z-index: 9;
     position: relative;
@@ -38,7 +41,7 @@
 }
 /*center div*/
 .carousel div div:nth-child(4){
-    max-width: 85%;
+    max-width: 58%;
     width: 15rem;
     opacity: 1 !important;
     z-index: 5!important;;
