@@ -1,5 +1,5 @@
 ---
-date: 2022-07-25T10:18:00.000000Z
+date: 2022-07-25T10:18:00.000Z
 first_name: Simon
 last_name: Elliott
 url: www.simonelliott.net
@@ -10,6 +10,7 @@ book_releases:
   - book_title: Fake
   - book_title: The Long War
   - book_title: We Need Snowflakes
+  - book_title: Test Book
 ---
 Simon Elliott holds a PhD from the University of Kent where he studied the military presence in Britain during the Roman occupation, and where he is now an Honorary Research Fellow. He also has an MA in War Studies from KCL and an MA in Archaeology from UCL.
 
