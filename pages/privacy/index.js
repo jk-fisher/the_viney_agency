@@ -4,7 +4,6 @@ import { getAllPageData } from '../../lib/pages'
 import { getLayout } from '../../components/Layout/Layout';
 import { Fragment } from 'react';
 import PrivacyInfo from '../../components/Privacy/PrivacyInfo';
-import DynamicHeader from '../../components/UI/DynamicHeader';
 
 const Privacy = () => {
     return ( <Fragment>
