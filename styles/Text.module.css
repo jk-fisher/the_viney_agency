@@ -2,7 +2,8 @@
     font-weight: 600;
     font-size: 1rem;
     color: #959595;
-    margin: 0 auto;
+    padding-left: 0;
+    margin: 2rem 0;
     display: inline-block;
     background-color: white;
     border: none;
@@ -15,6 +16,17 @@
     font-family: 'Open Sans', sans-serif;
     color: #676767;
     font-size: 1rem;
+}
+
+.clamp {
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    margin-top: 0;
+    padding-top: 0;
 }
 .icon {
     margin-left: 0.2rem;
@@ -83,5 +95,10 @@
     }
     100% {
         opacity: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    .clamp {
+        -webkit-line-clamp: 8;
     }
 }

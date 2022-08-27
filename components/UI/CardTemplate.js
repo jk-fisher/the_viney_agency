@@ -2,14 +2,14 @@ import styles from '../../styles/CardTemplate.module.css'
 import Card from './Card.js'
 
 const CardTemplate = ({ cardsContent, header }) => {
-    const cards = cardsContent.map(({pg, title, subTitle, content, image}, index) => {
+    const cards = cardsContent.map(({pg, title, positionTitle, content, image}, index) => {
         return (
             <div key={index} data-aos="fade-left">
                 <li className={styles.list}>
                     <Card 
                         pg={pg}
                         title={title} 
-                        subTitle={subTitle} 
+                        positionTitle={positionTitle} 
                         content={content} 
                         image={image}
                     />

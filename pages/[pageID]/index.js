@@ -18,14 +18,14 @@ const Page = ({dynamicPageData}) => {
     const cardsContent = [{
         pg: "about",
         title:"Charlie Viney",
-        subTitle:"Director",
+        positionTitle:"Director",
         content: "I have been a literary agent since 2002 and founded The Viney Agency in 2008. The agency represents a diverse range of clients writing across a wide range of subjects. \n I first started in the book trade as a bookseller and then enjoyed a twenty-five-year career in general trade publishing, mostly working in international sales and marketing, later becoming a board director at a major British publishing house.\n Being a literary agent combines my love of books and an enjoyment of business while enabling me to work very closely with our wonderful authors and manage their careers across all media.",
         image: {icon: headshot_1}
       },
       {
         pg: "about",
         title: "Amberley Lowis",
-        subTitle: "Literary Agent",
+        positionTitle: "Literary Agent",
         content: "I’m actively building my list and looking for debut commercial, reading group and literary fiction. I love beautifully crafted, evocative and original storytelling. I am also very interested in a broad range of lively and original non-fiction, particularly in the areas of narrative non-fiction, biography, memoir and cookery. I am also developing a children’s and young adult fiction list. \n I joined The Viney Agency in 2021, having spent the previous five years at the Abner Stein literary agency. Before that I worked in editorial at Kyle Books publishing house.",
         image: {icon: headshot_2}
       }]

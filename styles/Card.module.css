@@ -8,14 +8,14 @@
     column-gap: 3rem;
     padding: 1rem;
 }
-.title, .subTitle {
+.title, .positionTitle {
     color: #39778B;
     font-size: 1.8rem;
     font-family: 'calibri', 'Open Sans', sans-serif;
     font-weight: 700;
     margin: 1rem 0;
 }
-.subTitle {
+.positionTitle {
     color: #A3AEB1;
     font-size: 1.5rem;
 }

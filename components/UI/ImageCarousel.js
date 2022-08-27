@@ -24,7 +24,6 @@ const ImageCarousel = ({ images, data }) => {
 
     const imageArray = data.map((image, index) => {
         const current_slide = state.goToSlide % data.length;
-        console.log("slide", state.goToSlide)//, "mod", state.goToSlide % 9, "index", index)
         if(index == current_slide){
               return {
                 key: index,
@@ -46,17 +45,13 @@ const ImageCarousel = ({ images, data }) => {
         }else{
               return {
                       key: index,
-                      content: <Image className={styles.image} src={`/images/carousel_images/${image.bookID}.jpg`} alt={index} width={1000}
-                      height={1000} onClick={() => setState({ goToSlide: index, offsetRadius: state.offsetRadius })}/>
+                      content: <Image className={styles.image} src={`/images/carousel_images/${image.bookID}.jpg`} alt={index} width={500}
+                      height={500} onClick={() => {
+                        setState({ goToSlide: index, offsetRadius: state.offsetRadius }); 
+                        // clearInterval(timer.current)  
+                      }}/>
             }
             }
-        // } else {
-        //   return {
-        //       key: imageID,
-        //       content: <Image className={styles.image} src={`/images/carousel_images/${imageID}.jpg`} alt={index} width={1000}
-        //       height={1000} onClick={() => setState({ goToSlide: index, offsetRadius: state.offsetRadius })}/>
-        //   } 
-        // }
     })
     imageArray.map((slide, index) => {
       return slide
@@ -66,11 +61,11 @@ const ImageCarousel = ({ images, data }) => {
             // clearInterval(timer.current)
 
 
-    const onChangeInput = (e) => {
-        setState({
-        [e.target.name]: parseInt(e.target.value, 10) || 0
-        });
-    };
+    // const onChangeInput = (e) => {
+    //     setState({
+    //     [e.target.name]: parseInt(e.target.value, 10) || 0
+    //     });
+    // };
 
     let xDown = null;
     let yDown = null;

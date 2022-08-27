@@ -14,7 +14,7 @@ const Submissions = ({  }) => {
   const cardsContent = [{
     pg: "submission",
     title: "Amberley Lowis",
-    subTitle: "Literary Agent",
+    positionTitle: "Literary Agent",
     content: "I’m actively building my list and looking for debut commercial, reading group and literary fiction. I love beautifully crafted, evocative and original storytelling. I am also very interested in a broad range of lively and original non-fiction, particularly in the areas of narrative non-fiction, biography, memoir and cookery. I am also developing a children’s and young adult fiction list.",
     image: {icon: headshot}
   }

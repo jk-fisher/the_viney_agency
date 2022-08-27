@@ -60,6 +60,7 @@ const Book = ({bookData, authorData, allBookData}) => {
 
     return ( <Fragment>
         <BookInfo 
+          className={styles.mt}
           authorPg={false} 
           authorsName={authorsName} 
           reviews={reviews}
