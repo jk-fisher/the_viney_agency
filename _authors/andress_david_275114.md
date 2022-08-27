@@ -8,7 +8,7 @@ instagram: null
 image: /images/author_images/andress_david.jpg
 book_releases:
   - book_title: The Terror
-  - book_title: 1789
+  - book_title: "1789"
   - book_title: The Savage Storm
   - book_title: Cultural Dementia
   - book_title: The French Revolution
