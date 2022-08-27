@@ -58,7 +58,9 @@ const Footer = () => {
             <SocialIcon className={styles.social} url="https://twitter.com" bgColor="#CECECE" network="twitter" style={{ height: 35, width: 35 }}/>
             </ul>
             <div className={styles.subFooter}>
-                <div className={`${styles.caps} ${styles.col_1}`}>Privacy notice</div>
+                <Link href='/privacy'>
+                    <a className={`${styles.caps} ${styles.col_1}`}>Privacy notice</a>
+                </Link>
                 <div className={`${styles.col_2}`}>The Viney Agency, 64, New Cavendish Street, London W1G 8TB.<br/>Please note this is not an office address. </div>
                 <div className={`${styles.caps} ${styles.col_3}`}>COPYRIGHT © 2022 THE VINEY AGENCY</div>
             </div>
