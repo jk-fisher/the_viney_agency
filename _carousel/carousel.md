@@ -1,11 +1,11 @@
 ---
 name: Carousel
 image:
-  - bradford_the_soul_hunters.jpg
+  - bradford_the-soul-hunters.jpg
   - fountain_fake.jpg
   - hoyland_merlin.jpg
-  - jewell_we_need_snowflakes.jpg
-  - loyn_the_long_war.jpg
-  - macinnes_snow_widows.jpg
-  - sevilla_how_to_work_without_losing_your_mind.jpg
+  - jewell_we-need-snowflakes.jpg
+  - loyn_the-long-war.jpg
+  - macinnes-snow-widows.jpg
+  - sevilla_how-to-work-without-losing-your-mind.jpg
 ---
