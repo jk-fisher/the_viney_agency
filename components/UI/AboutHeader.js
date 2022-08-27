@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Fragment } from 'react'
 
 const AboutHeader = ({ title, description }) => {
-    console.log(description)
+
     return ( <Fragment>
         <div className={`${styles.container} ${description ? styles.lgContainer : ''}`}>
             <div className={styles.wrapper}>

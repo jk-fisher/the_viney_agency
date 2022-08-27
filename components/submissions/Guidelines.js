@@ -17,7 +17,7 @@ const Guidelines = () => {
             The Viney Agency is a member of the Association of Author’s Agents (AAA) and abides by its code of conduct.
         </p>
         <div  data-aos="fade-up">
-            <SubmissionButton label="Email your submission" />
+            <SubmissionButton href="mailto:fisherjoanna@sky.com" label="Email your submission" />
         </div>
     </div>
      );

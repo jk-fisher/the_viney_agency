@@ -11,7 +11,15 @@
     text-align: center;
     color: #676767;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
+}
+.img {
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
 }
 @media screen and (min-width: 768px) {
     .gridWrapper {

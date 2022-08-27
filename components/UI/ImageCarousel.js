@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+
+import Link from "next/link";
 import { config } from "react-spring";
 import Image from "next/image";
 import styles from "../../styles/ImageCarousel.module.css";
@@ -9,24 +11,47 @@ const Carousel = dynamic(() => import("react-spring-3d-carousel-2"), {
   ssr: false,
 });
 
-const ImageCarousel = ({ images }) => {
+const ImageCarousel = ({ images, data }) => {
     const timer = useRef();
 
     const [state, setState] = useState({
             goToSlide: 0,
-            offsetRadius: 6,
+            offsetRadius: 3,
             showNavigation: false,
-            config: config.gentle
+            config: config.gentle, 
+            autoPlay: true
     });
 
-    console.log('images', images)
-
-    const imageArray = images.slice(1).map((imageId, index) => {
-        return {
-            key: imageId,
-            content: <Image className={styles.image} src={`/images/carousel_images/${imageId}.jpg`} alt={index} width={1000}
-            height={1000} onClick={() => setState({ goToSlide: index, offsetRadius: state.offsetRadius })}/>
-        } 
+    const imageArray = data.map((image, index) => {
+        const current_slide = state.goToSlide % data.length;
+        if(index == current_slide){
+              return {
+                key: index,
+                content: 
+                <Link 
+                  href={{
+                  pathname: '/authors/[authorID]/[bookID]',
+                  query: {
+                              authorID: image.authorID,
+                              bookID: image.bookID
+                                }
+                          }}
+                  as={`/authors/${image.authorID}/${image.bookID}`}>
+                  <a>
+                    <Image className={styles.image} src={`/images/carousel_images/${image.bookID}.jpg`} alt={index} width={250}
+                  height={350}/>
+                  </a>
+                </Link>}
+        }else{
+              return {
+                      key: index,
+                      content: <Image className={styles.image} src={`/images/carousel_images/${image.bookID}.jpg`} alt={index} width={500}
+                      height={500} onClick={() => {
+                        setState({ goToSlide: index, offsetRadius: state.offsetRadius }); 
+                        // clearInterval(timer.current)  
+                      }}/>
+            }
+            }
     })
     imageArray.map((slide, index) => {
       return slide
@@ -36,11 +61,11 @@ const ImageCarousel = ({ images }) => {
             // clearInterval(timer.current)
 
 
-    const onChangeInput = (e) => {
-        setState({
-        [e.target.name]: parseInt(e.target.value, 10) || 0
-        });
-    };
+    // const onChangeInput = (e) => {
+    //     setState({
+    //     [e.target.name]: parseInt(e.target.value, 10) || 0
+    //     });
+    // };
 
     let xDown = null;
     let yDown = null;
@@ -48,7 +73,7 @@ const ImageCarousel = ({ images }) => {
     const getTouches = (evt) => {
         return (
         evt.touches || evt.originalEvent.touches // browser API
-        ); // jQuery
+        ); 
     };
 
     const handleTouchStart = (evt) => {
@@ -91,17 +116,16 @@ const ImageCarousel = ({ images }) => {
 
   const tick = () => {
     setState((prevIndex) => { 
-        console.log('tick', prevIndex)
         return { ...prevIndex, goToSlide: prevIndex.goToSlide + 1 }
     })
   }
 
-  // useEffect(() => {
-  //   timer.current = setInterval(() => {
-  //     tick()
-  //   }, 3800);
-  //   return () => clearInterval(timer.current);
-  // }, []);
+  useEffect(() => {
+    timer.current = setInterval(() => {
+      tick()
+    }, 3800);
+    return () => clearInterval(timer.current);
+  }, []);
 
   return (
 

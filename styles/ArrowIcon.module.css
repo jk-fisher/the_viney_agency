@@ -2,13 +2,18 @@
     /* position: relative; */
     /* margin: 1rem auto; */
     /* width: 100%; */
-    z-index: 9;
+    /* z-index: 9; */
+}
+.hide {
+    display: none;
 }
 .icon {
     display: flex; 
     justify-content: space-around;
     flex-direction: column;
-    height: 5rem;
+    height: 4rem;
     /* z-index: 9; */
     align-items: center;
+    width: 100%;
+
 }

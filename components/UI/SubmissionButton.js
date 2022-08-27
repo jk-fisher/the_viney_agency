@@ -1,12 +1,16 @@
-import styles from '../../styles/SubmissionButton.module.css'
+import Link from 'next/link';
+import styles from '../../styles/SubmissionButton.module.css';
 import RightArrowIcon from '../../components/UI/RightArrowIcon';
+import { motion } from 'framer-motion';
 
-const SubmissionButton = ({ label }) => {
+const SubmissionButton = ({ label, href }) => {
     return ( 
-        <button className={styles.button}>
-        {label}
-        <RightArrowIcon className={styles.icon}  data-aos="fade-left"/>
-    </button>
+        <Link href={href} passHref>
+            <motion.button className={styles.button} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                {label}
+                <RightArrowIcon className={styles.icon}  data-aos="fade-left"/>
+            </motion.button>
+        </Link>
      );
 }
  

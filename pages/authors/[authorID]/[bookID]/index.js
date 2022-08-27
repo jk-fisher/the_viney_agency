@@ -10,7 +10,9 @@ import { Fragment } from 'react'
 import BookInfo from '../../../../components/Books/BookInfo'
 import BookList from '../../../../components/Books/BookList'
 
+import styles from '../../../../styles/BookID.module.css'
 import booksStyles from '../../../../styles/BookList.module.css'
+import { motion } from 'framer-motion'
 
 const Book = ({bookData, authorData, allBookData}) => {
 
@@ -25,29 +27,31 @@ const Book = ({bookData, authorData, allBookData}) => {
     const releasedBooks = allBookData.map((book_release) => {
         return (
         book_release.markdownBody ?
-        <Link
-            href={{
-            pathname: '/authors/[authorID]/[bookID]',
-            query: {
-                        authorID: authorData.authorID,
-                        bookID: book_release.bookid  }
-                    }}
-            className={booksStyles.gridItem} key={book_release.bookid}>
-                    <a>
-                        <Image 
-                            src={book_release.image}
-                            alt={`${book_release.title}`}
-                            width={400}
-                            height={570}
-                        />
-                    </a>
-        </Link> :
-        <div className={booksStyles.gridItem} key={book_release.bookid}>
+        <motion.div key={book_release.bookid} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link
+                href={{
+                pathname: '/authors/[authorID]/[bookID]',
+                query: {
+                            authorID: authorData.authorID,
+                            bookID: book_release.bookid  }
+                        }}
+                className={booksStyles.gridItem} key={book_release.bookid}>
+                        <a className={styles.imageContainer}>
+                            <Image 
+                                src={book_release.image}
+                                alt={`${book_release.title}`}
+                                className={styles.image}
+                                layout="fill"
+                            />
+                        </a>
+            </Link> 
+        </motion.div> :
+        <div key={book_release.bookid} className={`${booksStyles.gridItem} ${styles.imageContainer}`}>
             <Image 
                 src={book_release.image}
                 alt={`${book_release.title}`}
-                width={400}
-                height={570}
+                className={styles.image}
+                layout="fill"
             />
             
         </div>
@@ -56,6 +60,7 @@ const Book = ({bookData, authorData, allBookData}) => {
 
     return ( <Fragment>
         <BookInfo 
+          className={styles.mt}
           authorPg={false} 
           authorsName={authorsName} 
           reviews={reviews}
@@ -74,7 +79,6 @@ const Book = ({bookData, authorData, allBookData}) => {
 
 const getStaticPaths = async () => {
     const paths = getAllBookIDs();
-    // console.log('paths', paths)
     return {
         paths,
         fallback: false,
@@ -82,12 +86,9 @@ const getStaticPaths = async () => {
 }
 const getStaticProps = async ({params}) => {
     const allPageData = getAllPageData();
-
-    const bookData = getBookData(params.bookID)
-
-    const authorData = getAuthorData(params.authorID)
-
-    const allBookData = getAllBookData(authorData)
+    const bookData = getBookData(params.bookID);
+    const authorData = getAuthorData(params.authorID);
+    const allBookData = getAllBookData(authorData);
     return {
         props: {
             bookData,

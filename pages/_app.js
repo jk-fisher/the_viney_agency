@@ -8,10 +8,8 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     AOS.init({ 
-        duration: 1000,
+        duration: 2000,
         easing: "ease-out-cubic",
-        offset: 50,
-        //once: true;
         })
   }, []);
 
@@ -19,12 +17,5 @@ function MyApp({ Component, pageProps }) {
 
   return getLayout(<Component {...pageProps} />, pageProps);
 }
-//   return (
-//     <Layout>
-//       <Component {...pageProps} />
-//     </Layout>
-    
-//   )
-// }
 
 export default MyApp

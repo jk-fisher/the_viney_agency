@@ -21,7 +21,7 @@
     .gridWrapper {
         /* width: 80%; */
         grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
+        gap: 2.5rem;
     }
 }
 
