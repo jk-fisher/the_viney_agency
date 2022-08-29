@@ -8,7 +8,7 @@ instagram: null
 image: /images/author_images/ince_robin.jpg
 book_releases:
   - book_title: How To Build A Universe
-  - book_title: I'M A Joke And So Are You
+  - book_title: I'm A Joke And So Are You
   - book_title: The Importance Of Being Interested
   - book_title: Bibliomaniac
 ---
