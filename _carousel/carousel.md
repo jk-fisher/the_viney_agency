@@ -6,6 +6,6 @@ image:
   - hoyland_merlin.jpg
   - jewell_we-need-snowflakes.jpg
   - loyn_the-long-war.jpg
-  - macinnes-snow-widows.jpg
+  - macinnes_snow-widows.jpg
   - sevilla_how-to-work-without-losing-your-mind.jpg
 ---
