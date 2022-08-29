@@ -10,7 +10,7 @@ book_releases:
   - book_title: How To Build A Universe
   - book_title: The Importance Of Being Interested
   - book_title: Bibliomaniac
-  - book_title: I'm a Joke and So Are You
+  - book_title: I'm A Joke And So Are You
 ---
 Robin Ince is widely recognised as one of the UK's most accomplished, versatile comedians and writers, with a string of awards and media appearances to his name.
 
