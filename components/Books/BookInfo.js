@@ -4,15 +4,16 @@ import authorStyles from '../../styles/AuthorID.module.css'
 import bookStyles from '../../styles/BookInfo.module.css'
 import ArrowIcon from '../UI/ArrowIcon';
 
-const BookInfo = ({ authorsName, image, genre, title, blurb, reviews, authorPg, className }) => {
+const BookInfo = ({ authorsName, image, title, blurb, reviews, authorPg, className }) => {
 
-    const bookReviews = reviews.map((review, index) => {
-        return <li className={bookStyles.review} key={index}>
-          <span className={bookStyles.reviewContent}>{`"${review.review}"`}</span>&nbsp;
-          <span className={bookStyles.reviewAuthor}>{review.by}</span>
-        </li>
-  
-      })
+    if(reviews !== undefined){
+      const bookReviews = reviews.map((review, index) => {
+          return <li className={bookStyles.review} key={index}>
+            <span className={bookStyles.reviewContent}>{`"${review.review}"`}</span>&nbsp;
+            <span className={bookStyles.reviewAuthor}>{review.by}</span>
+          </li>
+        })
+    }
     return (  
     <section className={bookStyles.greyColourContainer}>
       {authorPg && <ArrowIcon className={authorStyles.arrow} />}
@@ -26,7 +27,6 @@ const BookInfo = ({ authorsName, image, genre, title, blurb, reviews, authorPg, 
                 layout="fill"
                 />
           </div>
-          <span className={bookStyles.tag}>Genre: {genre}</span>
         </div>
         <div className={bookStyles.col_1}>
           <h2 className={`${bookStyles.headerLg} ${authorStyles.headerBlue}`}>
@@ -42,7 +42,7 @@ const BookInfo = ({ authorsName, image, genre, title, blurb, reviews, authorPg, 
           <p className={authorStyles.text}>
             {blurb}
           </p>
-          {reviews && <ul className={bookStyles.reviewWrapper}>
+          {reviews !== undefined && <ul className={bookStyles.reviewWrapper}>
             {bookReviews}
           </ul>}
           </div>

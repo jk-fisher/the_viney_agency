@@ -22,15 +22,6 @@
     padding: 4rem 4rem 3rem 4rem;
     width: 100%;
 }
-.tag{ 
-    position: relative;
-    text-align: right;
-    display: block;
-    color: #9BB1B8;
-    font-family: 'Open Sans', sans-serif;
-    margin: auto;
-    max-width: 360px;
-}
 .col_2::before {
     background-color: #0D4253;
     content: '';
