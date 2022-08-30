@@ -10,4 +10,5 @@ image:
   - sevilla_how-to-work-without-losing-your-mind.jpg
 images:
   - image: /images/carousel_images/blackhurst_too-big-to-jail.jpg
+  - image: /images/carousel_images/bates_the-poisonous-solicitor.jpg
 ---
