@@ -4,6 +4,7 @@ author_first_name: Monty
 author_last_name: Lyman
 title: The Painful Truth
 image: /images/book_images/lyman_the_painful_truth.jpg
+book_reviews: []
 ---
 We know pain when we feel it. We fear it and try to avoid it. But do we know what it really is?
 
