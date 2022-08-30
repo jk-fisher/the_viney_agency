@@ -13,6 +13,7 @@ const BookInfo = ({ authorsName, image, title, blurb, reviews, authorPg, classNa
             <span className={bookStyles.reviewAuthor}>{review.by}</span>
           </li>
         })
+        return bookReviews;
     }
     return (  
     <section className={bookStyles.greyColourContainer}>
@@ -42,7 +43,8 @@ const BookInfo = ({ authorsName, image, title, blurb, reviews, authorPg, classNa
           <p className={authorStyles.text}>
             {blurb}
           </p>
-          {reviews !== undefined && <ul className={bookStyles.reviewWrapper}>{bookReviews}</ul>}
+          {reviews !== undefined && 
+          <ul className={bookStyles.reviewWrapper}>{bookReviews}</ul>}
           </div>
       </div>
     </section> );
