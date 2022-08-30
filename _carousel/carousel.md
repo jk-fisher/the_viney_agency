@@ -8,4 +8,6 @@ image:
   - loyn_the-long-war.jpg
   - macinnes_snow-widows.jpg
   - sevilla_how-to-work-without-losing-your-mind.jpg
+images:
+  - image: /images/carousel_images/blackhurst_too-big-to-jail.jpg
 ---
