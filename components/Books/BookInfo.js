@@ -3,18 +3,11 @@ import Image from 'next/image'
 import authorStyles from '../../styles/AuthorID.module.css'
 import bookStyles from '../../styles/BookInfo.module.css'
 import ArrowIcon from '../UI/ArrowIcon';
+import BookReviews from './BookReviews';
 
 const BookInfo = ({ authorsName, image, title, blurb, reviews, authorPg, className }) => {
 
-    if(reviews !== undefined){
-      const bookReviews = reviews.map((review, index) => {
-          return <li className={bookStyles.review} key={index}>
-            <span className={bookStyles.reviewContent}>{`"${review.review}"`}</span>&nbsp;
-            <span className={bookStyles.reviewAuthor}>{review.by}</span>
-          </li>
-        })
-        return bookReviews;
-    }
+
     return (  
     <section className={bookStyles.greyColourContainer}>
       {authorPg && <ArrowIcon className={authorStyles.arrow} />}
@@ -43,8 +36,11 @@ const BookInfo = ({ authorsName, image, title, blurb, reviews, authorPg, classNa
           <p className={authorStyles.text}>
             {blurb}
           </p>
-          {reviews !== undefined && 
-          <ul className={bookStyles.reviewWrapper}>{bookReviews}</ul>}
+          {reviews !== undefined || 
+          reviews && 
+          <ul className={bookStyles.reviewWrapper}>
+            <BookReviews reviews={reviews}/>
+          </ul>}
           </div>
       </div>
     </section> );
