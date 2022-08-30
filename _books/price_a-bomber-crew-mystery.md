@@ -1,5 +1,5 @@
 ---
-publish_date: 2022-08-30T08:34:12.898Z
+publish_date: 2016-01-01T09:34:12.898Z
 author_first_name: David
 author_last_name: Price
 title: A Bomber Crew Mystery
