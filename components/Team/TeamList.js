@@ -1,6 +1,7 @@
 import styles from '../../styles/TeamList.module.css'
 import Team_01 from '../../public/images/staff_images/charlie.jpg' 
 import Team_02 from '../../public/images/staff_images/amberley.jpg' 
+import Team_03 from '../../public/images/staff_images/jack.jpg' 
 
 import Image from 'next/image';
 
@@ -19,7 +20,7 @@ const TeamList = () => {
         {
             name: 'Jack Viney', 
             title: 'Buisness Manager',
-            img: {icon: Team_01}
+            img: {icon: Team_03}
         },
         {
             name: 'Kamila Cantor', 
