@@ -10,5 +10,18 @@ images:
   - image: /images/carousel_images/bradford_the-soul-hunters.jpg
   - image: /images/carousel_images/blackhurst_too-big-to-jail.jpg
   - image: /images/carousel_images/bates_the-poisonous-solicitor.jpg
-
+  - image: /images/carousel_images/clark_the-commanders.jpg
+  - image: /images/carousel_images/cooper_later.jpg
+  - image: /images/carousel_images/downing_wedding-station.jpg
+  - image: /images/carousel_images/dowswell_the-great-revolt.jpg
+  - image: /images/carousel_images/hepworth_abbey-road.jpg
+  - image: /images/carousel_images/hoggarth_who-do-you-think-you-are-maggie-pink.jpg
+  - image: /images/carousel_images/howkins_invisible-work.jpg
+  - image: /images/carousel_images/ince_bibliomaniac.jpg
+  - image: /images/carousel_images/langley_the-lost-king.jpg
+  - image: /images/carousel_images/lyman_a-war-of-empires.jpg
+  - image: /images/carousel_images/lyman_the-painful-truth.jpg
+  - image: /images/carousel_images/martin_incomparable-world.jpg
+  - image: /images/carousel_images/price_mosquito-men.jpg
+  - image: /images/carousel_images/pugh_the-lord-of-worlds.jpg
 ---
