@@ -4,6 +4,7 @@ author_first_name: David
 author_last_name: Price
 title: Mosquito Men
 image: /images/book_images/price_mosquito_men.jpg
+book_reviews: []
 ---
 Mosquito Men – The Elite Pathfinders of 627 Squadron is the story of one of the most remarkable - and feared - British aircraft of the Second World War and the airmen who flew in them.
 
