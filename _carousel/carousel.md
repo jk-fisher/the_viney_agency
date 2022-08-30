@@ -21,4 +21,6 @@ images:
   - image: /images/carousel_images/lyman_a-war-of-empires.jpg
   - image: /images/carousel_images/martin_incomparable-world.jpg
   - image: /images/carousel_images/pugh_the-lord-of-worlds.jpg
+  - image: /images/carousel_images/lyman_the_painful_truth.jpg
+  - image: /images/carousel_images/price_mosquito-men.jpg
 ---
