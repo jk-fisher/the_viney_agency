@@ -59,7 +59,7 @@ const AuthorInfo = ({ image, authorsName, biography, twitter, instagram, web }) 
                   style={{ height: 40, width: 40 }}/>
                   <span className={authorStyles.socialData}>
                     <Link href={web}>
-                      <a>Author's Website</a>
+                      <a>{`Author's Website`}</a>
                     </Link>
                   </span>
               </li>}
