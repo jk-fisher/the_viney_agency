@@ -1,11 +1,11 @@
 ---
-date: 2022-08-27T14:51:09.892606Z
+date: 2022-08-27T14:51:09.892Z
 first_name: Lynne
 last_name: O'donnell
 url: null
 twitter: LynneO'donnell
 instagram: null
-image: /images/author_images/o'donnell_lynne.jpg
+image: /images/author_images/odonnell_lynne.jpg
 book_releases:
   - book_title: High Tea In Mosul
 ---
