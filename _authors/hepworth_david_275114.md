@@ -2,7 +2,7 @@
 date: 2022-08-27T14:51:09.690600Z
 first_name: David
 last_name: Hepworth
-url: http://whatsheonaboutnow.blogspot.co.uk 
+url: http://whatsheonaboutnow.blogspot.co.uk
 twitter: DavidHepworth
 instagram: null
 image: /images/author_images/hepworth_david.jpg

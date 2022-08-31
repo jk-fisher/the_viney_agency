@@ -6,7 +6,7 @@ title: Blitzkrieg
 image: /images/book_images/clark_blitzkrieg.jpg
 book_reviews: []
 ---
-'This genuinely revisionist account of the Battle of France in 1940 proves a deeply shocking factwe are essentially still in thrall to the view of Blitzkrieg tactics that Adolf Hitler and Joseph Goebbels wanted us to have, even over three-quarters of a century later. Lloyd Clark s brilliant analysis proves that 'Fall Gelb' wasn't all about unstoppable, superior panzers and Stukas, but was in fact an audacious, highly risky infantry-based plan that could have gone badly wrong given a different Allied mindset'.*
+'This genuinely revisionist account of the Battle of France in 1940 proves a deeply shocking factwe are essentially still in thrall to the view of Blitzkrieg tactics that Adolf Hitler and Joseph Goebbels wanted us to have, even over three-quarters of a century later. Lloyd Clark s brilliant analysis proves that 'Fall Gelb' wasn't all about unstoppable, superior panzers and Stukas, but was in fact an audacious, highly risky infantry-based plan that could have gone badly wrong given a different Allied mindset'.
 
 -Andrew Roberts
 

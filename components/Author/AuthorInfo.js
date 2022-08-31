@@ -1,4 +1,5 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
 import { SocialIcon } from 'react-social-icons';
 import ShowMoreText from '../UI/ShowMoreText';
 import authorStyles from '../../styles/AuthorID.module.css'
@@ -31,33 +32,35 @@ const AuthorInfo = ({ image, authorsName, biography, twitter, instagram, web }) 
           <ul className={authorStyles.socialLinks}>
             {twitter && 
               <li className={authorStyles.listItem}>
-                <SocialIcon url="https://twitter.com" 
+                <SocialIcon url={`https://twitter.com/${twitter}`}
                   bgColor="#39778B" 
                   network="twitter" 
                   style={{ height: 40, width: 40 }}
                   />
-                  <span className={authorStyles.paddingLft}>
+                  <span className={authorStyles.socialData}>
                     {twitter}
                   </span>
                 </li>}
             {instagram && 
                 <li className={authorStyles.listItem}>
-                  <SocialIcon url="https://instagram.com" 
+                  <SocialIcon url={`https://instagram.com/${instagram}`}
                     bgColor="#39778B" 
                     network="instagram" 
                     style={{ height: 40, width: 40 }}/>
-                    <span className={authorStyles.paddingLft}>
+                    <span className={authorStyles.socialData}>
                       {instagram}
                     </span>
                 </li>}
             {web && 
               <li className={authorStyles.listItem}>
-                <SocialIcon url="https://instagram.com" 
+                <SocialIcon url={web}
                   bgColor="#39778B" 
                   network="dribbble"
                   style={{ height: 40, width: 40 }}/>
-                  <span className={authorStyles.paddingLft}>
-                    {web}
+                  <span className={authorStyles.socialData}>
+                    <Link href={web}>
+                      <a>Author's Website</a>
+                    </Link>
                   </span>
               </li>}
           </ul>
