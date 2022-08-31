@@ -3,7 +3,8 @@ import bookStyles from '../../styles/BookInfo.module.css'
 import booksStyles from '../../styles/BookList.module.css'
 
 const BookList = ({ authorsName, releasedBooks }) => {
-    return ( <section className={booksStyles.blueColourContainer}>
+    return ( 
+    <section className={booksStyles.blueColourContainer}>
         <div className={booksStyles.allBooks}>
             <h2 className={`${bookStyles.headerLg} ${authorStyles.headerBlue}`}>Other Publications</h2>
             <h3 className={`${authorStyles.headerSm} ${authorStyles.headerDark}`}>by {authorsName}</h3>

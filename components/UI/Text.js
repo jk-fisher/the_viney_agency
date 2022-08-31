@@ -8,38 +8,6 @@ const Text = ({ state, moreText, lessText, content }) => {
     const moreBtn = useRef(null);
     const lessBtn = useRef(null);
 
-
-    // const displayedText = content.split(' ').slice(0, 150).join(' ').split('<p>');
-
-    
-    // console.log(displayedText)
-    // displayedText.filter(word => word === '<p>');
-    // const bioText = useRef(null);
-
-    // const textLength = useState(0);
-    // const [ height, setHeight ] = useState(0);
-
-    // const displayedText = content.split(' ').slice(0, 120).join(' ').concat('...');
-    // console.log(displayedText)
-
-    // const [windowSize, setWindowSize] = useState(null)
-
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         setWindowSize(window.innerWidth)
-    //     }
-    //     window.addEventListener('resize', handleResize)
-    //     return () => window.removeEventListener('resize', handleResize)
-    // }, []);
-
-    // useLayoutEffect(() => {
-    //     // setHeight(bioText.current.clientHeight);
-    //     document.onreadystatechange = () => {
-    //         console.log(bioText.current.clientHeight);
-            
-    //     }
-    // }, [])
-    
     return ( <Fragment>
         {content.split(' ').length < 100 ? 
         <div className={styles.text} dangerouslySetInnerHTML={{ __html: content }} />

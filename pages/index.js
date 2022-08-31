@@ -14,7 +14,6 @@ import TeamContainer from '../components/Team/TeamContainer'
 import { getSortedImages, getCarouselParams  } from '../lib/carousel'
 
 const Home = ({ carouselImages, carouselData }) => {  
-  console.log(carouselData)
 
   return (<Fragment>
         <Head>

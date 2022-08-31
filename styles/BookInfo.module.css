@@ -4,7 +4,7 @@
 }
 .bookWrapper{
     max-width: 100%;
-    margin: 0 auto 0 auto;   
+    margin: 0 auto;   
     margin-top: 0; 
 }
 .mtLg {
@@ -15,6 +15,7 @@
     display: block;
     width: 90%;
     margin: 3rem auto 0 auto;
+    padding: 1rem;
 }
 .col_2{
     position: relative;
@@ -38,6 +39,7 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid #3A6D7D;
 }
+
 @media screen and (min-width: 768px){
     .col_2 {
         padding: 3rem 11rem 5rem 11rem;
@@ -59,7 +61,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 0rem;
-        
+        padding-bottom: 3rem;
     }
     .col_1 {
         grid-row-start: 1;
@@ -71,6 +73,9 @@
         grid-column-start: 2;
         grid-column-end: 4;
         padding: 3rem 5rem 3rem 5rem;
+    }
+    .col_2::before {
+        margin-bottom: -3rem;
     }
 }
 .reviewWrapper {

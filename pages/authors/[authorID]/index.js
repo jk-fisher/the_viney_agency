@@ -44,23 +44,27 @@ const Author = ({authorData, allBookData}) => {
                           authorID: authorData.authorID,
                           bookID: book_release.bookid  }
                       }}
-              className={booksStyles.gridItem}>
-                      <a className={styles.imageContainer}>
+              >
+                      <a>
                           <Image 
                               src={book_release.image}
                               alt={`${book_release.title}`}
-                              className={styles.image}
-                              layout="fill"
+                              className={styles.img}
+                              width={380}
+                              height={600}
+                              objectFit='cover'
                           />
                       </a>
           </Link> 
         </motion.div> :
-        <div className={`${booksStyles.gridItem} ${styles.imageContainer}`} key={book_release.bookid}>
+        <div key={book_release.bookid}>
             <Image 
                 src={book_release.image}
                 alt={`${book_release.title}`}
-                className={styles.image}
-                layout="fill"
+                className={styles.img}
+                width={380}
+                height={600}
+                objectFit='cover'
             />
             
         </div>
