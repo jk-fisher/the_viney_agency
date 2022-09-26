@@ -1,7 +1,7 @@
 ---
 date: 2022-08-27T14:51:09.491Z
 first_name: Chris
-last_name: Adam
+last_name: Adams
 url: null
 twitter: ChrisAdams
 instagram: null
