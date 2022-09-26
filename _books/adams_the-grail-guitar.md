@@ -1,7 +1,7 @@
 ---
 publish_date: 2016-01-01T00:00:00.000Z
 author_first_name: Chris
-author_last_name: Adam
+author_last_name: Adams
 title: The Grail Guitar
 image: /images/book_images/adams_the_grail_guitar.jpg
 book_reviews: []
