@@ -40,14 +40,12 @@ collections:
        required: true
        hint: "At least one book release is required."
        fields: 
-       - {label: "Book Title", name: "book_title", widget: "relation", collection: "book", search_fields: ["title"], value_field: "title", required: true}
+       - {label: "Book Title", name: "book_title", widget: "relation", collection: "book", search_fields: ["title"], value_field: "{{slug}}", required: true}
   - name: "book"
     label: "Book"
     folder: "_books"
     create: true
     slug: "{{author_last_name}}_{{slug}}"
-       encoding: "ascii"
-       clean_accents: true
     media_folder: "/{{media_folder}}/book_images"
     public_folder: "/{{public_folder}}/book_images"
     fields: 
