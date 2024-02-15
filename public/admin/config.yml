@@ -46,7 +46,6 @@ collections:
     folder: "_books"
     create: true
     slug: "{{author_last_name}}_{{slug}}"
-    slug:
        encoding: "ascii"
        clean_accents: true
     media_folder: "/{{media_folder}}/book_images"
