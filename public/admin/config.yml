@@ -37,8 +37,10 @@ collections:
        name: "book_releases"
        widget: list
        create: true
+       required: true
+       hint: "At least one book release is required."
        fields: 
-       - {label: "Book Title", name: "book_title", widget: "relation", collection: "book", search_fields: ["title"], value_field: "title", required: true}
+       - {label: "Book Title", name: "book_title", widget: "relation", collection: "book", search_fields: ["title"], value_field: "{{slug}}", required: true}
   - name: "book"
     label: "Book"
     folder: "_books"
