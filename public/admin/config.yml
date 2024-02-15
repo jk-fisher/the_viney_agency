@@ -37,6 +37,7 @@ collections:
        name: "book_releases"
        widget: list
        create: true
+       required: true
        fields: 
        - {label: "Book Title", name: "book_title", widget: "relation", collection: "book", search_fields: ["title"], value_field: "title", required: true}
   - name: "book"
