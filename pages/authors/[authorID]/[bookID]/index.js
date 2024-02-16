@@ -26,7 +26,7 @@ const Book = ({bookData, authorData, allBookData}) => {
 
     const releasedBooks = allBookData.map((book_release) => {
         return (
-        book_release.markdownBody ?
+        book_release.markdownBody ? 
         <motion.div key={book_release.bookid} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
                 href={{
@@ -35,7 +35,7 @@ const Book = ({bookData, authorData, allBookData}) => {
                             authorID: authorData.authorID,
                             bookID: book_release.bookid  }
                         }}
-                key={book_release.bookid}>
+                >
                         <a>
                             <Image 
                                 src={book_release.image}
@@ -47,7 +47,8 @@ const Book = ({bookData, authorData, allBookData}) => {
                             />
                         </a>
             </Link> 
-        </motion.div> :
+        </motion.div>
+         :
         <div key={book_release.bookid}>
             <Image 
                 src={book_release.image}

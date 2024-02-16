@@ -8,7 +8,6 @@ import { getAllAuthorIDs, getAuthorData } from '../../../lib/authors'
 import { getAllBookData } from '../../../lib/books'
 import { getLayout } from '../../../components/Layout/Layout'
 
-import booksStyles from '../../../styles/BookList.module.css'
 import styles from '../../../styles/BookID.module.css'
 import AuthorInfo from '../../../components/Author/AuthorInfo'
 import BookInfo from '../../../components/Books/BookInfo'
@@ -34,7 +33,6 @@ const Author = ({authorData, allBookData}) => {
 
     
     const releasedBooks = allBookData.map((book_release) => {
-      if(book_release.bookid === bookTitle) return null;
       return (
         book_release.markdownBody ?
         <motion.div key={book_release.bookid} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
