@@ -34,6 +34,7 @@ const Author = ({authorData, allBookData}) => {
 
     
     const releasedBooks = allBookData.map((book_release) => {
+      if(book_release.bookid === bookTitle) return null;
       return (
         book_release.markdownBody ?
         <motion.div key={book_release.bookid} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
