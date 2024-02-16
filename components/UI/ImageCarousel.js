@@ -7,11 +7,11 @@ import styles from "../../styles/ImageCarousel.module.css";
 
 import dynamic from "next/dynamic";
 
-const Carousel = dynamic(() => import("react-spring-3d-carousel-2"), {
+const Carousel = dynamic(() => import("react-spring-3d-carousel"), {
   ssr: false,
 });
 
-const ImageCarousel = ({ images, data }) => {
+const ImageCarousel = ({ data }) => {
     const timer = useRef();
 
     const [state, setState] = useState({
