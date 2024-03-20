@@ -1,7 +1,6 @@
 ---
 name: Carousel
 images:
-  - image: /images/carousel_images/sevilla_how-to-work-without-losing-your-mind.jpg
   - image: /images/carousel_images/macinnes_snow-widows.jpg
   - image: /images/carousel_images/loyn_the-long-war.jpg
   - image: /images/carousel_images/jewell_we-need-snowflakes.jpg
